@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		734DE2802586780C0006E607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE27F2586780C0006E607 /* AppDelegate.swift */; };
 		734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2812586780C0006E607 /* SceneDelegate.swift */; };
-		734DE2842586780C0006E607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2832586780C0006E607 /* ViewController.swift */; };
 		734DE2872586780C0006E607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE2852586780C0006E607 /* Main.storyboard */; };
 		734DE2892586780C0006E607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734DE2882586780C0006E607 /* Assets.xcassets */; };
 		734DE28C2586780C0006E607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE28A2586780C0006E607 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		734DE27C2586780C0006E607 /* Kmeza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kmeza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734DE27F2586780C0006E607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734DE2812586780C0006E607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		734DE2832586780C0006E607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		734DE2862586780C0006E607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		734DE2882586780C0006E607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734DE28B2586780C0006E607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +74,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		731B1E5C258E179800D0A2F6 /* Media Files */ = {
+			isa = PBXGroup;
+			children = (
+				734DE2882586780C0006E607 /* Assets.xcassets */,
+			);
+			path = "Media Files";
+			sourceTree = "<group>";
+		};
+		731B1E5D258E17B500D0A2F6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				734DE28A2586780C0006E607 /* LaunchScreen.storyboard */,
+				734DE2852586780C0006E607 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		731B1E5E258E17C900D0A2F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				734DE27F2586780C0006E607 /* AppDelegate.swift */,
+				734DE2812586780C0006E607 /* SceneDelegate.swift */,
+				734DE28D2586780C0006E607 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		734DE2732586780C0006E607 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +131,10 @@
 		734DE27E2586780C0006E607 /* Kmeza */ = {
 			isa = PBXGroup;
 			children = (
-				734DE27F2586780C0006E607 /* AppDelegate.swift */,
-				734DE2812586780C0006E607 /* SceneDelegate.swift */,
-				734DE2832586780C0006E607 /* ViewController.swift */,
-				734DE2852586780C0006E607 /* Main.storyboard */,
-				734DE2882586780C0006E607 /* Assets.xcassets */,
-				734DE28A2586780C0006E607 /* LaunchScreen.storyboard */,
-				734DE28D2586780C0006E607 /* Info.plist */,
+				731B1E65258E17FE00D0A2F6 /* View Controllers */,
+				731B1E5D258E17B500D0A2F6 /* Storyboard */,
+				731B1E5C258E179800D0A2F6 /* Media Files */,
+				731B1E5E258E17C900D0A2F6 /* Supporting Files */,
 			);
 			path = Kmeza;
 			sourceTree = "<group>";
@@ -258,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				734DE2842586780C0006E607 /* ViewController.swift in Sources */,
 				734DE2802586780C0006E607 /* AppDelegate.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
 			);
@@ -438,7 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
-				INFOPLIST_FILE = Kmeza/Info.plist;
+				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
-				INFOPLIST_FILE = Kmeza/Info.plist;
+				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
