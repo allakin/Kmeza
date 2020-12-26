@@ -30,16 +30,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xtx-Hw-Psv">
-                                <rect key="frame" x="16" y="500" width="288" height="44"/>
+                                <rect key="frame" x="16" y="503" width="288" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fashion Store App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgW-DV-5jo">
-                                        <rect key="frame" x="85" y="0.0" width="118" height="18"/>
+                                        <rect key="frame" x="86" y="0.0" width="116.5" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Lora-Regular" family="Lora" pointSize="14"/>
                                         <color key="textColor" red="1" green="0.96078431372549022" blue="0.94117647058823528" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psb-1I-BHM">
-                                        <rect key="frame" x="126" y="26" width="36" height="18"/>
+                                        <rect key="frame" x="125" y="24.5" width="38.5" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Lora-Regular" family="Lora" pointSize="14"/>
                                         <color key="textColor" red="1" green="0.96078431369999995" blue="0.94117647059999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
     <resources>
         <image name="Launch Screen Logo" width="100" height="100"/>
         <namedColor name="Primary Background Color">
-            <color red="0.36862745098039218" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.36899998784065247" green="0.27500000596046448" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
