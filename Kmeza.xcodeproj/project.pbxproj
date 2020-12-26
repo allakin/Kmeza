@@ -32,6 +32,14 @@
 		734DE28C2586780C0006E607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE28A2586780C0006E607 /* LaunchScreen.storyboard */; };
 		734DE2972586780C0006E607 /* KmezaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2962586780C0006E607 /* KmezaTests.swift */; };
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
+		735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowMainScreen.swift */; };
+		736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D803F258F8FB0005F0BA8 /* Extension+Button.swift */; };
+		73849277258E370100F665E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73849276258E370100F665E8 /* ViewController.swift */; };
+		73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73849288258E3AA000F665E8 /* WalkthroughViewController.swift */; };
+		738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */; };
+		738492AB258E997900F665E8 /* WalkthroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738492AA258E997900F665E8 /* WalkthroughModel.swift */; };
+		73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */; };
+		73947C802593B055008A1781 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947C7F2593B055008A1781 /* Values.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +91,14 @@
 		734DE29D2586780C0006E607 /* KmezaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmezaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		734DE2A12586780C0006E607 /* KmezaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmezaUITests.swift; sourceTree = "<group>"; };
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		735898D22597918200CE5042 /* ShowMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMainScreen.swift; sourceTree = "<group>"; };
+		736D803F258F8FB0005F0BA8 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
+		73849276258E370100F665E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73849288258E3AA000F665E8 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCollectionViewCell.swift; sourceTree = "<group>"; };
+		738492AA258E997900F665E8 /* WalkthroughModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughModel.swift; sourceTree = "<group>"; };
+		73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault Save + Fetch .swift"; sourceTree = "<group>"; };
+		73947C7F2593B055008A1781 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +150,10 @@
 				734DE27F2586780C0006E607 /* AppDelegate.swift */,
 				734DE2812586780C0006E607 /* SceneDelegate.swift */,
 				734DE28D2586780C0006E607 /* Info.plist */,
+				736D803F258F8FB0005F0BA8 /* Extension+Button.swift */,
+				73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */,
+				73947C7F2593B055008A1781 /* Values.swift */,
+				735898D22597918200CE5042 /* ShowMainScreen.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +161,8 @@
 		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				73849276258E370100F665E8 /* ViewController.swift */,
+				73849267258E31DE00F665E8 /* Onboarding */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -149,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				731B1E94258E254A00D0A2F6 /* Open Sans */,
-				731B1E95258E255900D0A2F6 /*  Lora */,
+				731B1E95258E255900D0A2F6 /* Lora */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -171,7 +193,7 @@
 			path = "Open Sans";
 			sourceTree = "<group>";
 		};
-		731B1E95258E255900D0A2F6 /*  Lora */ = {
+		731B1E95258E255900D0A2F6 /* Lora */ = {
 			isa = PBXGroup;
 			children = (
 				731B1E71258E253400D0A2F6 /* Lora-Bold.ttf */,
@@ -183,7 +205,7 @@
 				731B1E6F258E253400D0A2F6 /* Lora-SemiBold.ttf */,
 				731B1E6D258E253400D0A2F6 /* Lora-SemiBoldItalic.ttf */,
 			);
-			path = " Lora";
+			path = Lora;
 			sourceTree = "<group>";
 		};
 		734DE2732586780C0006E607 = {
@@ -209,6 +231,7 @@
 		734DE27E2586780C0006E607 /* Kmeza */ = {
 			isa = PBXGroup;
 			children = (
+				738492A9258E982600F665E8 /* Model */,
 				731B1E65258E17FE00D0A2F6 /* View Controllers */,
 				731B1E5D258E17B500D0A2F6 /* Storyboard */,
 				731B1E5C258E179800D0A2F6 /* Media Files */,
@@ -233,6 +256,23 @@
 				734DE2A32586780C0006E607 /* Info.plist */,
 			);
 			path = KmezaUITests;
+			sourceTree = "<group>";
+		};
+		73849267258E31DE00F665E8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				73849288258E3AA000F665E8 /* WalkthroughViewController.swift */,
+				738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		738492A9258E982600F665E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				738492AA258E997900F665E8 /* WalkthroughModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,7 +423,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738492AB258E997900F665E8 /* WalkthroughModel.swift in Sources */,
+				735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */,
+				73947C802593B055008A1781 /* Values.swift in Sources */,
 				734DE2802586780C0006E607 /* AppDelegate.swift in Sources */,
+				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
+				73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */,
+				738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */,
+				73849277258E370100F665E8 /* ViewController.swift in Sources */,
+				736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
 				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
 				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
