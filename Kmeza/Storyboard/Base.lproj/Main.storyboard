@@ -183,7 +183,7 @@ with K’meza</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="TSY-rv-juc"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -193,14 +193,14 @@ with K’meza</string>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-7h-uxg">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Button">
+                                                        <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-P2-jE4">
                                                         <rect key="frame" x="197" y="0.0" width="175" height="60"/>
                                                         <color key="backgroundColor" name="AccentColor"/>
-                                                        <state key="normal" title="Button">
+                                                        <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
@@ -233,6 +233,11 @@ with K’meza</string>
                             <constraint firstItem="V9w-gc-IO0" firstAttribute="leading" secondItem="YSD-7g-Wip" secondAttribute="leading" id="tNI-6Q-Clk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LoginWithAppleIDButton" destination="jiB-7h-uxg" id="pJb-Kk-BHb"/>
+                        <outlet property="LoginWithEmailButton" destination="QuI-tb-pMb" id="Gvy-G2-1oP"/>
+                        <outlet property="LoginWithFacebookButton" destination="dGa-P2-jE4" id="w93-On-5CD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-v8-fNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

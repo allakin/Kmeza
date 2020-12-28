@@ -9,10 +9,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var LoginWithEmailButton: UIButton!
+	@IBOutlet weak var LoginWithAppleIDButton: UIButton!
+	@IBOutlet weak var LoginWithFacebookButton: UIButton!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		LoginWithFacebookButton.settingWelcomeButton(image: "Facebook")
+		LoginWithAppleIDButton.settingWelcomeButton(image: "Apple")
     }
     
 
