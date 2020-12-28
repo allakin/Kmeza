@@ -17,6 +17,10 @@ class WalkthroughViewController: UIViewController {
 		setupCollectionView()
 	}
 	
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+		UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .portrait
+	}
+	
 	private func setupCollectionView() {
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .horizontal
