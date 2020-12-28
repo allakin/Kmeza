@@ -34,7 +34,7 @@
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
 		735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowMainScreen.swift */; };
 		736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D803F258F8FB0005F0BA8 /* Extension+Button.swift */; };
-		73849277258E370100F665E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73849276258E370100F665E8 /* ViewController.swift */; };
+		73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73849276258E370100F665E8 /* WelcomeViewController.swift */; };
 		73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73849288258E3AA000F665E8 /* WalkthroughViewController.swift */; };
 		738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */; };
 		738492AB258E997900F665E8 /* WalkthroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738492AA258E997900F665E8 /* WalkthroughModel.swift */; };
@@ -93,7 +93,7 @@
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		735898D22597918200CE5042 /* ShowMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMainScreen.swift; sourceTree = "<group>"; };
 		736D803F258F8FB0005F0BA8 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
-		73849276258E370100F665E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73849276258E370100F665E8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		73849288258E3AA000F665E8 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCollectionViewCell.swift; sourceTree = "<group>"; };
 		738492AA258E997900F665E8 /* WalkthroughModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughModel.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73849276258E370100F665E8 /* ViewController.swift */,
+				73849276258E370100F665E8 /* WelcomeViewController.swift */,
 				73849267258E31DE00F665E8 /* Onboarding */,
 			);
 			path = "View Controllers";
@@ -430,7 +430,7 @@
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
 				73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */,
 				738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */,
-				73849277258E370100F665E8 /* ViewController.swift in Sources */,
+				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
 				736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
 			);

@@ -131,15 +131,15 @@ with K’meza</string>
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="-156.52173913043478"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="4s3-mX-bH1">
             <objects>
-                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="pdL-bk-TvG" customClass="ViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="WelcomeViewController" storyboardIdentifier="WelcomeViewController" id="pdL-bk-TvG" customClass="WelcomeViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yVl-zV-zng">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="YSD-7g-Wip"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" name="Primary Background Color"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-v8-fNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -160,9 +160,6 @@ with K’meza</string>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
