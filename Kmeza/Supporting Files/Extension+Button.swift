@@ -8,26 +8,25 @@
 import UIKit
 
 extension UIButton {
-	func setShadow() {
-		let button = self
-		button.layer.shadowColor = UIColor(named: "Primary Accent Color")?.cgColor
-		button.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
-		button.layer.shadowOpacity = 0.8
-		button.layer.shadowRadius = 10.0
-		button.layer.masksToBounds = false
+	func setButtonShadow() {
+		getButton().layer.shadowColor = UIColor(named: "Primary Accent Color")?.cgColor
+		getButton().layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+		getButton().layer.shadowOpacity = 0.8
+		getButton().layer.shadowRadius = 10.0
+		getButton().layer.masksToBounds = false
 	}
 	
 	func settingButton(image: String) {
-		let button = self
-		button.layer.cornerRadius = button.frame.size.height / 2
-		button.setImage(UIImage(named: image), for: .normal)
-		button.tintColor = .white
+		getButton().layer.cornerRadius = getButton().frame.size.height / 2
+		getButton().setImage(UIImage(named: image), for: .normal)
+		getButton().tintColor = .white
 	}
 	
-	func settingWelcomeButton(image: String) {
-		let button = self
-		button.setImage(UIImage(named: image), for: .normal)
-		button.tintColor = .white
-		button.layer.cornerRadius = button.frame.size.height / 2
+	func setLeftPositionIconInsideButton(at number: CGFloat) {
+		getButton().imageEdgeInsets.right = number
+	}
+	
+	private func getButton() -> UIButton {
+		self
 	}
 }

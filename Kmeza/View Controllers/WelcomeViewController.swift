@@ -8,15 +8,16 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
 	@IBOutlet weak var LoginWithEmailButton: UIButton!
 	@IBOutlet weak var LoginWithAppleIDButton: UIButton!
 	@IBOutlet weak var LoginWithFacebookButton: UIButton!
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
-		LoginWithFacebookButton.settingWelcomeButton(image: "Facebook")
-		LoginWithAppleIDButton.settingWelcomeButton(image: "Apple")
+		LoginWithFacebookButton.settingButton(image: "Facebook")
+		LoginWithAppleIDButton.settingButton(image: "Apple")
+		LoginWithEmailButton.settingButton(image: "Email")
+		LoginWithEmailButton.setLeftPositionIconInsideButton(at: 20)
     }
     
 

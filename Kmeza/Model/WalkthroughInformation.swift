@@ -1,5 +1,5 @@
 //
-//  WalkthroughModel.swift
+//  WalkthroughInformation.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 19.12.2020.

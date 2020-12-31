@@ -16,6 +16,9 @@
         <array key="OpenSans-Regular.ttf">
             <string>OpenSans-Regular</string>
         </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Walkthrough View Controller-->
@@ -177,27 +180,28 @@ with K’meza</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="b0E-7x-KbE">
                                         <rect key="frame" x="0.0" y="674" width="372" height="146"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-tb-pMb">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-tb-pMb">
                                                 <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
                                                 <color key="backgroundColor" name="Primary Accent Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="TSY-rv-juc"/>
                                                 </constraints>
-                                                <state key="normal">
+                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                <state key="normal" title="Login with email">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="TpZ-S0-2SJ">
                                                 <rect key="frame" x="0.0" y="86" width="372" height="60"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-7h-uxg">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-7h-uxg">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-P2-jE4">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-P2-jE4">
                                                         <rect key="frame" x="197" y="0.0" width="175" height="60"/>
                                                         <color key="backgroundColor" name="AccentColor"/>
                                                         <state key="normal">
@@ -243,19 +247,96 @@ with K’meza</string>
             </objects>
             <point key="canvasLocation" x="854" y="-157"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome Feature Collection View Controller-->
         <scene sceneID="jPN-Zi-Nke">
             <objects>
-                <viewController id="hok-Jr-EME" sceneMemberID="viewController">
+                <viewController id="hok-Jr-EME" customClass="WelcomeFeatureCollectionViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeA-3C-3Vs">
                         <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7b8-Uv-uh8">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8pk-mk-t4h">
+                                        <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M7t-5V-4O3">
+                                            <size key="itemSize" width="210" height="47"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Tdc-sT-OxE" customClass="WelcomeFeatureCollectionViewCell" customModule="Kmeza" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2lT-ru-vzx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-GX-sEq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-86-oV7">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="73"/>
+                                                                    <string key="text">Best Fashion Store 
+in This Era</string>
+                                                                    <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="28"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-ZG-Bx8">
+                                                                    <rect key="frame" x="0.0" y="83" width="372" height="39"/>
+                                                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AI2-56-Emn">
+                                                                    <rect key="frame" x="0.0" y="132" width="372" height="28"/>
+                                                                    <color key="pageIndicatorTintColor" name="Primary Accent Color"/>
+                                                                    <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </pageControl>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3ra-GX-sEq" firstAttribute="leading" secondItem="2lT-ru-vzx" secondAttribute="leading" id="KyG-G8-nfr"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3ra-GX-sEq" secondAttribute="bottom" id="UMh-qX-2hv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3ra-GX-sEq" secondAttribute="trailing" id="edc-sY-gWR"/>
+                                                        <constraint firstItem="3ra-GX-sEq" firstAttribute="top" secondItem="2lT-ru-vzx" secondAttribute="top" id="i62-Kf-nRc"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="customSize" width="372" height="160"/>
+                                                <connections>
+                                                    <outlet property="descriptionLabel" destination="vtA-ZG-Bx8" id="65T-vD-dLE"/>
+                                                    <outlet property="titleLabel" destination="a2j-86-oV7" id="oNP-R2-e1z"/>
+                                                    <outlet property="welcomePageController" destination="AI2-56-Emn" id="VHq-3L-KKN"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="01d-Pm-zyv"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7b8-Uv-uh8" firstAttribute="top" secondItem="XeA-3C-3Vs" secondAttribute="top" id="SQE-Km-rsy"/>
+                            <constraint firstAttribute="bottom" secondItem="7b8-Uv-uh8" secondAttribute="bottom" id="SWX-jD-yWS"/>
+                            <constraint firstItem="01d-Pm-zyv" firstAttribute="trailing" secondItem="7b8-Uv-uh8" secondAttribute="trailing" id="f13-Lf-7Fg"/>
+                            <constraint firstItem="7b8-Uv-uh8" firstAttribute="leading" secondItem="01d-Pm-zyv" secondAttribute="leading" id="nsV-WV-s6q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeCollectionView" destination="8pk-mk-t4h" id="3Ku-pZ-Vam"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWs-gJ-Ajb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1587" y="-157"/>
+            <point key="canvasLocation" x="1596.7289719626167" y="-157.451403887689"/>
         </scene>
     </scenes>
     <resources>
