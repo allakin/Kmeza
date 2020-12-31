@@ -17,6 +17,10 @@ class WalkthroughViewController: UIViewController {
 		setupCollectionView()
 	}
 	
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+		UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .portrait
+	}
+	
 	private func setupCollectionView() {
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .horizontal
@@ -30,7 +34,7 @@ class WalkthroughViewController: UIViewController {
 	private func changeScreen(indexParh: IndexPath) {
 		if indexParh.item == information.count - 1 {
 			SaveDataInUserDefaults.saveData(state: true, key: WALKTHROUGH_VALUE)
-			ShowScreen.shared.showMainScreen()
+			ShowWelcomeScreen.shared.showWelcomeScreen()
 		} else {
 			let index = indexParh.item + 1
 			let nextIndexPath = IndexPath(item: index, section: 0)

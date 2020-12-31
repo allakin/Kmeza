@@ -35,8 +35,8 @@ class WalkthroughCollectionViewCell: UICollectionViewCell {
 		//		lastButton.settingButton(button: lastButton, with: "lastButtonIcon")
 		//		lastButton.setShadow(button: lastButton)
 		
-		nextButton.settingButton(button: nextButton, with: "nextButtonIcon")
-		nextButton.setShadow(button: nextButton)
+		nextButton.settingButton(image: "nextButtonIcon")
+		nextButton.setButtonShadow()
 	}
 	
 	@IBAction func lastButtonPressed() {

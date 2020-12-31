@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ShowScreen {
-	static let shared = ShowScreen()
+class ShowWelcomeScreen {
+	static let shared = ShowWelcomeScreen()
 	
 	private init() {}
 	
-	func showMainScreen() {
+	func showWelcomeScreen() {
 		let mainScreen = UIStoryboard(name: "Main", bundle: nil)
-			.instantiateViewController(identifier: "ViewController")
+			.instantiateViewController(identifier: "WelcomeViewController")
 		if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
 		   let sceneDelegate = windowScene.delegate as? SceneDelegate,
 		   let window = sceneDelegate.window {
