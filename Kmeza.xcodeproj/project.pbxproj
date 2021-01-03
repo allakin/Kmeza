@@ -25,6 +25,8 @@
 		731B1E8E258E254500D0A2F6 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E84258E254500D0A2F6 /* OpenSans-Light.ttf */; };
 		731B1E8F258E254500D0A2F6 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E85258E254500D0A2F6 /* OpenSans-SemiBold.ttf */; };
 		731B1E90258E254500D0A2F6 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E86258E254500D0A2F6 /* OpenSans-Italic.ttf */; };
+		73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */; };
+		7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */; };
 		734DE2802586780C0006E607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE27F2586780C0006E607 /* AppDelegate.swift */; };
 		734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2812586780C0006E607 /* SceneDelegate.swift */; };
 		734DE2872586780C0006E607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE2852586780C0006E607 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		734DE2972586780C0006E607 /* KmezaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2962586780C0006E607 /* KmezaTests.swift */; };
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
 		735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowMainScreen.swift */; };
+		73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B02259F2B8C009097D7 /* Extension+Color.swift */; };
+		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
 		736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D803F258F8FB0005F0BA8 /* Extension+Button.swift */; };
 		737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC737259BC7D600B861BD /* WelcomeFeature.swift */; };
 		737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */; };
@@ -43,6 +47,7 @@
 		738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738492AA258E997900F665E8 /* WalkthroughInformation.swift */; };
 		73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */; };
 		73947C802593B055008A1781 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947C7F2593B055008A1781 /* Values.swift */; };
+		73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2399259DC476004BAA64 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,8 @@
 		731B1E84258E254500D0A2F6 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		731B1E85258E254500D0A2F6 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		731B1E86258E254500D0A2F6 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		734DE27C2586780C0006E607 /* Kmeza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kmeza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734DE27F2586780C0006E607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734DE2812586780C0006E607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +102,8 @@
 		734DE2A12586780C0006E607 /* KmezaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmezaUITests.swift; sourceTree = "<group>"; };
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		735898D22597918200CE5042 /* ShowMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMainScreen.swift; sourceTree = "<group>"; };
+		73597B02259F2B8C009097D7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
 		736D803F258F8FB0005F0BA8 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
 		737CC737259BC7D600B861BD /* WelcomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeature.swift; sourceTree = "<group>"; };
 		737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +114,7 @@
 		738492AA258E997900F665E8 /* WalkthroughInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughInformation.swift; sourceTree = "<group>"; };
 		73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault Save + Fetch .swift"; sourceTree = "<group>"; };
 		73947C7F2593B055008A1781 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		73AB2399259DC476004BAA64 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +166,12 @@
 				734DE27F2586780C0006E607 /* AppDelegate.swift */,
 				734DE2812586780C0006E607 /* SceneDelegate.swift */,
 				734DE28D2586780C0006E607 /* Info.plist */,
-				736D803F258F8FB0005F0BA8 /* Extension+Button.swift */,
+				73597B0C259F2CB8009097D7 /* Extension */,
+				73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */,
 				73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */,
 				73947C7F2593B055008A1781 /* Values.swift */,
 				735898D22597918200CE5042 /* ShowMainScreen.swift */,
+				73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,10 +179,9 @@
 		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73849276258E370100F665E8 /* WelcomeViewController.swift */,
-				73849267258E31DE00F665E8 /* Onboarding */,
-				737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */,
-				737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */,
+				73AB2398259DC44C004BAA64 /* SignUp Controllers */,
+				73AB2391259DC422004BAA64 /* Welcome Controllers */,
+				73849267258E31DE00F665E8 /* Onboarding Controllers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -266,13 +277,23 @@
 			path = KmezaUITests;
 			sourceTree = "<group>";
 		};
-		73849267258E31DE00F665E8 /* Onboarding */ = {
+		73597B0C259F2CB8009097D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				736D803F258F8FB0005F0BA8 /* Extension+Button.swift */,
+				73597B02259F2B8C009097D7 /* Extension+Color.swift */,
+				7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		73849267258E31DE00F665E8 /* Onboarding Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				73849288258E3AA000F665E8 /* WalkthroughViewController.swift */,
 				738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */,
 			);
-			path = Onboarding;
+			path = "Onboarding Controllers";
 			sourceTree = "<group>";
 		};
 		738492A9258E982600F665E8 /* Model */ = {
@@ -282,6 +303,24 @@
 				737CC737259BC7D600B861BD /* WelcomeFeature.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		73AB2391259DC422004BAA64 /* Welcome Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73849276258E370100F665E8 /* WelcomeViewController.swift */,
+				737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */,
+				737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */,
+			);
+			path = "Welcome Controllers";
+			sourceTree = "<group>";
+		};
+		73AB2398259DC44C004BAA64 /* SignUp Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73AB2399259DC476004BAA64 /* SignUpViewController.swift */,
+			);
+			path = "SignUp Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,11 +474,16 @@
 				738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */,
 				737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */,
 				735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */,
+				73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */,
+				7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */,
 				73947C802593B055008A1781 /* Values.swift in Sources */,
 				734DE2802586780C0006E607 /* AppDelegate.swift in Sources */,
+				73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */,
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
 				737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */,
+				73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */,
 				73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */,
+				73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */,
 				738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */,
 				737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */,
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
