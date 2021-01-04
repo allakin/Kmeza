@@ -38,6 +38,7 @@
 		73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B02259F2B8C009097D7 /* Extension+Color.swift */; };
 		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
 		736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D803F258F8FB0005F0BA8 /* Extension+Button.swift */; };
+		7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373485D25A3961200FD6D50 /* Extension+String.swift */; };
 		737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC737259BC7D600B861BD /* WelcomeFeature.swift */; };
 		737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */; };
 		737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */; };
@@ -105,6 +106,7 @@
 		73597B02259F2B8C009097D7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
 		736D803F258F8FB0005F0BA8 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
+		7373485D25A3961200FD6D50 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		737CC737259BC7D600B861BD /* WelcomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeature.swift; sourceTree = "<group>"; };
 		737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
 		737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeatureCollectionViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				736D803F258F8FB0005F0BA8 /* Extension+Button.swift */,
 				73597B02259F2B8C009097D7 /* Extension+Color.swift */,
 				7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */,
+				7373485D25A3961200FD6D50 /* Extension+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */,
 				738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */,
 				737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */,
 				735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */,

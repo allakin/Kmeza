@@ -32,6 +32,16 @@ extension UITextField {
 		getTextField().backgroundColor = .getColor(color: .textFileldBackroundDefaultColor)
 	}
 	
+	func isValidEmail(value: String) -> Bool {
+		getTextField().text = value
+		return getTextField().text?.isValidText(.email) ?? false
+	}
+	
+	func isValidPassword(value: String) -> Bool {
+		getTextField().text = value
+		return getTextField().text?.isValidText(.password) ?? false
+	}
+	
 	private func settingTextField(width: CGFloat) {
 		getTextField().layer.cornerRadius =  getTextField().frame.size.height / 2
 		getTextField().layer.borderWidth = width

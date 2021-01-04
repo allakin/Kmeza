@@ -9,6 +9,8 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 	
+	@IBOutlet weak var scrollView: UIScrollView!
+	
 	@IBOutlet weak var emailTextField: TextFieldWithPadding!
 	@IBOutlet weak var passwordTextField: TextFieldWithPadding!
 	@IBOutlet weak var passwordAgainTextField: TextFieldWithPadding!
@@ -40,6 +42,12 @@ class SignUpViewController: UIViewController {
 		settingUITextField()
 		addShowButtonToTextField()
 		hideKeyboardWhenTappedAround()
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(keyboardWillShow),
+											   name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(keyboardWillHide),
+											   name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 	
 	@IBAction func PressButton(_ sender: UIButton) {
@@ -59,6 +67,17 @@ class SignUpViewController: UIViewController {
 			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, registerButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		}
+	}
+	
+	@objc func keyboardWillShow(notification: NSNotification) {
+		guard let userInfo = notification.userInfo else { return }
+		guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+		let keyboardFrame = keyboardSize.cgRectValue
+		scrollView.contentOffset = CGPoint(x: 0, y: keyboardFrame.height)
+	}
+	
+	@objc func keyboardWillHide(notification: NSNotification) {
+		scrollView.contentOffset = CGPoint.zero
 	}
 	
 	@objc func showPassword(sender: UIButton) {
@@ -118,6 +137,10 @@ class SignUpViewController: UIViewController {
 		
 		passwordTextField.textInsets.right = 60
 		passwordAgainTextField.textInsets.right = 60
+		
+		emailTextField.delegate = self
+		passwordTextField.delegate = self
+		passwordAgainTextField.delegate = self
 	}
 	
 	private func settingActivityIndicatorInButton(button: UIButton) {
@@ -144,9 +167,9 @@ extension SignUpViewController: UITextFieldDelegate  {
 			passwordAgainTextField.becomeFirstResponder()
 		} else {
 			view.endEditing(true)
-//			settingActivityIndicatorInButton(button: registerButton)
-//			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, facebookLoginButton])
-//			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
+			//			settingActivityIndicatorInButton(button: registerButton)
+			//			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, facebookLoginButton])
+			//			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		}
 		return true
 	}

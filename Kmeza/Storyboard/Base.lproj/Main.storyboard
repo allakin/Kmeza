@@ -348,7 +348,7 @@ in This Era</string>
         <!--Sign Up View Controller-->
         <scene sceneID="nyy-tE-Ags">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eW9-Px-aEr" customClass="SignUpViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="eW9-Px-aEr" customClass="SignUpViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOX-AZ-V7B">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="953"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,13 +421,10 @@ in This Era</string>
                                                                                 <color key="textColor" name="Secondary Text Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-3P-Kbk" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type email here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-3P-Kbk" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="34" width="372" height="54"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                                                <connections>
-                                                                                    <outlet property="delegate" destination="eW9-Px-aEr" id="ssE-Zc-HGG"/>
-                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                         <constraints>
@@ -446,13 +443,10 @@ in This Era</string>
                                                                                 <color key="textColor" name="Secondary Text Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foA-mM-otW" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
+                                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="foA-mM-otW" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="34" width="372" height="54"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                                                <connections>
-                                                                                    <outlet property="delegate" destination="eW9-Px-aEr" id="gc9-OU-n4Y"/>
-                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                         <constraints>
@@ -471,13 +465,10 @@ in This Era</string>
                                                                                 <color key="textColor" name="Secondary Text Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ilk-9h-0et" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
+                                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ilk-9h-0et" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="34" width="372" height="54"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                                                                <connections>
-                                                                                    <outlet property="delegate" destination="eW9-Px-aEr" id="vTA-xK-GHW"/>
-                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                         <constraints>
@@ -604,6 +595,7 @@ in This Era</string>
                         <outlet property="passwordAgainTextField" destination="Ilk-9h-0et" id="WJb-n0-x3i"/>
                         <outlet property="passwordTextField" destination="foA-mM-otW" id="fS5-hS-hUv"/>
                         <outlet property="registerButton" destination="mfa-YF-olR" id="WCb-oL-Gp6"/>
+                        <outlet property="scrollView" destination="yG6-oa-agM" id="jfZ-05-R5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POc-1i-xvm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
