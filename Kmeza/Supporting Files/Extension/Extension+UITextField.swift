@@ -32,14 +32,9 @@ extension UITextField {
 		getTextField().backgroundColor = .getColor(color: .textFileldBackroundDefaultColor)
 	}
 	
-	func isValidEmail(value: String) -> Bool {
+	func isValid(value: String, with type: ValidityType) -> Bool {
 		getTextField().text = value
-		return getTextField().text?.isValidText(.email) ?? false
-	}
-	
-	func isValidPassword(value: String) -> Bool {
-		getTextField().text = value
-		return getTextField().text?.isValidText(.password) ?? false
+		return getTextField().text?.isValidText(type) ?? false
 	}
 	
 	private func settingTextField(width: CGFloat) {

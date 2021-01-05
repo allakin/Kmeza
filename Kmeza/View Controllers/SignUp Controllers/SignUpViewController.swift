@@ -20,6 +20,9 @@ class SignUpViewController: UIViewController {
 	@IBOutlet weak var appleIDLoginButton: UIButton!
 	@IBOutlet weak var facebookLoginButton: UIButton!
 	
+	private var similarPassword = ""
+	private var similarPasswordAgain = ""
+	
 	private let showPasswordButton: UIButton = {
 		let button = UIButton()
 		button.tag = 0
@@ -36,26 +39,32 @@ class SignUpViewController: UIViewController {
 		return button
 	}()
 	
+	//MARK: - ViewDidLoad
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		settingButtons()
 		settingUITextField()
 		addShowButtonToTextField()
 		hideKeyboardWhenTappedAround()
+		
+		emailTextField.addTarget(self, action: #selector(validateEmail), for: .editingChanged)
+		passwordTextField.addTarget(self, action: #selector(validatePassword), for: .editingChanged)
+		passwordAgainTextField.addTarget(self, action: #selector(validatePasswordAgain), for: .editingChanged)
+		
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(keyboardWillShow),
-											   name: UIResponder.keyboardWillShowNotification, object: nil)
+											   name: UIResponder.keyboardWillShowNotification,
+											   object: nil)
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(keyboardWillHide),
-											   name: UIResponder.keyboardWillHideNotification, object: nil)
+											   name: UIResponder.keyboardWillHideNotification,
+											   object: nil)
 	}
-	
+
 	@IBAction func PressButton(_ sender: UIButton) {
 		switch sender.tag {
 		case 0:
-			settingActivityIndicatorInButton(button: registerButton)
-			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, facebookLoginButton])
-			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
+			correctPassword()
 		case 1:
 			print("123123")
 		case 2:
@@ -68,56 +77,10 @@ class SignUpViewController: UIViewController {
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		}
 	}
-	
-	@objc func keyboardWillShow(notification: NSNotification) {
-		guard let userInfo = notification.userInfo else { return }
-		guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
-		let keyboardFrame = keyboardSize.cgRectValue
-		scrollView.contentOffset = CGPoint(x: 0, y: keyboardFrame.height)
-	}
-	
-	@objc func keyboardWillHide(notification: NSNotification) {
-		scrollView.contentOffset = CGPoint.zero
-	}
-	
-	@objc func showPassword(sender: UIButton) {
-		switch sender.tag {
-		case 0:
-			isShowPassword(textField: passwordTextField, and: showPasswordButton)
-		default:
-			isShowPassword(textField: passwordAgainTextField, and: showPasswordAgainButton)
-		}
-	}
-	
-	@objc func dismissKeyboard() {
-		view.endEditing(true)
-	}
-	
-	private func hideKeyboardWhenTappedAround() {
-		let tap = UITapGestureRecognizer(target: self,
-										 action: #selector(dismissKeyboard))
-		tap.cancelsTouchesInView = false
-		view.addGestureRecognizer(tap)
-	}
-	
-	private func isShowPassword(textField: UITextField, and button: UIButton) {
-		if textField.isSecureTextEntry {
-			textField.isSecureTextEntry.toggle()
-			button.setImage(UIImage(named: "passwordShow"), for: .normal)
-		} else {
-			textField.isSecureTextEntry.toggle()
-			button.setImage(UIImage(named: "passwordHide"), for: .normal)
-		}
-	}
-	
-	private func addShowButtonToTextField() {
-		passwordTextField.rightView = showPasswordButton
-		passwordAgainTextField.rightView = showPasswordAgainButton
-		
-		passwordTextField.rightViewMode = .always
-		passwordAgainTextField.rightViewMode = .always
-	}
-	
+}
+
+//MARK: - Setting UI
+extension SignUpViewController {
 	private func settingButtons() {
 		registerButton.setFullRoundCorners()
 		registerButton.setButtonShadow()
@@ -156,9 +119,42 @@ class SignUpViewController: UIViewController {
 	private func setAlphaChanel(texFields: [UITextField]) {
 		texFields.forEach { $0.isEnabled = false }
 	}
+	
+	private func addShowButtonToTextField() {
+		passwordTextField.rightView = showPasswordButton
+		passwordAgainTextField.rightView = showPasswordAgainButton
+		
+		passwordTextField.rightViewMode = .always
+		passwordAgainTextField.rightViewMode = .always
+	}
 }
 
+//MARK: - Logic with Keyboard
+extension SignUpViewController {
+	@objc func keyboardWillShow(notification: NSNotification) {
+		guard let userInfo = notification.userInfo else { return }
+		guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+		let keyboardFrame = keyboardSize.cgRectValue
+		scrollView.contentOffset = CGPoint(x: 0, y: keyboardFrame.height)
+	}
+	
+	@objc func keyboardWillHide(notification: NSNotification) {
+		scrollView.contentOffset = CGPoint.zero
+	}
+	
+	@objc func dismissKeyboard() {
+		view.endEditing(true)
+	}
+	
+	private func hideKeyboardWhenTappedAround() {
+		let tap = UITapGestureRecognizer(target: self,
+										 action: #selector(dismissKeyboard))
+		view.addGestureRecognizer(tap)
+	}
+	
+}
 
+//MARK: - UITextFieldDelegate
 extension SignUpViewController: UITextFieldDelegate  {
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		if textField == emailTextField {
@@ -166,11 +162,89 @@ extension SignUpViewController: UITextFieldDelegate  {
 		} else if textField == passwordTextField {
 			passwordAgainTextField.becomeFirstResponder()
 		} else {
+			correctPassword()
 			view.endEditing(true)
-			//			settingActivityIndicatorInButton(button: registerButton)
-			//			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, facebookLoginButton])
-			//			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		}
 		return true
+	}
+}
+
+//MARK: - Logic with Password
+extension SignUpViewController {
+	@objc func showPassword(sender: UIButton) {
+		switch sender.tag {
+		case 0:
+			isShowPassword(textField: passwordTextField, and: showPasswordButton)
+		default:
+			isShowPassword(textField: passwordAgainTextField, and: showPasswordAgainButton)
+		}
+	}
+	
+	private func isShowPassword(textField: UITextField, and button: UIButton) {
+		if textField.isSecureTextEntry {
+			textField.isSecureTextEntry.toggle()
+			button.setImage(UIImage(named: "passwordShow"), for: .normal)
+		} else {
+			textField.isSecureTextEntry.toggle()
+			button.setImage(UIImage(named: "passwordHide"), for: .normal)
+		}
+	}
+	
+	private func correctPassword() {
+		if similarPassword == similarPasswordAgain {
+			settingActivityIndicatorInButton(button: registerButton)
+			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, facebookLoginButton])
+			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
+		} else {
+			passwordTextField.errorStateTextField()
+			passwordAgainTextField.errorStateTextField()
+		}
+		
+		if passwordTextField.isSecureTextEntry {
+			passwordTextField.isSecureTextEntry.toggle()
+			showPasswordButton.setImage(UIImage(named: "passwordShow"), for: .normal)
+		}
+		
+		if passwordAgainTextField.isSecureTextEntry {
+			passwordAgainTextField.isSecureTextEntry.toggle()
+			showPasswordAgainButton.setImage(UIImage(named: "passwordShow"), for: .normal)
+		}
+	}
+}
+
+//MARK: - Validation Text Fields
+extension SignUpViewController {
+	@objc func validateEmail() {
+		isValid(textField: emailTextField, type: .email)
+		isEmpty(textField: emailTextField)
+	}
+	
+	@objc func validatePassword() {
+		isValid(textField: passwordTextField, type: .password)
+		similarPassword = passwordTextField.text ?? ""
+		isEmpty(textField: passwordTextField)
+	}
+	
+	@objc func validatePasswordAgain() {
+		isValid(textField: passwordAgainTextField, type: .password)
+		similarPasswordAgain = passwordAgainTextField.text ?? ""
+		isEmpty(textField: passwordAgainTextField)
+	}
+	
+	private func isValid(textField: UITextField, type: ValidityType) {
+		
+		guard let value = textField.text else { return }
+		
+		if textField.isValid(value: value, with: type) {
+			textField.filledStateTextField()
+		} else {
+			textField.fillingStateTextField()
+		}
+	}
+	
+	private func isEmpty(textField: UITextField) {
+		if textField.text == "" {
+			textField.defaultStateTextField()
+		}
 	}
 }
