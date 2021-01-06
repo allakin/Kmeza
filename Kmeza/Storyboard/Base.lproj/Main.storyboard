@@ -491,7 +491,7 @@ in This Era</string>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping “Sign Up” you accept our terms and condition" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-N1-0uH">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping “Sign Up” you accept our terms and condition" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-N1-0uH">
                                                                 <rect key="frame" x="0.0" y="522" width="372" height="44"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="44" id="EhC-uM-o0R"/>
