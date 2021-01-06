@@ -6,4 +6,4 @@
 //
 
 // MARK: - UserDefauls values
-let WALKTHROUGH_VALUE = "Walkthrough"
+let CURRENT_ROOT_VIEW_CONTROLLER = "SetRootViewController"

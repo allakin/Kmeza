@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import AuthenticationServices
+import CryptoKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 	
@@ -60,7 +63,7 @@ class SignUpViewController: UIViewController {
 											   name: UIResponder.keyboardWillHideNotification,
 											   object: nil)
 	}
-
+	
 	@IBAction func PressButton(_ sender: UIButton) {
 		switch sender.tag {
 		case 0:
@@ -68,6 +71,7 @@ class SignUpViewController: UIViewController {
 		case 1:
 			print("123123")
 		case 2:
+			getPerformRequests()
 			settingActivityIndicatorInButton(button: appleIDLoginButton)
 			setAlphaChanel(buttons: [loginButton, registerButton, facebookLoginButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
@@ -76,6 +80,32 @@ class SignUpViewController: UIViewController {
 			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, registerButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		}
+	}
+	
+	private func getPerformRequests() {
+		let request = SignWithAppleID.shared.createAppleIDRequest()
+		let autorizationController = ASAuthorizationController(authorizationRequests: [request])
+		
+		autorizationController.delegate = self
+		autorizationController.presentationContextProvider = self
+		
+		autorizationController.performRequests()
+	}
+}
+
+//MARK: - ASAuthorizationControllerDelegate
+extension SignUpViewController: ASAuthorizationControllerDelegate {
+	func authorizationController(controller: ASAuthorizationController,
+								 didCompleteWithAuthorization authorization: ASAuthorization) {
+		
+		SignWithAppleID.shared.userAuth(authorization: authorization)
+	}
+}
+
+//MARK: - ASAuthorizationControllerPresentationContextProviding
+extension SignUpViewController: ASAuthorizationControllerPresentationContextProviding {
+	func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+		view.window!
 	}
 }
 
