@@ -27,7 +27,7 @@ class WalkthroughCollectionViewCell: UICollectionViewCell {
 	
 	func changeNextButtonBGColor(number: Int) {
 		if walkthroughPageController.currentPage == number {
-			nextButton.backgroundColor = UIColor(named: "Primary Accent Color")
+			nextButton.backgroundColor = .getColor(color: .primaryAccentColor)
 		}
 	}
 	

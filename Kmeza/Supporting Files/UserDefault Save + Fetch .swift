@@ -11,14 +11,20 @@ class GetUserDefaults {
 	static let userDefault = UserDefaults.standard
 }
 
-class SaveDataInUserDefaults: GetUserDefaults {
-	static func saveData(state: Bool, key: String) {
-		userDefault.setValue(state, forKey: key)
+class SetRootViewController: GetUserDefaults {
+	static func saveCurrentScreen(currentScreen: StoryBoardID) {
+		userDefault.setValue(currentScreen.rawValue, forKey: CURRENT_ROOT_VIEW_CONTROLLER)
 	}
 }
 
-class FetchDataFromUserDefaults: GetUserDefaults {
-	static func fetchData(with key: String) -> Bool {
-		userDefault.bool(forKey: key)
+class FetchRootViewController: GetUserDefaults {
+	static func fetchData() -> String {
+		guard let fetchData = userDefault.string(forKey: CURRENT_ROOT_VIEW_CONTROLLER) else { return "" }
+		return fetchData
 	}
+}
+
+enum StoryBoardID: String {
+	case welcomeViewController = "WelcomeViewController"
+	case homeScreenViewController = "HomeScreenViewController"
 }

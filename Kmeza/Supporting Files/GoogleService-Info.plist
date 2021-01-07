@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>351684004799-0tf68inqp832r0c027aatt5lfcj0jgf5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.351684004799-0tf68inqp832r0c027aatt5lfcj0jgf5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAU6NuUq2AWZxGDk_Gm12wPV0ztUglKVfs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>351684004799</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.anpleenko-dev.Kmeza</string>
+	<key>PROJECT_ID</key>
+	<string>kmeza-fb3fe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kmeza-fb3fe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:351684004799:ios:42e8c0d3edfbe9dbf22f0a</string>
+</dict>
+</plist>

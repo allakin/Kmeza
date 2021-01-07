@@ -33,8 +33,8 @@ class WalkthroughViewController: UIViewController {
 	
 	private func changeScreen(indexParh: IndexPath) {
 		if indexParh.item == information.count - 1 {
-			SaveDataInUserDefaults.saveData(state: true, key: WALKTHROUGH_VALUE)
-			ShowWelcomeScreen.shared.showWelcomeScreen()
+			SetRootViewController.saveCurrentScreen(currentScreen: .welcomeViewController)
+			ShowViewScreen.shared.showWelcomeScreen()
 		} else {
 			let index = indexParh.item + 1
 			let nextIndexPath = IndexPath(item: index, section: 0)

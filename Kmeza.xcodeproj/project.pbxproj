@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0128F22F18658E200CB928B9 /* Pods_Kmeza_KmezaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E690F6ABF1D54C28D77BBC /* Pods_Kmeza_KmezaUITests.framework */; };
+		24EF1C9919C8029B9EFE14A5 /* Pods_KmezaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A9D41559F69038F2ED0A99 /* Pods_KmezaTests.framework */; };
 		731B1E72258E253400D0A2F6 /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E6A258E253400D0A2F6 /* Lora-Regular.ttf */; };
 		731B1E73258E253400D0A2F6 /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E6B258E253400D0A2F6 /* Lora-Italic.ttf */; };
 		731B1E74258E253400D0A2F6 /* Lora-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E6C258E253400D0A2F6 /* Lora-BoldItalic.ttf */; };
@@ -25,6 +27,9 @@
 		731B1E8E258E254500D0A2F6 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E84258E254500D0A2F6 /* OpenSans-Light.ttf */; };
 		731B1E8F258E254500D0A2F6 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E85258E254500D0A2F6 /* OpenSans-SemiBold.ttf */; };
 		731B1E90258E254500D0A2F6 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E86258E254500D0A2F6 /* OpenSans-Italic.ttf */; };
+		7322247325A650720080D2DC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7322247225A650720080D2DC /* HomeScreenViewController.swift */; };
+		73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */; };
+		7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */; };
 		734DE2802586780C0006E607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE27F2586780C0006E607 /* AppDelegate.swift */; };
 		734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2812586780C0006E607 /* SceneDelegate.swift */; };
 		734DE2872586780C0006E607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE2852586780C0006E607 /* Main.storyboard */; };
@@ -32,8 +37,11 @@
 		734DE28C2586780C0006E607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE28A2586780C0006E607 /* LaunchScreen.storyboard */; };
 		734DE2972586780C0006E607 /* KmezaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2962586780C0006E607 /* KmezaTests.swift */; };
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
-		735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowMainScreen.swift */; };
+		735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowViewScreen.swift */; };
+		73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B02259F2B8C009097D7 /* Extension+Color.swift */; };
+		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
 		736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D803F258F8FB0005F0BA8 /* Extension+Button.swift */; };
+		7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373485D25A3961200FD6D50 /* Extension+String.swift */; };
 		737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC737259BC7D600B861BD /* WelcomeFeature.swift */; };
 		737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */; };
 		737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */; };
@@ -43,6 +51,10 @@
 		738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738492AA258E997900F665E8 /* WalkthroughInformation.swift */; };
 		73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */; };
 		73947C802593B055008A1781 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947C7F2593B055008A1781 /* Values.swift */; };
+		73A2367425A5E224007E8664 /* SignWithAppleID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A2367325A5E224007E8664 /* SignWithAppleID.swift */; };
+		73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2399259DC476004BAA64 /* SignUpViewController.swift */; };
+		73D8789A25A5B3CD00F33B63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */; };
+		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05A9D41559F69038F2ED0A99 /* Pods_KmezaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KmezaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E690F6ABF1D54C28D77BBC /* Pods_Kmeza_KmezaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza_KmezaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731B1E6A258E253400D0A2F6 /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
 		731B1E6B258E253400D0A2F6 /* Lora-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic.ttf"; sourceTree = "<group>"; };
 		731B1E6C258E253400D0A2F6 /* Lora-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -81,6 +95,9 @@
 		731B1E84258E254500D0A2F6 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		731B1E85258E254500D0A2F6 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		731B1E86258E254500D0A2F6 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		7322247225A650720080D2DC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		734DE27C2586780C0006E607 /* Kmeza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kmeza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734DE27F2586780C0006E607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		734DE2812586780C0006E607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +111,11 @@
 		734DE29D2586780C0006E607 /* KmezaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmezaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		734DE2A12586780C0006E607 /* KmezaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmezaUITests.swift; sourceTree = "<group>"; };
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		735898D22597918200CE5042 /* ShowMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMainScreen.swift; sourceTree = "<group>"; };
+		735898D22597918200CE5042 /* ShowViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewScreen.swift; sourceTree = "<group>"; };
+		73597B02259F2B8C009097D7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
 		736D803F258F8FB0005F0BA8 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
+		7373485D25A3961200FD6D50 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		737CC737259BC7D600B861BD /* WelcomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeature.swift; sourceTree = "<group>"; };
 		737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
 		737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeatureCollectionViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +125,17 @@
 		738492AA258E997900F665E8 /* WalkthroughInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughInformation.swift; sourceTree = "<group>"; };
 		73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault Save + Fetch .swift"; sourceTree = "<group>"; };
 		73947C7F2593B055008A1781 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		73A2365825A5B85F007E8664 /* Kmeza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kmeza.entitlements; sourceTree = "<group>"; };
+		73A2367325A5E224007E8664 /* SignWithAppleID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignWithAppleID.swift; sourceTree = "<group>"; };
+		73AB2399259DC476004BAA64 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		76B954F85959FE01782319A7 /* Pods-Kmeza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza/Pods-Kmeza.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD15CCE12FC7F429C8DD0B6 /* Pods-KmezaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmezaTests.debug.xcconfig"; path = "Target Support Files/Pods-KmezaTests/Pods-KmezaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C72095A9A2C4B7B30E897F76 /* Pods-Kmeza-KmezaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.release.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C7AEB60E8051F27FE402B326 /* Pods-Kmeza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza.release.xcconfig"; path = "Target Support Files/Pods-Kmeza/Pods-Kmeza.release.xcconfig"; sourceTree = "<group>"; };
+		C8FA2AC2D59D104E953A5887 /* Pods-KmezaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmezaTests.release.xcconfig"; path = "Target Support Files/Pods-KmezaTests/Pods-KmezaTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EF1C9919C8029B9EFE14A5 /* Pods_KmezaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,12 +159,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0128F22F18658E200CB928B9 /* Pods_Kmeza_KmezaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CCC43079F44FFD07EBAB334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76B954F85959FE01782319A7 /* Pods-Kmeza.debug.xcconfig */,
+				C7AEB60E8051F27FE402B326 /* Pods-Kmeza.release.xcconfig */,
+				D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */,
+				C72095A9A2C4B7B30E897F76 /* Pods-Kmeza-KmezaUITests.release.xcconfig */,
+				BAD15CCE12FC7F429C8DD0B6 /* Pods-KmezaTests.debug.xcconfig */,
+				C8FA2AC2D59D104E953A5887 /* Pods-KmezaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		731B1E5C258E179800D0A2F6 /* Media Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,13 +200,15 @@
 		731B1E5E258E17C900D0A2F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */,
 				734DE27F2586780C0006E607 /* AppDelegate.swift */,
 				734DE2812586780C0006E607 /* SceneDelegate.swift */,
 				734DE28D2586780C0006E607 /* Info.plist */,
-				736D803F258F8FB0005F0BA8 /* Extension+Button.swift */,
+				73597B0C259F2CB8009097D7 /* Extension */,
+				73A2368325A63DFE007E8664 /* Singleton Class */,
 				73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */,
 				73947C7F2593B055008A1781 /* Values.swift */,
-				735898D22597918200CE5042 /* ShowMainScreen.swift */,
+				73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,10 +216,10 @@
 		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73849276258E370100F665E8 /* WelcomeViewController.swift */,
-				73849267258E31DE00F665E8 /* Onboarding */,
-				737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */,
-				737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */,
+				7322247125A6505C0080D2DC /* Home Screen */,
+				73AB2398259DC44C004BAA64 /* SignUp Controllers */,
+				73AB2391259DC422004BAA64 /* Welcome Controllers */,
+				73849267258E31DE00F665E8 /* Onboarding Controllers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -216,6 +265,14 @@
 			path = Lora;
 			sourceTree = "<group>";
 		};
+		7322247125A6505C0080D2DC /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7322247225A650720080D2DC /* HomeScreenViewController.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
 		734DE2732586780C0006E607 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +280,8 @@
 				734DE2952586780C0006E607 /* KmezaTests */,
 				734DE2A02586780C0006E607 /* KmezaUITests */,
 				734DE27D2586780C0006E607 /* Products */,
+				2CCC43079F44FFD07EBAB334 /* Pods */,
+				A902F67B677FD937CC716B22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +298,7 @@
 		734DE27E2586780C0006E607 /* Kmeza */ = {
 			isa = PBXGroup;
 			children = (
+				73A2365825A5B85F007E8664 /* Kmeza.entitlements */,
 				738492A9258E982600F665E8 /* Model */,
 				731B1E65258E17FE00D0A2F6 /* View Controllers */,
 				731B1E5D258E17B500D0A2F6 /* Storyboard */,
@@ -266,13 +326,24 @@
 			path = KmezaUITests;
 			sourceTree = "<group>";
 		};
-		73849267258E31DE00F665E8 /* Onboarding */ = {
+		73597B0C259F2CB8009097D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				736D803F258F8FB0005F0BA8 /* Extension+Button.swift */,
+				73597B02259F2B8C009097D7 /* Extension+Color.swift */,
+				7327007D259FA3E1001B0F69 /* Extension+UITextField.swift */,
+				7373485D25A3961200FD6D50 /* Extension+String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		73849267258E31DE00F665E8 /* Onboarding Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				73849288258E3AA000F665E8 /* WalkthroughViewController.swift */,
 				738492A4258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift */,
 			);
-			path = Onboarding;
+			path = "Onboarding Controllers";
 			sourceTree = "<group>";
 		};
 		738492A9258E982600F665E8 /* Model */ = {
@@ -284,6 +355,44 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		73A2368325A63DFE007E8664 /* Singleton Class */ = {
+			isa = PBXGroup;
+			children = (
+				73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */,
+				735898D22597918200CE5042 /* ShowViewScreen.swift */,
+				73A2367325A5E224007E8664 /* SignWithAppleID.swift */,
+			);
+			path = "Singleton Class";
+			sourceTree = "<group>";
+		};
+		73AB2391259DC422004BAA64 /* Welcome Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73849276258E370100F665E8 /* WelcomeViewController.swift */,
+				737CC742259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift */,
+				737CC747259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift */,
+			);
+			path = "Welcome Controllers";
+			sourceTree = "<group>";
+		};
+		73AB2398259DC44C004BAA64 /* SignUp Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73AB2399259DC476004BAA64 /* SignUpViewController.swift */,
+			);
+			path = "SignUp Controllers";
+			sourceTree = "<group>";
+		};
+		A902F67B677FD937CC716B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */,
+				19E690F6ABF1D54C28D77BBC /* Pods_Kmeza_KmezaUITests.framework */,
+				05A9D41559F69038F2ED0A99 /* Pods_KmezaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,9 +400,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 734DE2A62586780C0006E607 /* Build configuration list for PBXNativeTarget "Kmeza" */;
 			buildPhases = (
+				5C2223E9BEDF3DE0A0B4F3A1 /* [CP] Check Pods Manifest.lock */,
 				734DE2782586780C0006E607 /* Sources */,
 				734DE2792586780C0006E607 /* Frameworks */,
 				734DE27A2586780C0006E607 /* Resources */,
+				13448535E7EF04D02F09231E /* [CP] Embed Pods Frameworks */,
+				D7422C7ECAE6C6477C4C872E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +420,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 734DE2A92586780C0006E607 /* Build configuration list for PBXNativeTarget "KmezaTests" */;
 			buildPhases = (
+				21453935F06A9C2AC830F8ED /* [CP] Check Pods Manifest.lock */,
 				734DE28E2586780C0006E607 /* Sources */,
 				734DE28F2586780C0006E607 /* Frameworks */,
 				734DE2902586780C0006E607 /* Resources */,
@@ -326,9 +439,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 734DE2AC2586780C0006E607 /* Build configuration list for PBXNativeTarget "KmezaUITests" */;
 			buildPhases = (
+				D8AB93DD7262B3D61FA2ABE5 /* [CP] Check Pods Manifest.lock */,
 				734DE2992586780C0006E607 /* Sources */,
 				734DE29A2586780C0006E607 /* Frameworks */,
 				734DE29B2586780C0006E607 /* Resources */,
+				15EFB49B4C818C29A397C5DE /* [CP] Embed Pods Frameworks */,
+				DED86D38F40A98F28193E49F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,6 +522,7 @@
 				731B1E8B258E254500D0A2F6 /* OpenSans-ExtraBold.ttf in Resources */,
 				731B1E89258E254500D0A2F6 /* OpenSans-Regular.ttf in Resources */,
 				734DE2872586780C0006E607 /* Main.storyboard in Resources */,
+				73D8789A25A5B3CD00F33B63 /* GoogleService-Info.plist in Resources */,
 				731B1E88258E254500D0A2F6 /* OpenSans-LightItalic.ttf in Resources */,
 				731B1E76258E253400D0A2F6 /* Lora-Medium.ttf in Resources */,
 			);
@@ -427,24 +544,169 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13448535E7EF04D02F09231E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza/Pods-Kmeza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza/Pods-Kmeza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kmeza/Pods-Kmeza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15EFB49B4C818C29A397C5DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21453935F06A9C2AC830F8ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KmezaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C2223E9BEDF3DE0A0B4F3A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kmeza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7422C7ECAE6C6477C4C872E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza/Pods-Kmeza-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza/Pods-Kmeza-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kmeza/Pods-Kmeza-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8AB93DD7262B3D61FA2ABE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kmeza-KmezaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED86D38F40A98F28193E49F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		734DE2782586780C0006E607 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */,
 				738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */,
 				737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */,
-				735898D32597918200CE5042 /* ShowMainScreen.swift in Sources */,
+				735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */,
+				73A2367425A5E224007E8664 /* SignWithAppleID.swift in Sources */,
+				73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */,
+				7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */,
 				73947C802593B055008A1781 /* Values.swift in Sources */,
 				734DE2802586780C0006E607 /* AppDelegate.swift in Sources */,
+				73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */,
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
 				737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */,
+				73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */,
 				73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */,
+				73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */,
 				738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */,
 				737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */,
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
 				736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
+				7322247325A650720080D2DC /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +812,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -605,7 +867,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -617,9 +879,11 @@
 		};
 		734DE2A72586780C0006E607 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B954F85959FE01782319A7 /* Pods-Kmeza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kmeza/Kmeza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
 				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
@@ -637,9 +901,11 @@
 		};
 		734DE2A82586780C0006E607 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AEB60E8051F27FE402B326 /* Pods-Kmeza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kmeza/Kmeza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
 				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
@@ -657,6 +923,7 @@
 		};
 		734DE2AA2586780C0006E607 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD15CCE12FC7F429C8DD0B6 /* Pods-KmezaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,6 +946,7 @@
 		};
 		734DE2AB2586780C0006E607 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FA2AC2D59D104E953A5887 /* Pods-KmezaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -701,6 +969,7 @@
 		};
 		734DE2AD2586780C0006E607 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -721,6 +990,7 @@
 		};
 		734DE2AE2586780C0006E607 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72095A9A2C4B7B30E897F76 /* Pods-Kmeza-KmezaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
