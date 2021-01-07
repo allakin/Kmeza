@@ -7,7 +7,6 @@
 
 import UIKit
 import AuthenticationServices
-import CryptoKit
 import FirebaseAuth
 
 class SignUpViewController: UIViewController {
@@ -21,7 +20,6 @@ class SignUpViewController: UIViewController {
 	@IBOutlet weak var registerButton: UIButton!
 	@IBOutlet weak var loginButton: UIButton!
 	@IBOutlet weak var appleIDLoginButton: UIButton!
-	@IBOutlet weak var facebookLoginButton: UIButton!
 	
 	private var similarPassword = ""
 	private var similarPasswordAgain = ""
@@ -70,14 +68,10 @@ class SignUpViewController: UIViewController {
 			correctPassword()
 		case 1:
 			print("123123")
-		case 2:
+		default:
 			getPerformRequests()
 			settingActivityIndicatorInButton(button: appleIDLoginButton)
-			setAlphaChanel(buttons: [loginButton, registerButton, facebookLoginButton])
-			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
-		default:
-			settingActivityIndicatorInButton(button: facebookLoginButton)
-			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, registerButton])
+			setAlphaChanel(buttons: [loginButton, registerButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		}
 	}
@@ -119,8 +113,7 @@ extension SignUpViewController {
 		loginButton.addBorderButton()
 		
 		appleIDLoginButton.settingButton(image: "Apple")
-		
-		facebookLoginButton.settingButton(image: "Facebook")
+		appleIDLoginButton.setLeftPositionIconInsideButton(at: 20)
 	}
 	
 	private func settingUITextField() {
@@ -223,7 +216,7 @@ extension SignUpViewController {
 	private func correctPassword() {
 		if similarPassword == similarPasswordAgain {
 			settingActivityIndicatorInButton(button: registerButton)
-			setAlphaChanel(buttons: [loginButton, appleIDLoginButton, facebookLoginButton])
+			setAlphaChanel(buttons: [loginButton, appleIDLoginButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
 		} else {
 			passwordTextField.errorStateTextField()

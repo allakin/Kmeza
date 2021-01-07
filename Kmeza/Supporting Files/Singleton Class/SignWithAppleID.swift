@@ -33,6 +33,7 @@ class SignWithAppleID {
 			
 			if let error = error {
 				print(error.localizedDescription)
+				return
 			}
 			
 			if let user = authDataResult?.user {

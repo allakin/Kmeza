@@ -7,20 +7,19 @@
 
 import UIKit
 import AuthenticationServices
-import CryptoKit
 import FirebaseAuth
 
 class WelcomeViewController: UIViewController {
-	@IBOutlet weak var LoginWithEmailButton: UIButton!
-	@IBOutlet weak var LoginWithAppleIDButton: UIButton!
-	@IBOutlet weak var LoginWithFacebookButton: UIButton!
+	
+	@IBOutlet weak var loginWithEmailButton: UIButton!
+	@IBOutlet weak var loginWithAppleIDButton: UIButton!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		settingUI()
 	}
 	
-	@IBAction func test(_ sender: Any) {
+	@IBAction func AppleIDLoginAction(_ sender: Any) {
 		getPerformRequests()
 	}
 	
@@ -35,10 +34,11 @@ class WelcomeViewController: UIViewController {
 	}
 	
 	private func settingUI() {
-		LoginWithFacebookButton.settingButton(image: "Facebook")
-		LoginWithAppleIDButton.settingButton(image: "Apple")
-		LoginWithEmailButton.settingButton(image: "Email")
-		LoginWithEmailButton.setLeftPositionIconInsideButton(at: 20)
+		loginWithAppleIDButton.settingButton(image: "Apple")
+		loginWithAppleIDButton.setLeftPositionIconInsideButton(at: 20)
+		
+		loginWithEmailButton.settingButton(image: "Email")
+		loginWithEmailButton.setLeftPositionIconInsideButton(at: 20)
 	}
 }
 

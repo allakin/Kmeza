@@ -201,21 +201,15 @@ with K’meza</string>
                                                 <rect key="frame" x="0.0" y="86" width="319" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-7h-uxg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="148.5" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal">
+                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                        <state key="normal" title="Login with Apple">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="test:" destination="pdL-bk-TvG" eventType="touchUpInside" id="mdW-1B-t8o"/>
+                                                            <action selector="AppleIDLoginAction:" destination="pdL-bk-TvG" eventType="touchUpInside" id="mdW-1B-t8o"/>
                                                         </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-P2-jE4">
-                                                        <rect key="frame" x="170.5" y="0.0" width="148.5" height="60"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <state key="normal">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -247,9 +241,8 @@ with K’meza</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LoginWithAppleIDButton" destination="jiB-7h-uxg" id="pJb-Kk-BHb"/>
-                        <outlet property="LoginWithEmailButton" destination="QuI-tb-pMb" id="Gvy-G2-1oP"/>
-                        <outlet property="LoginWithFacebookButton" destination="dGa-P2-jE4" id="w93-On-5CD"/>
+                        <outlet property="loginWithAppleIDButton" destination="jiB-7h-uxg" id="pJb-Kk-BHb"/>
+                        <outlet property="loginWithEmailButton" destination="QuI-tb-pMb" id="Gvy-G2-1oP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-v8-fNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -535,17 +528,14 @@ in This Era</string>
                                                                 <rect key="frame" x="0.0" y="128" width="372" height="60"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re7-Dc-37F">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                        <state key="normal" title="Login with Apple">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
                                                                         <connections>
                                                                             <action selector="PressButton:" destination="eW9-Px-aEr" eventType="touchUpInside" id="M0V-z0-ssp"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxx-TV-lnD">
-                                                                        <rect key="frame" x="197" y="0.0" width="175" height="60"/>
-                                                                        <color key="backgroundColor" systemColor="linkColor"/>
-                                                                        <connections>
-                                                                            <action selector="PressButton:" destination="eW9-Px-aEr" eventType="touchUpInside" id="dre-RX-5So"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -593,7 +583,6 @@ in This Era</string>
                     <connections>
                         <outlet property="appleIDLoginButton" destination="Re7-Dc-37F" id="tJJ-gA-Wtc"/>
                         <outlet property="emailTextField" destination="NCn-3P-Kbk" id="03u-Gi-XNe"/>
-                        <outlet property="facebookLoginButton" destination="mxx-TV-lnD" id="5fu-nf-tB3"/>
                         <outlet property="loginButton" destination="cbX-iv-rsW" id="UUL-ii-2se"/>
                         <outlet property="passwordAgainTextField" destination="Ilk-9h-0et" id="WJb-n0-x3i"/>
                         <outlet property="passwordTextField" destination="foA-mM-otW" id="fS5-hS-hUv"/>
@@ -629,9 +618,6 @@ in This Era</string>
         <namedColor name="Accent Text Color">
             <color red="0.85900002717971802" green="0.55299997329711914" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Primary Accent Color">
             <color red="0.85900002717971802" green="0.55299997329711914" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -647,9 +633,6 @@ in This Era</string>
         <namedColor name="Secondary Text Color">
             <color red="0.46700000762939453" green="0.46700000762939453" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
