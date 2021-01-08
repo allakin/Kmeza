@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //		}
 		
 		let currentRootViewController = FetchRootViewController.fetchData()
-		
+
 		if currentRootViewController == "HomeScreenViewController" {
 			ShowViewScreen.shared.showHomeScreen()
 		} else if currentRootViewController == "WelcomeViewController" {

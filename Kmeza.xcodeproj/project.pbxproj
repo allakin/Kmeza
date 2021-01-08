@@ -37,6 +37,7 @@
 		734DE28C2586780C0006E607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734DE28A2586780C0006E607 /* LaunchScreen.storyboard */; };
 		734DE2972586780C0006E607 /* KmezaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2962586780C0006E607 /* KmezaTests.swift */; };
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
+		7357F4E125A85F4500D62454 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357F4E025A85F4500D62454 /* Reference.swift */; };
 		735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowViewScreen.swift */; };
 		73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B02259F2B8C009097D7 /* Extension+Color.swift */; };
 		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
@@ -111,6 +112,7 @@
 		734DE29D2586780C0006E607 /* KmezaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmezaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		734DE2A12586780C0006E607 /* KmezaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmezaUITests.swift; sourceTree = "<group>"; };
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7357F4E025A85F4500D62454 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		735898D22597918200CE5042 /* ShowViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewScreen.swift; sourceTree = "<group>"; };
 		73597B02259F2B8C009097D7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 				73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */,
 				735898D22597918200CE5042 /* ShowViewScreen.swift */,
 				73A2367325A5E224007E8664 /* SignWithAppleID.swift */,
+				7357F4E025A85F4500D62454 /* Reference.swift */,
 			);
 			path = "Singleton Class";
 			sourceTree = "<group>";
@@ -703,6 +706,7 @@
 				73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */,
 				738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */,
 				737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */,
+				7357F4E125A85F4500D62454 /* Reference.swift in Sources */,
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
 				736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
