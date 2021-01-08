@@ -17,19 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		
 		FirebaseApp.configure()
 		
-//		let defaults = UserDefaults.standard
-//		let dictionary = defaults.dictionaryRepresentation()
-//		dictionary.keys.forEach { key in
-//			defaults.removeObject(forKey: key)
-//		}
-		
-		let currentRootViewController = FetchRootViewController.fetchData()
-
-		if currentRootViewController == "HomeScreenViewController" {
-			ShowViewScreen.shared.showHomeScreen()
-		} else if currentRootViewController == "WelcomeViewController" {
-			ShowViewScreen.shared.showWelcomeScreen()
+		let defaults = UserDefaults.standard
+		let dictionary = defaults.dictionaryRepresentation()
+		dictionary.keys.forEach { key in
+			defaults.removeObject(forKey: key)
 		}
+		
+//		let currentRootViewController = FetchRootViewController.fetchData()
+//
+//		if currentRootViewController == "HomeScreenViewController" {
+//			ShowViewScreen.shared.showHomeScreen()
+//		} else if currentRootViewController == "WelcomeViewController" {
+//			ShowViewScreen.shared.showWelcomeScreen()
+//		}
 	}
 	
 	func sceneDidDisconnect(_ scene: UIScene) {

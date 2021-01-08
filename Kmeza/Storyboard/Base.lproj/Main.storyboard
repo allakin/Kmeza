@@ -194,7 +194,7 @@ with K’meza</string>
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="eW9-Px-aEr" kind="presentation" modalPresentationStyle="fullScreen" id="czT-xL-9s6"/>
+                                                    <segue destination="C9F-nQ-QsN" kind="modal" modalPresentationStyle="fullScreen" id="HQB-Dh-YK9"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="TpZ-S0-2SJ">
@@ -281,7 +281,7 @@ with K’meza</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-86-oV7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="73"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
                                                                     <string key="text">Best Fashion Store 
 in This Era</string>
                                                                     <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="28"/>
@@ -289,13 +289,13 @@ in This Era</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-ZG-Bx8">
-                                                                    <rect key="frame" x="0.0" y="83" width="372" height="39"/>
+                                                                    <rect key="frame" x="0.0" y="82" width="372" height="36"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AI2-56-Emn">
-                                                                    <rect key="frame" x="0.0" y="132" width="372" height="28"/>
+                                                                    <rect key="frame" x="0.0" y="128" width="372" height="32"/>
                                                                     <color key="pageIndicatorTintColor" name="Primary Accent Color"/>
                                                                     <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </pageControl>
@@ -339,30 +339,30 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWs-gJ-Ajb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="-313"/>
+            <point key="canvasLocation" x="1655" y="71"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="nyy-tE-Ags">
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="eW9-Px-aEr" customClass="SignUpViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOX-AZ-V7B">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="953"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="953"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG6-oa-agM">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="953"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="953"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LU6-9R-Okf">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="950"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="e68-fx-VyF">
-                                                <rect key="frame" x="28" y="24" width="372" height="898"/>
+                                                <rect key="frame" x="28" y="24" width="319" height="898"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wz-NV-QVo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="72"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignUp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lKy-FR-g4f">
-                                                                <rect key="frame" x="150" y="0.0" width="72" height="72"/>
+                                                                <rect key="frame" x="123.5" y="0.0" width="72" height="72"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="72" id="0rG-xi-CXi"/>
                                                                     <constraint firstAttribute="height" constant="72" id="B6H-on-9Dn"/>
@@ -377,13 +377,13 @@ in This Era</string>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-sR-3La">
-                                                        <rect key="frame" x="0.0" y="108" width="372" height="566"/>
+                                                        <rect key="frame" x="0.0" y="108" width="319" height="566"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xGJ-pm-Pfu">
-                                                                <rect key="frame" x="0.0" y="0.0" width="372" height="86"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="86"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create account Free" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F5p-mn-b7P">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="28"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="28"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="28" id="jft-gB-T95"/>
                                                                         </constraints>
@@ -392,7 +392,7 @@ in This Era</string>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="asB-mb-cwb">
-                                                                        <rect key="frame" x="0.0" y="42" width="372" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="42" width="319" height="44"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="44" id="yjS-lX-mGP"/>
                                                                         </constraints>
@@ -403,13 +403,13 @@ in This Era</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G5K-yG-V7D">
-                                                                <rect key="frame" x="0.0" y="112" width="372" height="384"/>
+                                                                <rect key="frame" x="0.0" y="112" width="319" height="384"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IHc-YI-s6h">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="88"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="88"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-rZ-cEG">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="372" height="22"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="22"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="22" id="qly-cU-0IO"/>
                                                                                 </constraints>
@@ -418,7 +418,7 @@ in This Era</string>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type email here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-3P-Kbk" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="34" width="372" height="54"/>
+                                                                                <rect key="frame" x="0.0" y="34" width="319" height="54"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                                                             </textField>
@@ -428,10 +428,10 @@ in This Era</string>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-Ov-VQH">
-                                                                        <rect key="frame" x="0.0" y="108" width="372" height="88"/>
+                                                                        <rect key="frame" x="0.0" y="108" width="319" height="88"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpM-nq-BRS">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="372" height="22"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="22"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="22" id="f9N-Er-EMI"/>
                                                                                 </constraints>
@@ -440,7 +440,7 @@ in This Era</string>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="foA-mM-otW" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="34" width="372" height="54"/>
+                                                                                <rect key="frame" x="0.0" y="34" width="319" height="54"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                                                                             </textField>
@@ -450,10 +450,10 @@ in This Era</string>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qJw-oM-S0y">
-                                                                        <rect key="frame" x="0.0" y="216" width="372" height="88"/>
+                                                                        <rect key="frame" x="0.0" y="216" width="319" height="88"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0i-jt-gVB">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="372" height="22"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="22"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="22" id="gPX-CS-pzR"/>
                                                                                 </constraints>
@@ -462,7 +462,7 @@ in This Era</string>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ilk-9h-0et" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="34" width="372" height="54"/>
+                                                                                <rect key="frame" x="0.0" y="34" width="319" height="54"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                                             </textField>
@@ -472,7 +472,7 @@ in This Era</string>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfa-YF-olR">
-                                                                        <rect key="frame" x="0.0" y="324" width="372" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="324" width="319" height="60"/>
                                                                         <color key="backgroundColor" name="Primary Background Color"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="ILY-a5-JOq"/>
@@ -488,7 +488,7 @@ in This Era</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping “Sign Up” you accept our terms and condition" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-N1-0uH">
-                                                                <rect key="frame" x="0.0" y="522" width="372" height="44"/>
+                                                                <rect key="frame" x="0.0" y="522" width="319" height="44"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="44" id="EhC-uM-o0R"/>
                                                                 </constraints>
@@ -499,10 +499,10 @@ in This Era</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Vvu-cB-q3h">
-                                                        <rect key="frame" x="0.0" y="710" width="372" height="188"/>
+                                                        <rect key="frame" x="0.0" y="710" width="319" height="188"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha4-35-aVH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="372" height="24"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="24" id="cJN-V0-9T5"/>
                                                                 </constraints>
@@ -511,7 +511,7 @@ in This Era</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbX-iv-rsW">
-                                                                <rect key="frame" x="0.0" y="46" width="372" height="60"/>
+                                                                <rect key="frame" x="0.0" y="46" width="319" height="60"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="Q6N-uu-X0H"/>
@@ -522,13 +522,14 @@ in This Era</string>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="PressButton:" destination="eW9-Px-aEr" eventType="touchUpInside" id="CMc-By-pJ0"/>
+                                                                    <segue destination="C9F-nQ-QsN" kind="modal" modalPresentationStyle="fullScreen" id="dz0-cB-Y5v"/>
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-i9-9YS">
-                                                                <rect key="frame" x="0.0" y="128" width="372" height="60"/>
+                                                                <rect key="frame" x="0.0" y="128" width="319" height="60"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re7-Dc-37F">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                                                         <state key="normal" title="Login with Apple">
@@ -579,7 +580,7 @@ in This Era</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9iK-xu-JdH"/>
-                    <size key="freeformSize" width="428" height="953"/>
+                    <size key="freeformSize" width="375" height="953"/>
                     <connections>
                         <outlet property="appleIDLoginButton" destination="Re7-Dc-37F" id="tJJ-gA-Wtc"/>
                         <outlet property="emailTextField" destination="NCn-3P-Kbk" id="03u-Gi-XNe"/>
@@ -594,6 +595,233 @@ in This Era</string>
             </objects>
             <point key="canvasLocation" x="2374" y="-135"/>
         </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="9Hj-hd-S89">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C9F-nQ-QsN" customClass="SignInViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Bc-d4-YP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="824"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oer-Wg-u1N">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="824"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ms-I5-PcN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="824"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="k4d-hK-ChT">
+                                                <rect key="frame" x="28" y="20" width="319" height="776"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKf-2q-m64">
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="72"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignUp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HDu-YW-oz8">
+                                                                <rect key="frame" x="123.5" y="0.0" width="72" height="72"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="72" id="P3H-LY-MTQ"/>
+                                                                    <constraint firstAttribute="height" constant="72" id="jcf-cF-wI7"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="HDu-YW-oz8" firstAttribute="centerY" secondItem="pKf-2q-m64" secondAttribute="centerY" id="Iwb-3X-02k"/>
+                                                            <constraint firstItem="HDu-YW-oz8" firstAttribute="centerX" secondItem="pKf-2q-m64" secondAttribute="centerX" id="RLO-HH-4aE"/>
+                                                            <constraint firstAttribute="height" constant="72" id="aFf-AV-58Q"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="sBN-DQ-1Ux">
+                                                        <rect key="frame" x="0.0" y="108" width="319" height="444"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="uFk-6h-iBf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="86"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8u9-rL-Lvp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="28"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="28" id="WMJ-pF-vJ0"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="24"/>
+                                                                        <color key="textColor" name="Primary Text Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uNV-BB-MKt">
+                                                                        <rect key="frame" x="0.0" y="42" width="319" height="44"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="Yxh-H8-DGA"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                        <color key="textColor" name="Secondary Text Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-t6-zRO">
+                                                                <rect key="frame" x="0.0" y="112" width="319" height="276"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fTe-1x-B10">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="88"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPT-qU-b5u">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="22"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="22" id="rxs-GF-MgW"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                                <color key="textColor" name="Secondary Text Color"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type email here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-qP-Zpr" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="34" width="319" height="54"/>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="88" id="L7B-Jp-V1u"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-jg-fKU">
+                                                                        <rect key="frame" x="0.0" y="108" width="319" height="88"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sz-Cm-4VY">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="22"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="22" id="eKE-gM-wKX"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                                <color key="textColor" name="Secondary Text Color"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="gTh-VR-Yvn" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="34" width="319" height="54"/>
+                                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="88" id="LTO-tY-Q7a"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnN-7J-rJB">
+                                                                        <rect key="frame" x="0.0" y="216" width="319" height="60"/>
+                                                                        <color key="backgroundColor" name="Primary Background Color"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="60" id="gKj-TQ-ZO6"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                        <state key="normal" title="Login">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5dY-7u-M8p">
+                                                                <rect key="frame" x="0.0" y="414" width="319" height="30"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot password?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG3-i2-Q50">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                        <color key="textColor" name="Secondary Text Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdZ-9G-tKf">
+                                                                        <rect key="frame" x="245" y="0.0" width="74" height="30"/>
+                                                                        <state key="normal" title="Reset here">
+                                                                            <color key="titleColor" name="primaryAccentColor"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="xEd-nO-GDQ"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="sc8-1g-Jq6">
+                                                        <rect key="frame" x="0.0" y="588" width="319" height="188"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJd-Rz-oeV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="RBq-YT-bSl"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JN-ja-B3H">
+                                                                <rect key="frame" x="0.0" y="46" width="319" height="60"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="5k9-G9-k5A"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                <state key="normal" title="Register for Free now">
+                                                                    <color key="titleColor" name="Primary Background Color"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="eW9-Px-aEr" kind="modal" modalPresentationStyle="fullScreen" id="BvA-j9-DBA"/>
+                                                                </connections>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="TSR-Vt-9tK">
+                                                                <rect key="frame" x="0.0" y="128" width="319" height="60"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-kM-Qnu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                        <state key="normal" title="Login with Apple">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="2eh-w8-zXF"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="k4d-hK-ChT" secondAttribute="bottom" constant="28" id="H4n-yB-aFR"/>
+                                            <constraint firstItem="k4d-hK-ChT" firstAttribute="leading" secondItem="0Ms-I5-PcN" secondAttribute="leading" constant="28" id="hg5-ha-5Ad"/>
+                                            <constraint firstAttribute="trailing" secondItem="k4d-hK-ChT" secondAttribute="trailing" constant="28" id="om7-xb-WjA"/>
+                                            <constraint firstItem="k4d-hK-ChT" firstAttribute="top" secondItem="0Ms-I5-PcN" secondAttribute="top" constant="20" id="top-to-guP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Ms-I5-PcN" firstAttribute="leading" secondItem="Oer-Wg-u1N" secondAttribute="leading" id="4La-RB-oF6"/>
+                                    <constraint firstItem="0Ms-I5-PcN" firstAttribute="height" secondItem="Oer-Wg-u1N" secondAttribute="height" priority="250" id="AA2-6S-B08"/>
+                                    <constraint firstItem="0Ms-I5-PcN" firstAttribute="width" secondItem="Oer-Wg-u1N" secondAttribute="width" id="FY4-wP-Txh"/>
+                                    <constraint firstItem="0Ms-I5-PcN" firstAttribute="top" secondItem="Oer-Wg-u1N" secondAttribute="top" id="KH8-NJ-5T3"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Ms-I5-PcN" secondAttribute="bottom" id="WtW-1Y-8a4"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Ms-I5-PcN" secondAttribute="trailing" id="dDX-oj-tPs"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="pRr-12-IF2"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="f1c-gA-iRS"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gat-SE-wei"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oer-Wg-u1N" firstAttribute="top" secondItem="Gat-SE-wei" secondAttribute="top" id="0TB-wv-94K"/>
+                            <constraint firstItem="Gat-SE-wei" firstAttribute="bottom" secondItem="Oer-Wg-u1N" secondAttribute="bottom" id="2bJ-PY-qxi"/>
+                            <constraint firstItem="Gat-SE-wei" firstAttribute="trailing" secondItem="Oer-Wg-u1N" secondAttribute="trailing" id="9P9-IL-8bv"/>
+                            <constraint firstItem="Oer-Wg-u1N" firstAttribute="leading" secondItem="Gat-SE-wei" secondAttribute="leading" id="xcf-Of-NOL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ByK-fA-W30"/>
+                    <size key="freeformSize" width="375" height="824"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awc-Nm-f18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3165.5999999999999" y="-1119.04047976012"/>
+        </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="E8h-Rc-BTC">
             <objects>
@@ -607,9 +835,12 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssh-bT-Kvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3367" y="-264"/>
+            <point key="canvasLocation" x="3166" y="-264"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dz0-cB-Y5v"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="SignUp_logo" width="72" height="72"/>
         <image name="Welcome_BG_Logo" width="375" height="812"/>
@@ -632,6 +863,9 @@ in This Era</string>
         </namedColor>
         <namedColor name="Secondary Text Color">
             <color red="0.46700000762939453" green="0.46700000762939453" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryAccentColor">
+            <color red="0.85900002717971802" green="0.55299997329711914" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
