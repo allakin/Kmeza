@@ -85,6 +85,25 @@ class SignUpViewController: UIViewController {
 		
 		autorizationController.performRequests()
 	}
+	
+	private func signUP() {
+		guard let email = emailTextField.text,
+			  let password = passwordTextField.text else { return }
+		
+		Auth.auth().createUser(withEmail: email, password: password) { (results, error) in
+			if let error = error {
+				print(error.localizedDescription)
+				return
+			}
+			
+			if let user = results?.user {
+				print(user.email)
+				SetRootViewController.saveCurrentScreen(currentScreen: .homeScreenViewController)
+				ShowViewScreen.shared.showHomeScreen()
+			}
+			
+		}
+	}
 }
 
 //MARK: - ASAuthorizationControllerDelegate
@@ -214,10 +233,14 @@ extension SignUpViewController {
 	}
 	
 	private func correctPassword() {
-		if similarPassword == similarPasswordAgain {
+		guard let email = emailTextField.text else { return }
+		
+		if similarPassword == similarPasswordAgain &&
+			email != "" {
 			settingActivityIndicatorInButton(button: registerButton)
 			setAlphaChanel(buttons: [loginButton, appleIDLoginButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
+			signUP()
 		} else {
 			passwordTextField.errorStateTextField()
 			passwordAgainTextField.errorStateTextField()
