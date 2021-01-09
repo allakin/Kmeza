@@ -38,6 +38,7 @@
 		734DE2972586780C0006E607 /* KmezaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2962586780C0006E607 /* KmezaTests.swift */; };
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
 		7357F4E125A85F4500D62454 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357F4E025A85F4500D62454 /* Reference.swift */; };
+		7357F51A25A8740000D62454 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357F51925A8740000D62454 /* SignInViewController.swift */; };
 		735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowViewScreen.swift */; };
 		73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B02259F2B8C009097D7 /* Extension+Color.swift */; };
 		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
@@ -55,6 +56,7 @@
 		73A2367425A5E224007E8664 /* SignWithAppleID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A2367325A5E224007E8664 /* SignWithAppleID.swift */; };
 		73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2399259DC476004BAA64 /* SignUpViewController.swift */; };
 		73D8789A25A5B3CD00F33B63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */; };
+		73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */; };
 		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +115,7 @@
 		734DE2A12586780C0006E607 /* KmezaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmezaUITests.swift; sourceTree = "<group>"; };
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7357F4E025A85F4500D62454 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		7357F51925A8740000D62454 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		735898D22597918200CE5042 /* ShowViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewScreen.swift; sourceTree = "<group>"; };
 		73597B02259F2B8C009097D7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 		73A2367325A5E224007E8664 /* SignWithAppleID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignWithAppleID.swift; sourceTree = "<group>"; };
 		73AB2399259DC476004BAA64 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInFirebase.swift; sourceTree = "<group>"; };
 		76B954F85959FE01782319A7 /* Pods-Kmeza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza/Pods-Kmeza.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD15CCE12FC7F429C8DD0B6 /* Pods-KmezaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmezaTests.debug.xcconfig"; path = "Target Support Files/Pods-KmezaTests/Pods-KmezaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C72095A9A2C4B7B30E897F76 /* Pods-Kmeza-KmezaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.release.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7357F51525A8739000D62454 /* SignIn Controllers */,
 				7322247125A6505C0080D2DC /* Home Screen */,
 				73AB2398259DC44C004BAA64 /* SignUp Controllers */,
 				73AB2391259DC422004BAA64 /* Welcome Controllers */,
@@ -328,6 +333,14 @@
 			path = KmezaUITests;
 			sourceTree = "<group>";
 		};
+		7357F51525A8739000D62454 /* SignIn Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7357F51925A8740000D62454 /* SignInViewController.swift */,
+			);
+			path = "SignIn Controllers";
+			sourceTree = "<group>";
+		};
 		73597B0C259F2CB8009097D7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +377,7 @@
 				735898D22597918200CE5042 /* ShowViewScreen.swift */,
 				73A2367325A5E224007E8664 /* SignWithAppleID.swift */,
 				7357F4E025A85F4500D62454 /* Reference.swift */,
+				73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */,
 			);
 			path = "Singleton Class";
 			sourceTree = "<group>";
@@ -696,6 +710,7 @@
 				73A2367425A5E224007E8664 /* SignWithAppleID.swift in Sources */,
 				73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */,
 				7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */,
+				73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */,
 				73947C802593B055008A1781 /* Values.swift in Sources */,
 				734DE2802586780C0006E607 /* AppDelegate.swift in Sources */,
 				73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */,
@@ -710,6 +725,7 @@
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
 				736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
+				7357F51A25A8740000D62454 /* SignInViewController.swift in Sources */,
 				7322247325A650720080D2DC /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

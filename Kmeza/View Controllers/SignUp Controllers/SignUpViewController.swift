@@ -24,6 +24,10 @@ class SignUpViewController: UIViewController {
 	private var similarPassword = ""
 	private var similarPasswordAgain = ""
 	
+	private var isFilledEmail = false
+	private var isFilledPassword = false
+	private var isFilledPasswordAgain = false
+	
 	private let showPasswordButton: UIButton = {
 		let button = UIButton()
 		button.tag = 0
@@ -89,20 +93,7 @@ class SignUpViewController: UIViewController {
 	private func signUP() {
 		guard let email = emailTextField.text,
 			  let password = passwordTextField.text else { return }
-		
-		Auth.auth().createUser(withEmail: email, password: password) { (results, error) in
-			if let error = error {
-				print(error.localizedDescription)
-				return
-			}
-			
-			if let user = results?.user {
-				print(user.email)
-				SetRootViewController.saveCurrentScreen(currentScreen: .homeScreenViewController)
-				ShowViewScreen.shared.showHomeScreen()
-			}
-			
-		}
+		SignUp.shared.createUser(email: email, password: password)
 	}
 }
 
@@ -205,7 +196,6 @@ extension SignUpViewController: UITextFieldDelegate  {
 			passwordAgainTextField.becomeFirstResponder()
 		} else {
 			correctPassword()
-			view.endEditing(true)
 		}
 		return true
 	}
@@ -233,10 +223,26 @@ extension SignUpViewController {
 	}
 	
 	private func correctPassword() {
-		guard let email = emailTextField.text else { return }
+		
+		if !isFilledEmail {
+			emailTextField.errorStateTextField()
+		}
+		
+		if !isFilledPassword {
+			passwordTextField.errorStateTextField()
+		}
+		
+		if !isFilledPasswordAgain {
+			passwordAgainTextField.errorStateTextField()
+		}
+		
 		
 		if similarPassword == similarPasswordAgain &&
-			email != "" {
+			isFilledEmail &&
+			isFilledPassword &&
+			isFilledPasswordAgain {
+			passwordTextField.filledStateTextField()
+			passwordAgainTextField.filledStateTextField()
 			settingActivityIndicatorInButton(button: registerButton)
 			setAlphaChanel(buttons: [loginButton, appleIDLoginButton])
 			setAlphaChanel(texFields: [emailTextField, passwordTextField, passwordAgainTextField])
@@ -245,48 +251,58 @@ extension SignUpViewController {
 			passwordTextField.errorStateTextField()
 			passwordAgainTextField.errorStateTextField()
 		}
-		
-		if passwordTextField.isSecureTextEntry {
-			passwordTextField.isSecureTextEntry.toggle()
-			showPasswordButton.setImage(UIImage(named: "passwordShow"), for: .normal)
-		}
-		
-		if passwordAgainTextField.isSecureTextEntry {
-			passwordAgainTextField.isSecureTextEntry.toggle()
-			showPasswordAgainButton.setImage(UIImage(named: "passwordShow"), for: .normal)
-		}
 	}
 }
 
 //MARK: - Validation Text Fields
 extension SignUpViewController {
 	@objc func validateEmail() {
-		isValid(textField: emailTextField, type: .email)
+		guard let email = emailTextField.text else { return }
+		
+		let isValidEmail = email.isValidPassword()
+		
+		if isValidEmail {
+			isFilledEmail = true
+			emailTextField.filledStateTextField()
+		} else {
+			emailTextField.fillingStateTextField()
+		}
+		
 		isEmpty(textField: emailTextField)
 	}
 	
 	@objc func validatePassword() {
-		isValid(textField: passwordTextField, type: .password)
-		similarPassword = passwordTextField.text ?? ""
-		isEmpty(textField: passwordTextField)
+		guard let password = passwordTextField.text else { return }
+		
+		let isValidPassword = password.isValidPassword()
+		
+		if isValidPassword {
+			isFilledPassword = true
+			similarPassword = password
+			passwordTextField.filledStateTextField()
+		} else {
+			passwordTextField.fillingStateTextField()
+		}
+		
+		isEmpty(textField: emailTextField)
 	}
 	
 	@objc func validatePasswordAgain() {
-		isValid(textField: passwordAgainTextField, type: .password)
-		similarPasswordAgain = passwordAgainTextField.text ?? ""
-		isEmpty(textField: passwordAgainTextField)
-	}
-	
-	private func isValid(textField: UITextField, type: ValidityType) {
+		guard let password = passwordAgainTextField.text else { return }
 		
-		guard let value = textField.text else { return }
+		let isValidPassword = password.isValidPassword()
 		
-		if textField.isValid(value: value, with: type) {
-			textField.filledStateTextField()
+		if isValidPassword {
+			isFilledPasswordAgain = true
+			similarPasswordAgain = password
+			passwordAgainTextField.filledStateTextField()
 		} else {
-			textField.fillingStateTextField()
+			passwordAgainTextField.fillingStateTextField()
 		}
+		
+		isEmpty(textField: emailTextField)
 	}
+
 	
 	private func isEmpty(textField: UITextField) {
 		if textField.text == "" {
