@@ -135,7 +135,7 @@ with K’meza</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFU-0U-BwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204.34782608695653" y="-156.52173913043478"/>
+            <point key="canvasLocation" x="-268" y="-264"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="4s3-mX-bH1">
@@ -247,7 +247,7 @@ with K’meza</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-v8-fNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="-157"/>
+            <point key="canvasLocation" x="854" y="-264"/>
         </scene>
         <!--Welcome Feature Collection View Controller-->
         <scene sceneID="jPN-Zi-Nke">
@@ -281,7 +281,7 @@ with K’meza</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-86-oV7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="73"/>
                                                                     <string key="text">Best Fashion Store 
 in This Era</string>
                                                                     <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="28"/>
@@ -289,13 +289,13 @@ in This Era</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-ZG-Bx8">
-                                                                    <rect key="frame" x="0.0" y="82" width="372" height="36"/>
+                                                                    <rect key="frame" x="0.0" y="83" width="372" height="39"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AI2-56-Emn">
-                                                                    <rect key="frame" x="0.0" y="128" width="372" height="32"/>
+                                                                    <rect key="frame" x="0.0" y="132" width="372" height="28"/>
                                                                     <color key="pageIndicatorTintColor" name="Primary Accent Color"/>
                                                                     <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </pageControl>
@@ -339,7 +339,7 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWs-gJ-Ajb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="71"/>
+            <point key="canvasLocation" x="1650" y="-36"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="nyy-tE-Ags">
@@ -525,25 +525,20 @@ in This Era</string>
                                                                     <segue destination="C9F-nQ-QsN" kind="modal" modalPresentationStyle="fullScreen" id="dz0-cB-Y5v"/>
                                                                 </connections>
                                                             </button>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-i9-9YS">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re7-Dc-37F">
                                                                 <rect key="frame" x="0.0" y="128" width="319" height="60"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re7-Dc-37F">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
-                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
-                                                                        <state key="normal" title="Login with Apple">
-                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </state>
-                                                                        <connections>
-                                                                            <action selector="PressButton:" destination="eW9-Px-aEr" eventType="touchUpInside" id="M0V-z0-ssp"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="wqW-7P-S2h"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="DAN-Hv-MmC"/>
                                                                 </constraints>
-                                                            </stackView>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                <state key="normal" title="Login with Apple">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="PressButton:" destination="eW9-Px-aEr" eventType="touchUpInside" id="M0V-z0-ssp"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -593,7 +588,7 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POc-1i-xvm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="-135"/>
+            <point key="canvasLocation" x="2623" y="-135"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="9Hj-hd-S89">
@@ -696,7 +691,7 @@ in This Era</string>
                                                                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="gTh-VR-Yvn" customClass="TextFieldWithPadding" customModule="Kmeza" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="34" width="319" height="54"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
-                                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                                             </textField>
                                                                         </subviews>
                                                                         <constraints>
@@ -713,6 +708,9 @@ in This Era</string>
                                                                         <state key="normal" title="Login">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="logInAction:" destination="C9F-nQ-QsN" eventType="touchUpInside" id="8a0-UD-wKI"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -730,6 +728,9 @@ in This Era</string>
                                                                         <state key="normal" title="Reset here">
                                                                             <color key="titleColor" name="primaryAccentColor"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="resetPasswordAction:" destination="C9F-nQ-QsN" eventType="touchUpInside" id="XAg-pp-ab8"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -764,22 +765,20 @@ in This Era</string>
                                                                     <segue destination="eW9-Px-aEr" kind="modal" modalPresentationStyle="fullScreen" id="BvA-j9-DBA"/>
                                                                 </connections>
                                                             </button>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="TSR-Vt-9tK">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-kM-Qnu">
                                                                 <rect key="frame" x="0.0" y="128" width="319" height="60"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-kM-Qnu">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
-                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
-                                                                        <state key="normal" title="Login with Apple">
-                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </state>
-                                                                    </button>
-                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="2eh-w8-zXF"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="HSv-Tz-byr"/>
                                                                 </constraints>
-                                                            </stackView>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                <state key="normal" title="Login with Apple">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="appleIDLoginAction:" destination="C9F-nQ-QsN" eventType="touchUpInside" id="dYb-g4-gjd"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -817,10 +816,18 @@ in This Era</string>
                     </view>
                     <navigationItem key="navigationItem" id="ByK-fA-W30"/>
                     <size key="freeformSize" width="375" height="824"/>
+                    <connections>
+                        <outlet property="appleIDLoginButton" destination="BEn-kM-Qnu" id="Fje-0j-QBQ"/>
+                        <outlet property="emailTextField" destination="gq9-qP-Zpr" id="uzz-Sb-wBQ"/>
+                        <outlet property="logInButton" destination="gnN-7J-rJB" id="sb7-6d-TLK"/>
+                        <outlet property="passwordTextField" destination="gTh-VR-Yvn" id="qrv-e4-oki"/>
+                        <outlet property="registerButton" destination="2JN-ja-B3H" id="7Pl-jF-hDh"/>
+                        <outlet property="scrollView" destination="Oer-Wg-u1N" id="Z4J-Pe-Jdd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awc-Nm-f18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3165.5999999999999" y="-1119.04047976012"/>
+            <point key="canvasLocation" x="3748" y="-1115"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="E8h-Rc-BTC">
@@ -835,10 +842,11 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssh-bT-Kvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166" y="-264"/>
+            <point key="canvasLocation" x="3748" y="-265"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="BvA-j9-DBA"/>
         <segue reference="dz0-cB-Y5v"/>
     </inferredMetricsTieBreakers>
     <resources>
