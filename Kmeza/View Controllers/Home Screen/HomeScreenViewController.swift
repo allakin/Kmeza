@@ -7,23 +7,31 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
-
-    override func viewDidLoad() {
+class HomeScreenViewController: UIViewController, NewestProductsTableViewControllerDelegate {
+	
+	@IBOutlet weak var newProductsCount: UILabel!
+	
+	@IBOutlet weak var newestProductContainerView: UIView!
+	
+	var productsCount: String?
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
 		print(FetchRootViewController.fetchData())
-        // Do any additional setup after loading the view.
+		newProductsCount.text = "Showing \(productsCount ?? "") Results"
     }
-    
+	
+	func products(count: Int) {
+		productsCount = "\(count)"
+	}
+	
+	// MARK: - Navigation
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "countOfProducts" {
+			let destinationVC = segue.destination as! NewestProductsTableViewController
+			destinationVC.delegate = self
+		}
+	}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
