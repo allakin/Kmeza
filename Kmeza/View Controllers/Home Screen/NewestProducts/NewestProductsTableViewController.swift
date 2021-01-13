@@ -15,6 +15,7 @@ class NewestProductsTableViewController: UITableViewController {
 
 	let products = NewestProduct.newestProducts
 	var delegate: NewestProductsTableViewControllerDelegate!
+	private var isAddedToWishList = false
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,16 @@ class NewestProductsTableViewController: UITableViewController {
 		cell.productPrice.text = "$\(product.price)"
 		cell.productSale.text = "$\(product.sale)"
 		cell.productNumberOfReviews.text = "(\(product.numberOfReviews) Reviews)"
+		
+		cell.buttonTapAction = { () in
+			if self.isAddedToWishList {
+				self.isAddedToWishList.toggle()
+				cell.addToWishListButton.setImage(UIImage(named: "AddToWishList"), for: .normal)
+			} else {
+				self.isAddedToWishList.toggle()
+				cell.addToWishListButton.setImage(UIImage(named: "AddToWishListPressed"), for: .normal)
+			}
+		}
 		
         return cell
     }

@@ -13,6 +13,9 @@ class NewestProductsTableViewCell: UITableViewCell {
 	@IBOutlet weak var productPrice: UILabel!
 	@IBOutlet weak var productSale: UILabel!
 	@IBOutlet weak var productNumberOfReviews: UILabel!
+	@IBOutlet weak var addToWishListButton: UIButton!
+	
+	var buttonTapAction: (()->())?
 	
 
     override func awakeFromNib() {
@@ -20,7 +23,15 @@ class NewestProductsTableViewCell: UITableViewCell {
 		let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Your Text")
 			attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
 		productSale.attributedText = attributeString
-    }
+		
+		productImage.layer.cornerRadius = 8
+		
+		addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+	}
+	
+	@objc func tappedButton() {
+		buttonTapAction?()
+	}
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
