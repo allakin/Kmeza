@@ -1168,6 +1168,7 @@ in This Era</string>
                                     <outlet property="productPrice" destination="8LL-nl-HVO" id="Wsz-OL-Zkm"/>
                                     <outlet property="productSale" destination="Cqk-Y5-6ZI" id="rXS-XY-AUe"/>
                                     <outlet property="productTitle" destination="1ct-Ae-v5W" id="rCl-iz-ISb"/>
+                                    <outlet property="typeCollection" destination="zaZ-0z-8yj" id="Cxp-7B-zMk"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -1219,9 +1220,6 @@ in This Era</string>
                                                                 <constraint firstAttribute="height" constant="32" id="x8l-9G-QR5"/>
                                                             </constraints>
                                                             <state key="normal" image="AddToWishList_White"/>
-                                                            <connections>
-                                                                <action selector="addProductToWishlist:" destination="i3M-oR-pBT" eventType="touchUpInside" id="Wfp-PH-qgf"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1443,6 +1441,40 @@ in This Era</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKr-82-JHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5557.6000000000004" y="859.52023988005999"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="CD7-ar-0hN">
+            <objects>
+                <collectionViewController id="hgb-2u-QTm" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H5j-SM-O8c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fMc-L9-dce">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5CN-JO-bxs">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KoX-hj-xZM">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hgb-2u-QTm" id="7Sh-pC-heh"/>
+                            <outlet property="delegate" destination="hgb-2u-QTm" id="mBY-Sc-HAO"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsv-oW-mgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5602" y="1682"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

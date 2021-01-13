@@ -10,7 +10,6 @@ import UIKit
 class HomeScreenViewController: UIViewController, NewestProductsTableViewControllerDelegate {
 	
 	@IBOutlet weak var newProductsCount: UILabel!
-	
 	@IBOutlet weak var newestProductContainerView: UIView!
 	
 	var productsCount: String?

@@ -12,6 +12,7 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var productTitle: UILabel!
 	@IBOutlet weak var productPrice: UILabel!
 	@IBOutlet weak var productSale: UILabel!
+	@IBOutlet weak var typeCollection: UILabel!
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
@@ -23,6 +24,7 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 		productTitle.text = info.title
 		productPrice.text = "$\(info.price)"
 		productSale.text = "$\(info.sale)"
+		typeCollection.text = info.typeCollection
 		
 		addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
 	}

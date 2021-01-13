@@ -16,11 +16,8 @@ class FlashSaleCollectionViewController: UICollectionViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		print("+++++++++++")
-		print(flashSaleProducts.count)
 		
-	}
-	
-	@IBAction func addProductToWishlist(_ sender: Any) {
+		print(flashSaleProducts.count)
 	}
 	
 	
