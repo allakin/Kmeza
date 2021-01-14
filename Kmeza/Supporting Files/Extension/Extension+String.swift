@@ -8,17 +8,6 @@
 import Foundation
 
 extension String {
-	func isValidText(_ validdityType: ValidityType) -> Bool {
-		let format = "SELF MATCHES %@"
-		
-		switch validdityType {
-		case .email:
-			return NSPredicate(format: format, Regex.email.rawValue).evaluate(with: self)
-		default:
-			return NSPredicate(format: format, Regex.password.rawValue).evaluate(with: self)
-		}
-	}
-	
 	func isValidEmailAddress() -> Bool {
 		let emailRegEx = "(?:[a-zA-Z0-9!#$%\\&‘*+/=?\\^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%\\&'*+/=?\\^_`{|}"
 			+ "~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\"
@@ -39,6 +28,10 @@ extension String {
 		
 		let passwordTest = NSPredicate(format:"SELF MATCHES[c] %@", passwordRegEx)
 		return passwordTest.evaluate(with: self)
+	}
+	
+	func addCurrency(number: Double) -> String {
+		"$\(number)"
 	}
 	
 }
