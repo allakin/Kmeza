@@ -24,7 +24,27 @@ class FetchRootViewController: GetUserDefaults {
 	}
 }
 
+class SaveCurrentPage: GetUserDefaults {
+	static func save(_ name: CurrentPage, _ key: String) {
+		userDefault.setValue(name.rawValue, forKey: key)
+	}
+}
+
+class FetchCurrentPage: GetUserDefaults {
+	static func fetch(_ key: String) -> String {
+		userDefault.string(forKey: key) ?? ""
+	}
+}
+
 enum StoryBoardID: String {
 	case welcomeViewController = "WelcomeViewController"
 	case homeScreenViewController = "HomeScreenViewController"
+}
+
+enum CurrentPage: String {
+	case home = "Home"
+	case featured = "Featured"
+	case myCard = "My Cart"
+	case wishlist = "Wishlist"
+	case logout = "Logout"
 }

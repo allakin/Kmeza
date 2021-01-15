@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class HomeScreenViewController: UIViewController, NewestProductsTableViewControllerDelegate {
 	
@@ -13,15 +14,36 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	@IBOutlet weak var newestProductContainerView: UIView!
 	
 	var productsCount: String?
+	private var sideMenu: SideMenuNavigationController?
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
 		print(FetchRootViewController.fetchData())
+		settingSideMenu()
 		newProductsCount.text = "Showing \(productsCount ?? "") Results"
+	
+		SaveCurrentPage.save(.home, SHOW_CURRENT_PAGE)
     }
+	
+	@IBAction func showSideMenuAction(_ sender: UIBarButtonItem) {
+		present(sideMenu!, animated: true)
+	}
 	
 	func products(count: Int) {
 		productsCount = "\(count)"
+	}
+	
+	private func settingSideMenu() {
+		let sideMenuVC = UIStoryboard(name: "Main", bundle: nil)
+			.instantiateViewController(identifier: "SideMenuTableViewController")
+		
+		sideMenu = SideMenuNavigationController(rootViewController: sideMenuVC)
+		sideMenu?.leftSide = true
+		sideMenu?.setNavigationBarHidden(true, animated: false)
+		sideMenu?.menuWidth = 262
+		
+		SideMenuManager.default.leftMenuNavigationController = sideMenu
+		SideMenuManager.default.addPanGestureToPresent(toView: view)
 	}
 	
 	// MARK: - Navigation
@@ -31,6 +53,4 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 			destinationVC.delegate = self
 		}
 	}
-
-
 }
