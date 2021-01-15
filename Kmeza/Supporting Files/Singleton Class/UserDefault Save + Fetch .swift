@@ -25,14 +25,14 @@ class FetchRootViewController: GetUserDefaults {
 }
 
 class SaveCurrentPage: GetUserDefaults {
-	static func save(_ name: CurrentPage, _ key: String) {
-		userDefault.setValue(name.rawValue, forKey: key)
+	static func save(_ name: CurrentPage) {
+		userDefault.setValue(name.rawValue, forKey: SHOW_CURRENT_PAGE)
 	}
 }
 
 class FetchCurrentPage: GetUserDefaults {
-	static func fetch(_ key: String) -> String {
-		userDefault.string(forKey: key) ?? ""
+	static func fetch() -> String {
+		userDefault.string(forKey: SHOW_CURRENT_PAGE) ?? ""
 	}
 }
 

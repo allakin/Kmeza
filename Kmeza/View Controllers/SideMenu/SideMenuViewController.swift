@@ -32,7 +32,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 		let page = pages[indexPath.row]
 		cell.configureContant(page)
 		
-		let currentPage = FetchCurrentPage.fetch(SHOW_CURRENT_PAGE)
+		let currentPage = FetchCurrentPage.fetch()
 		
 		if page.pageName == currentPage {
 			cell.pageSelection.isHidden = false

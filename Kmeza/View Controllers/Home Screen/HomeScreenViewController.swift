@@ -22,7 +22,7 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 		settingSideMenu()
 		newProductsCount.text = "Showing \(productsCount ?? "") Results"
 	
-		SaveCurrentPage.save(.home, SHOW_CURRENT_PAGE)
+		SaveCurrentPage.save(.home)
     }
 	
 	@IBAction func showSideMenuAction(_ sender: UIBarButtonItem) {
