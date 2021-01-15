@@ -43,9 +43,6 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 			cell.pageIcon.image = UIImage(named: "\(currentPage)Pressed")
 		}
 		
-		
-		
-		
 		return cell
 	}
 }
