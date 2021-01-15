@@ -48,3 +48,17 @@ class SignUp {
 		}
 	}
 }
+
+class GetUserInformation {
+	static let shared = GetUserInformation()
+	
+	private init() {}
+	
+	func getUserEmail() -> String {
+		Auth.auth().currentUser?.email ?? "Unknown email"
+	}
+	
+	func getUserName() -> String {
+		Auth.auth().currentUser?.displayName ?? "Unknown name"
+	}
+}

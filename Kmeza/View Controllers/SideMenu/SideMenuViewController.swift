@@ -20,6 +20,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		userImage.roundingImage()
+		
+		userEmail.text = GetUserInformation.shared.getUserEmail()
+		userName.text = GetUserInformation.shared.getUserName()
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,6 +42,8 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 			cell.pageName.textColor = .white
 			cell.pageIcon.image = UIImage(named: "\(currentPage)Pressed")
 		}
+		
+		
 		
 		
 		return cell
