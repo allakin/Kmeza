@@ -29,11 +29,6 @@ extension String {
 		let passwordTest = NSPredicate(format:"SELF MATCHES[c] %@", passwordRegEx)
 		return passwordTest.evaluate(with: self)
 	}
-	
-	func addCurrency(number: Double) -> String {
-		"$\(number)"
-	}
-	
 }
 
 enum ValidityType {

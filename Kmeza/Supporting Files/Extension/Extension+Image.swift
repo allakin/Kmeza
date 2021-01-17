@@ -17,6 +17,10 @@ extension UIImageView {
 		getImageView().layer.masksToBounds = false
 	}
 	
+	func roundingImage() {
+		getImageView().layer.cornerRadius = getImageView().frame.size.height / 2
+	}
+	
 	private func getImageView() -> UIImageView {
 		self
 	}
