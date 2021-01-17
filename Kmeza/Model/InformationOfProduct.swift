@@ -6,6 +6,7 @@
 //
 
 struct InformationOfProduct {
+	let productImages: [ProductImage]
 	let size: String
 	let description: String
 	let color: [productColor]
@@ -23,4 +24,8 @@ struct productColor {
 	let red: Int
 	let green: Int
 	let blue: Int
+}
+
+struct ProductImage {
+	let image: String
 }

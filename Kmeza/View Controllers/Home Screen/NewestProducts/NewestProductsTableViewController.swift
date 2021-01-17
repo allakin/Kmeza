@@ -33,11 +33,12 @@ class NewestProductsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewestProductsTableViewCell
 		
 		let product = products[indexPath.row]
-		cell.productImage.image = UIImage(named: product.image)
+		cell.productImage.image = UIImage(named: product.cover)
 		cell.productTitle.text = product.title
 		cell.productPrice.text = "$\(product.price)"
 		cell.productSale.text = "$\(product.sale)"
 		cell.productNumberOfReviews.text = "(\(product.numberOfReviews) Reviews)"
+		cell.selectionStyle = .none
 		
 		cell.buttonTapAction = { () in
 			if self.isAddedToWishList {
@@ -51,39 +52,9 @@ class NewestProductsTableViewController: UITableViewController {
 		
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		performSegue(withIdentifier: "showDetail", sender: nil)
+	}
+	
 }

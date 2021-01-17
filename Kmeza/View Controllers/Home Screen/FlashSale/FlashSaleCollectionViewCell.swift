@@ -21,7 +21,7 @@ class FlashSaleCollectionViewCell: UICollectionViewCell {
 	func configureContant(product: FlashSaleProduct) {
 		configureUI()
 		
-		productImage.image = UIImage(named: product.image)
+		productImage.image = UIImage(named: product.cover)
 		productTitle.text = product.title
 		productPrice.text = "$\(product.price)"
 		numberStockProducts.text = configureLeftCountProducts(product.numberStock,

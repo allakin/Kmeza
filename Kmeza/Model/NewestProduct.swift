@@ -6,7 +6,7 @@
 //
 
 struct NewestProduct {
-	let image: String
+	let cover: String
 	let title: String
 	let typeCollection: String
 	let price: Double
@@ -14,31 +14,31 @@ struct NewestProduct {
 	let numberOfReviews: Int
 	
 	static let newestProducts: [NewestProduct] = [
-		.init(image: "Walkthrough_Screen_1",
+		.init(cover: "Walkthrough_Screen_1",
 			  title: "Naiki White Pro Sneakers",
 			  typeCollection: "MAN COLLECTIONS",
 			  price: 24.56,
 			  sale: 30.0,
 			  numberOfReviews: 245),
-		.init(image: "Walkthrough_Screen_2",
+		.init(cover: "Walkthrough_Screen_2",
 			  title: "Long Grey Bomber Jackets",
 			  typeCollection: "MAN COLLECTIONS",
 			  price: 158.2,
 			  sale: 170,
 			  numberOfReviews: 245),
-		.init(image: "Walkthrough_Screen_3",
+		.init(cover: "Walkthrough_Screen_3",
 			  title: "Blue Denim Cassual Jackets",
 			  typeCollection: "MAN COLLECTIONS",
 			  price: 87.45,
 			  sale: 90.0,
 			  numberOfReviews: 245),
-		.init(image: "Walkthrough_Screen_1",
+		.init(cover: "Walkthrough_Screen_1",
 			  title: "Black Leather Jackets for Men",
 			  typeCollection: "WOMAN COLLECTIONS",
 			  price: 1512.21,
 			  sale: 170,
 			  numberOfReviews: 245),
-		.init(image: "Walkthrough_Screen_2",
+		.init(cover: "Walkthrough_Screen_2",
 			  title: "Black Leather Jackets for Men",
 			  typeCollection: "WOMAN COLLECTIONS",
 			  price: 158.2,

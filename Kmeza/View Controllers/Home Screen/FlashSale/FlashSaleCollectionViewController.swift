@@ -45,6 +45,11 @@ class FlashSaleCollectionViewController: UICollectionViewController {
 		
 		return cell
 	}
+	
+	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		performSegue(withIdentifier: "showDetail", sender: nil)
+	}
+
 }
 
 extension FlashSaleCollectionViewController: UICollectionViewDelegateFlowLayout {

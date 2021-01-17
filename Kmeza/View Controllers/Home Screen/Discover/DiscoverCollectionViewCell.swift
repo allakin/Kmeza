@@ -20,7 +20,7 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	func configureContant(with info: DiscoverProduct) {
 		configureUI()
 		
-		productImage.image = UIImage(named: info.image)
+		productImage.image = UIImage(named: info.cover)
 		productTitle.text = info.title
 		productPrice.text = "$\(info.price)"
 		productSale.text = "$\(info.sale)"
