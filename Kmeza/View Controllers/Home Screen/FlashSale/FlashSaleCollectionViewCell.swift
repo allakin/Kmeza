@@ -45,6 +45,7 @@ class FlashSaleCollectionViewCell: UICollectionViewCell {
 		
 		if number > count {
 			result = "0 Left"
+			productPrice.text = "SOLD"
 		} else {
 			result = "\(number) Left"
 		}
