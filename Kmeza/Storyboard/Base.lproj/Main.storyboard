@@ -2093,6 +2093,7 @@ in This Era</string>
         <!--Navigation Controller-->
         <scene sceneID="1hI-Gq-23r">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBd-Ge-zwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XKl-as-f6F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Lui-1d-1dZ"/>
@@ -2105,13 +2106,12 @@ in This Era</string>
                         <segue destination="K6v-GY-VZd" kind="relationship" relationship="rootViewController" id="8JE-2d-r70"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uBd-Ge-zwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6678" y="-380"/>
+            <point key="canvasLocation" x="6639" y="-454"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Rfi-rS-e8H"/>
+        <segue reference="AMD-UW-eMB"/>
         <segue reference="dz0-cB-Y5v"/>
     </inferredMetricsTieBreakers>
     <resources>
