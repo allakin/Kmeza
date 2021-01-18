@@ -34,6 +34,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 		
 		let page = pages[indexPath.row]
 		cell.configureContant(page)
+		cell.selectionStyle = .none
 		
 		let currentPage = FetchCurrentPage.fetch()
 		
@@ -44,5 +45,23 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 		}
 		
 		return cell
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		switch indexPath.row {
+		case 0:
+			destination(view: "HomeScreenViewController")
+		default:
+			break
+		}
+	}
+	
+	private func destination(view: String) {
+		dismiss(animated: true) {
+			let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let newViewController = storyBoard.instantiateViewController(withIdentifier: view)
+			newViewController.modalPresentationStyle = .fullScreen
+			self.present(newViewController, animated: true, completion: nil)
+		}
 	}
 }

@@ -19,6 +19,9 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	override func viewDidLoad() {
         super.viewDidLoad()
 		print(FetchRootViewController.fetchData())
+		
+		navigationController?.navigationBar.tintColor = UIColor(red:0.73, green:0.74, blue:0.83, alpha:1.00)
+		
 		settingSideMenu()
 		newProductsCount.text = "Showing \(productsCount ?? "") Results"
 	

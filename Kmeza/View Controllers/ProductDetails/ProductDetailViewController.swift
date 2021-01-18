@@ -11,8 +11,10 @@ class ProductDetailViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		// Do any additional setup after loading the view.
+		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		navigationController?.navigationBar.shadowImage = UIImage()
+		navigationController?.navigationBar.isTranslucent = true
+		navigationController?.navigationBar.tintColor = .white
 	}
 	
 	@IBAction func returnToHomeScreenAction(_ sender: Any) {
