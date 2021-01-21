@@ -9,11 +9,14 @@ import UIKit
 
 class DiscoverCollectionViewController: UICollectionViewController {
 	
-	let discoverProducts = Product.products
+	let products = Product.products
+	private var discoverProducts: [Product] = []
 	private var isAddedToWishList = false
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		sortProducts(by: .discover)
+		print(discoverProducts.count)
 	}
 	
 	// MARK: UICollectionViewDataSource
@@ -51,6 +54,23 @@ class DiscoverCollectionViewController: UICollectionViewController {
 			if let indexPath = collectionView.indexPathsForSelectedItems?.first {
 				let detailsVC = segue.destination as? ProductDetailViewController
 				detailsVC?.product = discoverProducts[indexPath.item]
+			}
+		}
+	}
+	
+	private func sortProducts(by type: ProductType) {
+		products.forEach { (product) in
+			if product.productType == type.rawValue {
+				let product = Product(cover: product.cover,
+									  typeCollection: product.typeCollection,
+									  productType: product.productType,
+									  title: product.title,
+									  price: product.price,
+									  sale: product.sale,
+									  numberStock: product.numberStock,
+									  numberOfProducts: product.numberOfProducts,
+									  productInformation: product.productInformation)
+				discoverProducts.append(product)
 			}
 		}
 	}
