@@ -52,7 +52,7 @@
 		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
 		735ED91125ADAAC2003F8AEB /* DiscoverCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91025ADAAC2003F8AEB /* DiscoverCollectionViewController.swift */; };
 		735ED91625ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91525ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift */; };
-		735ED91B25ADAC1D003F8AEB /* DiscoverProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91A25ADAC1D003F8AEB /* DiscoverProduct.swift */; };
+		735ED91B25ADAC1D003F8AEB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91A25ADAC1D003F8AEB /* Product.swift */; };
 		735ED92025ADCACC003F8AEB /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91F25ADCACC003F8AEB /* Extension+Image.swift */; };
 		735ED92925ADFB86003F8AEB /* FlashSaleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED92825ADFB86003F8AEB /* FlashSaleCollectionViewCell.swift */; };
 		735ED93125ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED93025ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift */; };
@@ -147,7 +147,7 @@
 		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
 		735ED91025ADAAC2003F8AEB /* DiscoverCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewController.swift; sourceTree = "<group>"; };
 		735ED91525ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
-		735ED91A25ADAC1D003F8AEB /* DiscoverProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverProduct.swift; sourceTree = "<group>"; };
+		735ED91A25ADAC1D003F8AEB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		735ED91F25ADCACC003F8AEB /* Extension+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
 		735ED92825ADFB86003F8AEB /* FlashSaleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionViewCell.swift; sourceTree = "<group>"; };
 		735ED93025ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionViewController.swift; sourceTree = "<group>"; };
@@ -455,7 +455,7 @@
 				738492AA258E997900F665E8 /* WalkthroughInformation.swift */,
 				737CC737259BC7D600B861BD /* WelcomeFeature.swift */,
 				7358014E25AC418E00FB544E /* NewestProduct.swift */,
-				735ED91A25ADAC1D003F8AEB /* DiscoverProduct.swift */,
+				735ED91A25ADAC1D003F8AEB /* Product.swift */,
 				735ED93525ADFBEC003F8AEB /* FlashSaleProduct.swift */,
 				730A6FF025AF3A8C0068576C /* InformationOfProduct.swift */,
 				73570E9F25B1A94100363499 /* SideMenuPage.swift */,
@@ -807,7 +807,7 @@
 				73A2367425A5E224007E8664 /* SignWithAppleID.swift in Sources */,
 				735ED93125ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift in Sources */,
 				73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */,
-				735ED91B25ADAC1D003F8AEB /* DiscoverProduct.swift in Sources */,
+				735ED91B25ADAC1D003F8AEB /* Product.swift in Sources */,
 				7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */,
 				73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */,
 				735ED92025ADCACC003F8AEB /* Extension+Image.swift in Sources */,

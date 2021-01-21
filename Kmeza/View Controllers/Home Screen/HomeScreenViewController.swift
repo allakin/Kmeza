@@ -39,7 +39,7 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 		productsCount = "\(count)"
 	}
 	
-	override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {}
+//	override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {}
 	
 	private func settingSideMenu() {
 		let sideMenuVC = UIStoryboard(name: "Main", bundle: nil)

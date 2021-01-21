@@ -17,14 +17,14 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	
 	var buttonTapAction: (()->())?
     
-	func configureContant(with info: DiscoverProduct) {
+	func configureContant(with info: Product) {
 		configureUI()
 		
 		productImage.image = UIImage(named: info.cover)
 		productTitle.text = info.title
 		productPrice.text = "$\(info.price)"
 		productSale.text = "$\(info.sale)"
-		typeCollection.text = info.typeCollection
+		typeCollection.text = info.typeCollection.uppercased()
 		
 		addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
 	}
@@ -35,10 +35,7 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	
 	private func configureUI() {
 		productImage.layer.cornerRadius = 6
-		
-		let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Your Text")
-			attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
-		productSale.attributedText = attributeString
+		productSale.addAttributeString()
 	}
 	
 }

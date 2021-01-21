@@ -11,7 +11,9 @@ extension UILabel {
 	
 	func addAttributeString() {
 		let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Your Text")
-			attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
+			attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1,
+										 range: NSMakeRange(0,
+															attributeString.length))
 		getLabel().attributedText = attributeString
 	}
 	

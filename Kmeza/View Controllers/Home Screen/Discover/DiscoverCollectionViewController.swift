@@ -9,7 +9,7 @@ import UIKit
 
 class DiscoverCollectionViewController: UICollectionViewController {
 	
-	let discoverProducts = DiscoverProduct.discoverProducts
+	let discoverProducts = Product.products
 	private var isAddedToWishList = false
 	
 	override func viewDidLoad() {
@@ -44,6 +44,15 @@ class DiscoverCollectionViewController: UICollectionViewController {
 	
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		performSegue(withIdentifier: "showDetail", sender: nil)
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "showDetail" {
+			if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+				let detailsVC = segue.destination as? ProductDetailViewController
+				detailsVC?.product = discoverProducts[indexPath.item]
+			}
+		}
 	}
 }
 
