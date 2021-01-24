@@ -51,8 +51,8 @@ extension WelcomeFeatureCollectionViewController: UICollectionViewDelegate,
 	func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
 						sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let itemWidth = collectionView.bounds.width
-		let itemHeight = collectionView.bounds.height
+		let itemWidth = view.bounds.width
+		let itemHeight = view.bounds.height
 		
 		return CGSize(width: itemWidth, height: itemHeight)
 	}

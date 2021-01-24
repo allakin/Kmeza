@@ -18,16 +18,16 @@ class FlashSaleCollectionViewCell: UICollectionViewCell {
 	
 	var buttonTapAction: (()->())?
 	
-	func configureContant(product: FlashSaleProduct) {
+	func configureContant(product: Product) {
 		configureUI()
 		
-		productImage.image = UIImage(named: product.image)
+		productImage.image = UIImage(named: product.cover)
 		productTitle.text = product.title
 		productPrice.text = "$\(product.price)"
-		numberStockProducts.text = configureLeftCountProducts(product.numberStock,
-															  product.numberOfProducts.number)
-		leftStockProducts.progress = configureProgressView(number: product.numberStock,
-														   product.numberOfProducts.number)
+		numberStockProducts.text = configureLeftCountProducts(product.numberOfProducts,
+															  product.numberStock)
+		leftStockProducts.progress = configureProgressView(number: product.numberOfProducts,
+														   product.numberStock)
 		
 		addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
 	}
@@ -43,7 +43,7 @@ class FlashSaleCollectionViewCell: UICollectionViewCell {
 	private func configureLeftCountProducts(_ number: Int, _ count: Int) -> String {
 		var result = ""
 		
-		if number > count {
+		if number >= count {
 			result = "0 Left"
 			productPrice.text = "SOLD"
 		} else {

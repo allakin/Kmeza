@@ -20,12 +20,9 @@ class NewestProductsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-		let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Your Text")
-			attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
-		productSale.attributedText = attributeString
-		
+		productSale.addAttributeString()
 		productImage.layer.cornerRadius = 8
-		
+
 		addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
 	}
 	

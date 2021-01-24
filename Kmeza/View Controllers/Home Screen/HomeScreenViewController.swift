@@ -19,6 +19,12 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	override func viewDidLoad() {
         super.viewDidLoad()
 		print(FetchRootViewController.fetchData())
+		
+		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		navigationController?.navigationBar.shadowImage = UIImage()
+		navigationController?.navigationBar.isTranslucent = true
+		navigationController?.navigationBar.tintColor = UIColor(red:0.73, green:0.74, blue:0.83, alpha:1.00)
+		
 		settingSideMenu()
 		newProductsCount.text = "Showing \(productsCount ?? "") Results"
 	
@@ -32,6 +38,8 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	func products(count: Int) {
 		productsCount = "\(count)"
 	}
+	
+//	override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {}
 	
 	private func settingSideMenu() {
 		let sideMenuVC = UIStoryboard(name: "Main", bundle: nil)
