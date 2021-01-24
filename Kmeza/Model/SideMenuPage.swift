@@ -12,7 +12,7 @@ struct SideMenuPage {
 	static let page: [SideMenuPage] = [
 		.init(pageName: "Home",
 			  pageImage: "HomeNotPressed"),
-		.init(pageName: "Featured",
+		.init(pageName: "Catalog",
 			  pageImage: "FeaturedNotPressed"),
 		.init(pageName: "My Cart",
 			  pageImage: "MyCartNotPressed"),

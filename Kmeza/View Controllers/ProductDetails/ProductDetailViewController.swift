@@ -34,6 +34,14 @@ class ProductDetailViewController: UIViewController {
 		configureContant(info: product)
 	}
 	
+	@IBAction func productSizeAction(_ sender: UIButton) {
+		setSelectedSize(at: sender.tag)
+	}
+	
+	@IBAction func productColorAction(_ sender: UIButton) {
+		setSelectedColor(at: sender.tag)
+	}
+	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProductImages" {
 			let destination = segue.destination as! ProductDetailCollectionViewController
@@ -43,6 +51,27 @@ class ProductDetailViewController: UIViewController {
 	
 	deinit {
 		print("\(ProductDetailViewController.self) deinit")
+	}
+	
+	private func setSelectedSize(at tag: Int) {
+		for (index, value) in sizeButton.enumerated() {
+			if index == tag {
+				value.backgroundColor = UIColor.getColor(color: .primaryAccentColor)
+			} else {
+				value.backgroundColor = .clear
+			}
+		}
+	}
+	
+	private func setSelectedColor(at tag: Int) {
+		for (index, value) in productColor.enumerated() {
+			if index == tag {
+				value.layer.borderWidth = 2
+				value.layer.borderColor = UIColor.getColor(color: .primaryAccentColor).cgColor
+			} else {
+				value.layer.borderWidth = 0
+			}
+		}
 	}
 	
 	private func configureContant(info: Product) {

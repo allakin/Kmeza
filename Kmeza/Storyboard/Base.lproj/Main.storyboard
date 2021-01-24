@@ -877,13 +877,13 @@ in This Era</string>
                                                                 <rect key="frame" x="0.0" y="69" width="234" height="46"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Parkur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-Jz-W3v">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="234" height="23.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234" height="23"/>
                                                                         <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="20"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="peterparkur@mail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-10-j4c">
-                                                                        <rect key="frame" x="0.0" y="29.5" width="234" height="16.5"/>
+                                                                        <rect key="frame" x="0.0" y="29" width="234" height="17"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -960,17 +960,17 @@ in This Era</string>
                                                         <rect key="frame" x="28" y="490" width="234" height="129"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3t-eD-DiY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="234" height="80"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="234" height="74.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K’meza Fashion Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOh-7h-inI">
-                                                                <rect key="frame" x="0.0" y="88" width="234" height="19"/>
+                                                                <rect key="frame" x="0.0" y="82.5" width="234" height="22"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue2-rI-X1Q">
-                                                                <rect key="frame" x="0.0" y="115" width="234" height="14"/>
+                                                                <rect key="frame" x="0.0" y="112.5" width="234" height="16.5"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1045,25 +1045,25 @@ in This Era</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="1766.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-CQ-gEh">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1750.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1757"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="bku-3P-Ok2">
-                                                <rect key="frame" x="0.0" y="20" width="375" height="1702.5"/>
+                                                <rect key="frame" x="0.0" y="20" width="375" height="1709"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-74-yNT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="502.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="508.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="62g-IW-8t4">
-                                                                <rect key="frame" x="28" y="0.0" width="319" height="57.5"/>
+                                                                <rect key="frame" x="28" y="0.0" width="319" height="63.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymc-oA-Mjg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="33"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="36"/>
                                                                         <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="28"/>
                                                                         <color key="textColor" name="Primary Background Color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Collections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV8-VP-l9l">
-                                                                        <rect key="frame" x="0.0" y="41" width="319" height="16.5"/>
+                                                                        <rect key="frame" x="0.0" y="44" width="319" height="19.5"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                         <color key="textColor" name="Primary Text Color"/>
                                                                         <nil key="highlightedColor"/>
@@ -1071,7 +1071,7 @@ in This Era</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcb-wm-31n">
-                                                                <rect key="frame" x="0.0" y="92.5" width="375" height="410"/>
+                                                                <rect key="frame" x="0.0" y="98.5" width="375" height="410"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="410" id="MnL-p5-VV2"/>
                                                                 </constraints>
@@ -1088,19 +1088,19 @@ in This Era</string>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-hs-KMW">
-                                                        <rect key="frame" x="0.0" y="547.5" width="375" height="324.5"/>
+                                                        <rect key="frame" x="0.0" y="553.5" width="375" height="325"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e48-SI-OHu">
-                                                                <rect key="frame" x="28" y="0.0" width="319" height="60.5"/>
+                                                                <rect key="frame" x="28" y="0.0" width="319" height="61"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Sale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-7o-bxM">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="129.5" height="28.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="29"/>
                                                                         <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="28"/>
                                                                         <color key="textColor" name="Primary Background Color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDH-CN-fpp">
-                                                                        <rect key="frame" x="0.0" y="36.5" width="117" height="24"/>
+                                                                        <rect key="frame" x="0.0" y="37" width="123" height="24"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="24" id="4IE-gW-cni"/>
                                                                         </constraints>
@@ -1112,7 +1112,7 @@ in This Era</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgR-aQ-hPm">
-                                                                <rect key="frame" x="0.0" y="80.5" width="375" height="244"/>
+                                                                <rect key="frame" x="0.0" y="81" width="375" height="244"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="244" id="L9e-bT-h7F"/>
                                                                 </constraints>
@@ -1130,7 +1130,7 @@ in This Era</string>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Khl-zS-YYW">
-                                                        <rect key="frame" x="0.0" y="917" width="375" height="785.5"/>
+                                                        <rect key="frame" x="0.0" y="923.5" width="375" height="785.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CwX-JI-T0z">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="753.5"/>
@@ -1139,16 +1139,16 @@ in This Era</string>
                                                                         <rect key="frame" x="28" y="0.0" width="319" height="63.5"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newest Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMo-Z1-J2F">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="36.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="36"/>
                                                                                 <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="28"/>
                                                                                 <color key="textColor" name="Primary Background Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxj-IS-vD4">
-                                                                                <rect key="frame" x="0.0" y="44.5" width="319" height="19"/>
+                                                                                <rect key="frame" x="0.0" y="44" width="319" height="19.5"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showing 0 Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xX-ir-jmE">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="19"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="19.5"/>
                                                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                         <color key="textColor" name="Secondary Text Color"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1322,28 +1322,28 @@ in This Era</string>
                                                     <rect key="frame" x="0.0" y="326" width="251" height="84"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAN COLLECTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaZ-0z-8yj">
-                                                            <rect key="frame" x="69" y="0.0" width="113" height="15"/>
+                                                            <rect key="frame" x="71" y="0.0" width="109.5" height="16.5"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                             <color key="textColor" name="primaryAccentColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denim Jacket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ct-Ae-v5W">
-                                                            <rect key="frame" x="52" y="21" width="147" height="33"/>
+                                                            <rect key="frame" x="48.5" y="22.5" width="154.5" height="31.5"/>
                                                             <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="24"/>
                                                             <color key="textColor" name="Primary Text Color"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="tdp-2k-Egq">
-                                                            <rect key="frame" x="70.5" y="60" width="110.5" height="24"/>
+                                                            <rect key="frame" x="70" y="60" width="111.5" height="24"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$56.46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LL-nl-HVO">
-                                                                    <rect key="frame" x="0.0" y="1.5" width="55.5" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="0.5" width="55.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$60.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqk-Y5-6ZI">
-                                                                    <rect key="frame" x="67.5" y="4" width="43" height="16.5"/>
+                                                                    <rect key="frame" x="67.5" y="2.5" width="44" height="19.5"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                     <color key="textColor" name="Secondary Text Color"/>
                                                                     <nil key="highlightedColor"/>
@@ -1404,7 +1404,7 @@ in This Era</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ly-X7-kJM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1039"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2k-xy-yuP">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
@@ -1422,22 +1422,22 @@ in This Era</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kVA-BG-WEJ">
-                                                <rect key="frame" x="28" y="462" width="319" height="78.5"/>
+                                                <rect key="frame" x="28" y="462" width="319" height="84"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men Collections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrq-Iw-Ox0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="19"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="22"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                         <color key="textColor" name="primaryAccentColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Grey Bomber Jackets" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78Y-3u-NWK">
-                                                        <rect key="frame" x="0.0" y="26" width="319" height="29.5"/>
+                                                        <rect key="frame" x="0.0" y="29" width="319" height="32"/>
                                                         <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="25"/>
                                                         <color key="textColor" name="Third Text Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TDx-KX-DZs">
-                                                        <rect key="frame" x="0.0" y="62.5" width="319" height="16"/>
+                                                        <rect key="frame" x="0.0" y="68" width="319" height="16"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-tk-4nS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -1488,7 +1488,7 @@ in This Era</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-fq-10a">
-                                                <rect key="frame" x="28" y="570.5" width="319" height="40"/>
+                                                <rect key="frame" x="28" y="576" width="319" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-ch-waZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="52.5" height="40"/>
@@ -1496,34 +1496,49 @@ in This Era</string>
                                                         <state key="normal" title="S">
                                                             <color key="titleColor" name="Third Text Color"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="productSizeAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="OCf-Jv-FPC"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-Dn-LEq">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-Dn-LEq">
                                                         <rect key="frame" x="66.5" y="0.0" width="52.5" height="40"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                                         <state key="normal" title="M">
                                                             <color key="titleColor" name="Third Text Color"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="productSizeAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="GSl-6O-z62"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWv-Z7-7Wq">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWv-Z7-7Wq">
                                                         <rect key="frame" x="133" y="0.0" width="53" height="40"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                                         <state key="normal" title="L">
                                                             <color key="titleColor" name="Third Text Color"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="productSizeAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="wOA-NH-VNg"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lht-0X-Cr1">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lht-0X-Cr1">
                                                         <rect key="frame" x="200" y="0.0" width="52.5" height="40"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                                         <state key="normal" title="XL">
                                                             <color key="titleColor" name="Third Text Color"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="productSizeAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="Ulb-pf-1oq"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-N0-S2A">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-N0-S2A">
                                                         <rect key="frame" x="266.5" y="0.0" width="52.5" height="40"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                                         <state key="normal" title="XXL">
                                                             <color key="titleColor" name="Third Text Color"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="productSizeAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="2au-am-Zvn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1531,7 +1546,7 @@ in This Era</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NxU-6E-CB2">
-                                                <rect key="frame" x="0.0" y="640.5" width="375" height="173.5"/>
+                                                <rect key="frame" x="0.0" y="646" width="375" height="188"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McT-XW-hnf">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
@@ -1541,40 +1556,40 @@ in This Era</string>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="prV-yn-mPt">
-                                                        <rect key="frame" x="28" y="21" width="319" height="131.5"/>
+                                                        <rect key="frame" x="28" y="21" width="319" height="146"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-mw-CjD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="23.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="26"/>
                                                                 <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="20"/>
                                                                 <color key="textColor" name="Third Text Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eb1-xC-q4s">
-                                                                <rect key="frame" x="0.0" y="41.5" width="319" height="90"/>
+                                                                <rect key="frame" x="0.0" y="44" width="319" height="102"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FFE-MD-jxl">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="90"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="102"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRD-8O-VhJ">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" name="Third Text Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-0h-qFr">
-                                                                                <rect key="frame" x="0.0" y="24.5" width="64" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="27.5" width="64" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" name="Third Text Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8x-Gg-DYU">
-                                                                                <rect key="frame" x="0.0" y="49" width="64" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="55" width="64" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" name="Third Text Color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJM-OW-TWP">
-                                                                                <rect key="frame" x="0.0" y="73.5" width="64" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="82.5" width="64" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" name="Third Text Color"/>
                                                                                 <nil key="highlightedColor"/>
@@ -1585,28 +1600,28 @@ in This Era</string>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pMe-sJ-cr0">
-                                                                        <rect key="frame" x="88" y="0.0" width="231" height="90"/>
+                                                                        <rect key="frame" x="88" y="0.0" width="231" height="102"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naiki Shoes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH8-8g-zhx">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="260gr" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVR-Hv-AcX">
-                                                                                <rect key="frame" x="0.0" y="24.5" width="231" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="27.5" width="231" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWt-hS-gdz">
-                                                                                <rect key="frame" x="0.0" y="49" width="231" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="55" width="231" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men Shoes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bm1-83-tMZ">
-                                                                                <rect key="frame" x="0.0" y="73.5" width="231" height="16.5"/>
+                                                                                <rect key="frame" x="0.0" y="82.5" width="231" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                 <color key="textColor" name="Accent Text Color"/>
                                                                                 <nil key="highlightedColor"/>
@@ -1618,7 +1633,7 @@ in This Era</string>
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-s1-kLs">
-                                                        <rect key="frame" x="0.0" y="172.5" width="375" height="1"/>
+                                                        <rect key="frame" x="0.0" y="187" width="375" height="1"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="OL4-h7-xeC"/>
@@ -1635,16 +1650,16 @@ in This Era</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="hPJ-eq-eSp">
-                                                <rect key="frame" x="28" y="834" width="319" height="90.5"/>
+                                                <rect key="frame" x="28" y="854" width="319" height="101.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUB-y2-NJF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="26"/>
                                                         <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="20"/>
                                                         <color key="textColor" name="Third Text Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-0L-PFz">
-                                                        <rect key="frame" x="0.0" y="41.5" width="319" height="49"/>
+                                                        <rect key="frame" x="0.0" y="44" width="319" height="57.5"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                         <color key="textColor" name="Third Text Color"/>
                                                         <nil key="highlightedColor"/>
@@ -1652,19 +1667,19 @@ in This Era</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bRx-oj-wex">
-                                                <rect key="frame" x="28" y="951" width="319" height="60"/>
+                                                <rect key="frame" x="28" y="982" width="319" height="60"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="oBS-hU-nq5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="60"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$158.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhY-Y1-JCp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="42.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="157" height="41.5"/>
                                                                 <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="34"/>
                                                                 <color key="textColor" name="Third Text Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$170" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h45-es-z4H">
-                                                                <rect key="frame" x="0.0" y="42.5" width="162.5" height="17.5"/>
+                                                                <rect key="frame" x="0.0" y="41.5" width="157" height="18.5"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1672,7 +1687,7 @@ in This Era</string>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duk-dX-nJg">
-                                                        <rect key="frame" x="186.5" y="0.0" width="132.5" height="60"/>
+                                                        <rect key="frame" x="181" y="0.0" width="138" height="60"/>
                                                         <color key="backgroundColor" name="Accent Text Color"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                                         <state key="normal" title="BUY NOW">
@@ -1699,22 +1714,37 @@ in This Era</string>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmU-ZC-6Oz">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                                         <color key="backgroundColor" name="completedMarkTextColor"/>
+                                                        <connections>
+                                                            <action selector="productColorAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="3Y6-5z-I4m"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2f-ON-Wvn">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2f-ON-Wvn">
                                                         <rect key="frame" x="36" y="0.0" width="24" height="24"/>
                                                         <color key="backgroundColor" name="completedMarkTextColor"/>
+                                                        <connections>
+                                                            <action selector="productColorAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="lfF-3G-abk"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-Jf-Bf4">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-Jf-Bf4">
                                                         <rect key="frame" x="72" y="0.0" width="24" height="24"/>
                                                         <color key="backgroundColor" name="completedMarkTextColor"/>
+                                                        <connections>
+                                                            <action selector="productColorAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="cSu-Su-lzY"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBm-JE-Vay">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBm-JE-Vay">
                                                         <rect key="frame" x="108" y="0.0" width="24" height="24"/>
                                                         <color key="backgroundColor" name="completedMarkTextColor"/>
+                                                        <connections>
+                                                            <action selector="productColorAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="SRe-j7-pPN"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USz-zD-upR">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USz-zD-upR">
                                                         <rect key="frame" x="144" y="0.0" width="24" height="24"/>
                                                         <color key="backgroundColor" name="completedMarkTextColor"/>
+                                                        <connections>
+                                                            <action selector="productColorAction:" destination="K6v-GY-VZd" eventType="touchUpInside" id="TqM-18-7Fn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1856,36 +1886,36 @@ in This Era</string>
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G22-MM-gug">
-                                                    <rect key="frame" x="6" y="166.5" width="123" height="77.5"/>
+                                                    <rect key="frame" x="6" y="161" width="123" height="83"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mosshi Red Bag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPm-MY-iQ0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="123" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="123" height="18"/>
                                                             <fontDescription key="fontDescription" name="Lora-Regular" family="Lora" pointSize="14"/>
                                                             <color key="textColor" name="Primary Text Color"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$35.62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C5-I5-G3P">
-                                                            <rect key="frame" x="0.0" y="24.5" width="123" height="19"/>
+                                                            <rect key="frame" x="0.0" y="26" width="123" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="16"/>
                                                             <color key="textColor" name="primaryAccentColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e3l-XS-BTM">
-                                                            <rect key="frame" x="0.0" y="51.5" width="123" height="4"/>
+                                                            <rect key="frame" x="0.0" y="54.5" width="123" height="4"/>
                                                             <color key="progressTintColor" name="primaryAccentColor"/>
                                                             <color key="trackTintColor" name="lightAccentBackgroundColor"/>
                                                         </progressView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-DH-rjG">
-                                                            <rect key="frame" x="0.0" y="63.5" width="123" height="14"/>
+                                                            <rect key="frame" x="0.0" y="66.5" width="123" height="16.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upB-5C-WCg">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="56" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="55" height="16.5"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
                                                                     <color key="textColor" name="primaryBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Left" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNG-Cx-Ko1">
-                                                                    <rect key="frame" x="56" y="0.0" width="67" height="14"/>
+                                                                    <rect key="frame" x="55" y="0.0" width="68" height="16.5"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
                                                                     <color key="textColor" name="primaryBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1971,19 +2001,19 @@ in This Era</string>
                                                             <rect key="frame" x="0.0" y="54" width="203" height="24"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pd-3C-mJ6">
-                                                                    <rect key="frame" x="0.0" y="3" width="55.5" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="0.5" width="52.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ7-Gy-Fxr">
-                                                                    <rect key="frame" x="59.5" y="8.5" width="30.5" height="14"/>
+                                                                    <rect key="frame" x="56.5" y="5.5" width="31" height="16.5"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                                     <color key="textColor" name="Secondary Text Color"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZjE-qG-7yL">
-                                                                    <rect key="frame" x="94" y="0.0" width="109" height="24"/>
+                                                                    <rect key="frame" x="91.5" y="0.0" width="111.5" height="24"/>
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 </view>
                                                             </subviews>
