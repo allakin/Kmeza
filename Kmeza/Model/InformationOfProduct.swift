@@ -18,6 +18,7 @@ struct Specification {
 	let weight: String
 	let condition: String
 	let category: String
+	let typeCloths: String
 }
 
 struct ProductColor {

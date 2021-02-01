@@ -19,6 +19,7 @@ class ProductDetailViewController: UIViewController {
 	@IBOutlet weak var productWeight: UILabel!
 	@IBOutlet weak var conditionType: UILabel!
 	@IBOutlet weak var categoryType: UILabel!
+	@IBOutlet weak var typeCloths: UILabel!
 	@IBOutlet weak var productDescription: UILabel!
 	@IBOutlet weak var productPrice: UILabel!
 	@IBOutlet weak var productSale: UILabel!
@@ -82,6 +83,7 @@ class ProductDetailViewController: UIViewController {
 		productWeight.text = info.productInformation.specification.weight
 		conditionType.text = info.productInformation.specification.condition
 		categoryType.text = info.productInformation.specification.category
+		typeCloths.text = info.productInformation.specification.typeCloths
 		productDescription.text = info.productInformation.description
 		productPrice.text = "\(info.price)"
 		productSale.text = "\(info.sale)"

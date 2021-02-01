@@ -9,7 +9,9 @@ target 'Kmeza' do
 	pod 'Firebase/Storage'
 	pod 'Firebase/Database'
 	pod 'FirebaseUI/OAuth'
+	
 	pod 'SideMenu'
+	pod 'CHTCollectionViewWaterfallLayout'
 
   target 'KmezaTests' do
     inherit! :search_paths

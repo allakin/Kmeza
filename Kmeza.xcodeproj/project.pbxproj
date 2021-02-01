@@ -49,6 +49,7 @@
 		735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735898D22597918200CE5042 /* ShowViewScreen.swift */; };
 		73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B02259F2B8C009097D7 /* Extension+Color.swift */; };
 		73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */; };
+		735B686D25BD95690010F338 /* CatalogScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735B686C25BD95690010F338 /* CatalogScreenViewController.swift */; };
 		735ED91125ADAAC2003F8AEB /* DiscoverCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91025ADAAC2003F8AEB /* DiscoverCollectionViewController.swift */; };
 		735ED91625ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91525ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift */; };
 		735ED91B25ADAC1D003F8AEB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED91A25ADAC1D003F8AEB /* Product.swift */; };
@@ -57,6 +58,8 @@
 		735ED93125ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735ED93025ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift */; };
 		736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D803F258F8FB0005F0BA8 /* Extension+Button.swift */; };
 		7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373485D25A3961200FD6D50 /* Extension+String.swift */; };
+		7374F63625C6AB9D007E6CF8 /* CatalogScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F63525C6AB9D007E6CF8 /* CatalogScreenViewCell.swift */; };
+		7374F6C325C6D03D007E6CF8 /* Catagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F6C225C6D03D007E6CF8 /* Catagory.swift */; };
 		737AD10425B4908800EB8B50 /* ProductDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737AD10325B4908800EB8B50 /* ProductDetailCollectionViewController.swift */; };
 		737AD10925B490A900EB8B50 /* ProductDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737AD10825B490A900EB8B50 /* ProductDetailCollectionViewCell.swift */; };
 		737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737CC737259BC7D600B861BD /* WelcomeFeature.swift */; };
@@ -142,6 +145,7 @@
 		735898D22597918200CE5042 /* ShowViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewScreen.swift; sourceTree = "<group>"; };
 		73597B02259F2B8C009097D7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		73597B07259F2BE4009097D7 /* AddActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityIndicator.swift; sourceTree = "<group>"; };
+		735B686C25BD95690010F338 /* CatalogScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreenViewController.swift; sourceTree = "<group>"; };
 		735ED91025ADAAC2003F8AEB /* DiscoverCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewController.swift; sourceTree = "<group>"; };
 		735ED91525ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		735ED91A25ADAC1D003F8AEB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 		735ED93025ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionViewController.swift; sourceTree = "<group>"; };
 		736D803F258F8FB0005F0BA8 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
 		7373485D25A3961200FD6D50 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		7374F63525C6AB9D007E6CF8 /* CatalogScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreenViewCell.swift; sourceTree = "<group>"; };
+		7374F6C225C6D03D007E6CF8 /* Catagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catagory.swift; sourceTree = "<group>"; };
 		737AD10325B4908800EB8B50 /* ProductDetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCollectionViewController.swift; sourceTree = "<group>"; };
 		737AD10825B490A900EB8B50 /* ProductDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		737CC737259BC7D600B861BD /* WelcomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeature.swift; sourceTree = "<group>"; };
@@ -253,6 +259,7 @@
 		731B1E65258E17FE00D0A2F6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				735B686B25BD95350010F338 /* CatalogScreen */,
 				737AD0FF25B42D0500EB8B50 /* ProductDetails */,
 				737E315325B08AD200D95E77 /* SideMenu */,
 				7357F51525A8739000D62454 /* SignIn Controllers */,
@@ -390,6 +397,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		735B686B25BD95350010F338 /* CatalogScreen */ = {
+			isa = PBXGroup;
+			children = (
+				735B686C25BD95690010F338 /* CatalogScreenViewController.swift */,
+				7374F63525C6AB9D007E6CF8 /* CatalogScreenViewCell.swift */,
+			);
+			path = CatalogScreen;
+			sourceTree = "<group>";
+		};
 		735ED90A25ADAA5C003F8AEB /* NewestProducts */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +469,7 @@
 				735ED91A25ADAC1D003F8AEB /* Product.swift */,
 				730A6FF025AF3A8C0068576C /* InformationOfProduct.swift */,
 				73570E9F25B1A94100363499 /* SideMenuPage.swift */,
+				7374F6C225C6D03D007E6CF8 /* Catagory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -795,6 +812,7 @@
 				7358015925AC45AF00FB544E /* NewestProductsTableViewCell.swift in Sources */,
 				735ED92925ADFB86003F8AEB /* FlashSaleCollectionViewCell.swift in Sources */,
 				7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */,
+				7374F6C325C6D03D007E6CF8 /* Catagory.swift in Sources */,
 				738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */,
 				737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */,
 				735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */,
@@ -815,6 +833,7 @@
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
 				737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */,
 				7338E91925B4C63800044D55 /* ProductDetailViewController.swift in Sources */,
+				735B686D25BD95690010F338 /* CatalogScreenViewController.swift in Sources */,
 				73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */,
 				73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */,
 				73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */,
@@ -822,6 +841,7 @@
 				737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */,
 				735ED91125ADAAC2003F8AEB /* DiscoverCollectionViewController.swift in Sources */,
 				730A6FF125AF3A8C0068576C /* InformationOfProduct.swift in Sources */,
+				7374F63625C6AB9D007E6CF8 /* CatalogScreenViewCell.swift in Sources */,
 				7357F4E125A85F4500D62454 /* Reference.swift in Sources */,
 				7338E91425B4A8E000044D55 /* Extension+UIlabel.swift in Sources */,
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
@@ -1008,6 +1028,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Kmeza/Kmeza.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
 				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
@@ -1018,6 +1039,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anpleenko-dev.Kmeza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1030,6 +1052,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Kmeza/Kmeza.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T23CDVWRT;
 				INFOPLIST_FILE = "Kmeza/Supporting Files/Info.plist";
@@ -1040,6 +1063,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anpleenko-dev.Kmeza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
