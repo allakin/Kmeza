@@ -77,6 +77,7 @@
 		73D8789A25A5B3CD00F33B63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */; };
 		73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */; };
 		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
+		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		C8FA2AC2D59D104E953A5887 /* Pods-KmezaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmezaTests.release.xcconfig"; path = "Target Support Files/Pods-KmezaTests/Pods-KmezaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				735ED91025ADAAC2003F8AEB /* DiscoverCollectionViewController.swift */,
+				E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */,
 				735ED91525ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift */,
 			);
 			path = Discover;
@@ -814,6 +817,7 @@
 				7373485E25A3961200FD6D50 /* Extension+String.swift in Sources */,
 				7374F6C325C6D03D007E6CF8 /* Catagory.swift in Sources */,
 				738492AB258E997900F665E8 /* WalkthroughInformation.swift in Sources */,
+				E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */,
 				737CC738259BC7D600B861BD /* WelcomeFeature.swift in Sources */,
 				735898D32597918200CE5042 /* ShowViewScreen.swift in Sources */,
 				73A2367425A5E224007E8664 /* SignWithAppleID.swift in Sources */,

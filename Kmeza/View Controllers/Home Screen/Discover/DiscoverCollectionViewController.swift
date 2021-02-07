@@ -8,28 +8,30 @@
 import UIKit
 
 class DiscoverCollectionViewController: UICollectionViewController {
-	
-	let products = Product.products
-	private var discoverProducts: [Product] = []
 	private var isAddedToWishList = false
+	
+	var viewModel: DiscoverViewModelProtocol! {
+		didSet{
+			viewModel.sortFetchData(by: .discover)
+		}
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		sortProducts(by: .discover)
-		print(discoverProducts.count)
+		viewModel = DiscoverViewModel()
 	}
 	
 	// MARK: UICollectionViewDataSource
 	override func collectionView(_ collectionView: UICollectionView,
 								 numberOfItemsInSection section: Int) -> Int {
-		discoverProducts.count
+		viewModel.numberOfRows()
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView,
 								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DiscoverCollectionViewCell
 		
-		let discoverProduct = discoverProducts[indexPath.item]
+		let discoverProduct = viewModel.products[indexPath.item]
 		cell.configureContant(with: discoverProduct)
 		
 		cell.buttonTapAction = { () in
@@ -53,24 +55,7 @@ class DiscoverCollectionViewController: UICollectionViewController {
 		if segue.identifier == "showDetail" {
 			if let indexPath = collectionView.indexPathsForSelectedItems?.first {
 				let detailsVC = segue.destination as? ProductDetailViewController
-				detailsVC?.product = discoverProducts[indexPath.item]
-			}
-		}
-	}
-	
-	private func sortProducts(by type: ProductType) {
-		products.forEach { (product) in
-			if product.productType == type.rawValue {
-				let product = Product(cover: product.cover,
-									  typeCollection: product.typeCollection,
-									  productType: product.productType,
-									  title: product.title,
-									  price: product.price,
-									  sale: product.sale,
-									  numberStock: product.numberStock,
-									  numberOfProducts: product.numberOfProducts,
-									  productInformation: product.productInformation)
-				discoverProducts.append(product)
+				detailsVC?.product = viewModel.products[indexPath.item]
 			}
 		}
 	}
