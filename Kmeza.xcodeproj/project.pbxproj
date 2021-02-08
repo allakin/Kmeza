@@ -78,6 +78,7 @@
 		73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */; };
 		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
 		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
+		E9F4A52025D018F500F0F607 /* DiscoverCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A51F25D018F500F0F607 /* DiscoverCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +183,7 @@
 		D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		E9F4A51F25D018F500F0F607 /* DiscoverCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +422,7 @@
 		735ED90F25ADAA90003F8AEB /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				E9F4A51F25D018F500F0F607 /* DiscoverCellViewModel.swift */,
 				735ED91025ADAAC2003F8AEB /* DiscoverCollectionViewController.swift */,
 				E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */,
 				735ED91525ADAAFD003F8AEB /* DiscoverCollectionViewCell.swift */,
@@ -846,6 +849,7 @@
 				735ED91125ADAAC2003F8AEB /* DiscoverCollectionViewController.swift in Sources */,
 				730A6FF125AF3A8C0068576C /* InformationOfProduct.swift in Sources */,
 				7374F63625C6AB9D007E6CF8 /* CatalogScreenViewCell.swift in Sources */,
+				E9F4A52025D018F500F0F607 /* DiscoverCellViewModel.swift in Sources */,
 				7357F4E125A85F4500D62454 /* Reference.swift in Sources */,
 				7338E91425B4A8E000044D55 /* Extension+UIlabel.swift in Sources */,
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,

@@ -29,10 +29,11 @@ class DiscoverCollectionViewController: UICollectionViewController {
 	
 	override func collectionView(_ collectionView: UICollectionView,
 								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DiscoverCollectionViewCell
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
+													  for: indexPath) as! DiscoverCollectionViewCell
 		
 		let discoverProduct = viewModel.products[indexPath.item]
-		cell.configureContant(with: discoverProduct)
+		cell.viewModel = DiscoverCellViewModel(product: discoverProduct)
 		
 		cell.buttonTapAction = { () in
 			if self.isAddedToWishList {

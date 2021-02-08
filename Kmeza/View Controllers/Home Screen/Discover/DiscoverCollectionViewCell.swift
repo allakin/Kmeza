@@ -17,16 +17,17 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	
 	var buttonTapAction: (()->())?
     
-	func configureContant(with info: Product) {
-		configureUI()
-		
-		productImage.image = UIImage(named: info.cover)
-		productTitle.text = info.title
-		productPrice.text = "$\(info.price)"
-		productSale.text = "$\(info.sale)"
-		typeCollection.text = info.typeCollection.uppercased()
-		
-		addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+	var viewModel: DiscoverCellViewModelProtocol! {
+		didSet {
+			configureUI()
+			productImage.image = UIImage(named: viewModel.image)
+			productTitle.text = viewModel.title
+			productPrice.text = viewModel.price
+			productSale.text = viewModel.sale
+			typeCollection.text = viewModel.collectionType
+			
+			addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+		}
 	}
 	
 	@objc func tappedButton() {
