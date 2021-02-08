@@ -16,6 +16,7 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
+	private var isAddedToWishList = false
 	
 	var viewModel: DiscoverCellViewModelProtocol! {
 		didSet {
@@ -37,11 +38,11 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	
 	func changeAddToWishListStatus() {
 		if viewModel.isAddedToWishList.value {
-			viewModel.isAddedToWishList.value.toggle()
+			viewModel.changeAddToWishListStatus()
 			addToWishListButton.setImage(UIImage(named: "AddToWishList_White"), for: .normal)
 			print(false)
 		} else {
-			viewModel.isAddedToWishList.value.toggle()
+			viewModel.changeAddToWishListStatus()
 			addToWishListButton.setImage(UIImage(named: "AddToWishListPressed_White"), for: .normal)
 			print(true)
 		}

@@ -15,6 +15,7 @@ protocol DiscoverCellViewModelProtocol: class {
 	var sale: String { get }
 	var isAddedToWishList: Box<Bool> { get }
 	init(product: Product)
+	func changeAddToWishListStatus()
 }
 
 class DiscoverCellViewModel: DiscoverCellViewModelProtocol {
@@ -45,5 +46,9 @@ class DiscoverCellViewModel: DiscoverCellViewModelProtocol {
 	required init(product: Product) {
 		self.product = product
 		isAddedToWishList = Box(value: false)
+	}
+	
+	func changeAddToWishListStatus() {
+		isAddedToWishList.value.toggle()
 	}
 }

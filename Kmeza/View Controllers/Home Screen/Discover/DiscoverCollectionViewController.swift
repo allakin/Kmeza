@@ -34,7 +34,7 @@ class DiscoverCollectionViewController: UICollectionViewController {
 		
 		let discoverProduct = viewModel.products[indexPath.item]
 		cell.viewModel = DiscoverCellViewModel(product: discoverProduct)
-		cell.buttonTapAction = { () in cell.changeAddToWishListStatus() }
+		cell.buttonTapAction = { cell.changeAddToWishListStatus() }
 		
 		return cell
 	}
