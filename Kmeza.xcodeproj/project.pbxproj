@@ -78,6 +78,7 @@
 		73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */; };
 		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
 		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
+		E9642A1325D1C1B500055F3B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9642A1225D1C1B500055F3B /* Box.swift */; };
 		E9F4A52025D018F500F0F607 /* DiscoverCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A51F25D018F500F0F607 /* DiscoverCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +184,7 @@
 		D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		E9642A1225D1C1B500055F3B /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		E9F4A51F25D018F500F0F607 /* DiscoverCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +258,7 @@
 				73A2368325A63DFE007E8664 /* Singleton Class */,
 				73947C7F2593B055008A1781 /* Values.swift */,
 				73270075259FA33F001B0F69 /* TextFieldWithPadding.swift */,
+				E9642A1225D1C1B500055F3B /* Box.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -827,6 +830,7 @@
 				735ED93125ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift in Sources */,
 				73597B08259F2BE4009097D7 /* AddActivityIndicator.swift in Sources */,
 				735ED91B25ADAC1D003F8AEB /* Product.swift in Sources */,
+				E9642A1325D1C1B500055F3B /* Box.swift in Sources */,
 				7327007E259FA3E1001B0F69 /* Extension+UITextField.swift in Sources */,
 				73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */,
 				735ED92025ADCACC003F8AEB /* Extension+Image.swift in Sources */,

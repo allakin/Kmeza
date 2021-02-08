@@ -34,16 +34,7 @@ class DiscoverCollectionViewController: UICollectionViewController {
 		
 		let discoverProduct = viewModel.products[indexPath.item]
 		cell.viewModel = DiscoverCellViewModel(product: discoverProduct)
-		
-		cell.buttonTapAction = { () in
-			if self.isAddedToWishList {
-				self.isAddedToWishList.toggle()
-				cell.addToWishListButton.setImage(UIImage(named: "AddToWishList_White"), for: .normal)
-			} else {
-				self.isAddedToWishList.toggle()
-				cell.addToWishListButton.setImage(UIImage(named: "AddToWishListPressed_White"), for: .normal)
-			}
-		}
+		cell.buttonTapAction = { () in cell.changeAddToWishListStatus() }
 		
 		return cell
 	}
