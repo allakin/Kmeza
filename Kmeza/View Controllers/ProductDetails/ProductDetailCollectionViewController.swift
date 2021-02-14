@@ -9,21 +9,24 @@ import UIKit
 
 class ProductDetailCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	
-	var images: InformationOfProduct!
+	var viewModel: ProductDetailCollectionViewModalProtocol!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
 	
 	// MARK: UICollectionViewDataSource
-	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		images.productImages.count
+	override func collectionView(_ collectionView: UICollectionView,
+								 numberOfItemsInSection section: Int) -> Int {
+		viewModel.numberOfRows()
 	}
 	
-	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductDetailCollectionViewCell
+	override func collectionView(_ collectionView: UICollectionView,
+								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
+													  for: indexPath) as! ProductDetailCollectionViewCell
 		
-		cell.configureContent(images)
+		cell.viewModel = viewModel.cellViewModel(at: indexPath)
 		
 		return cell
 	}

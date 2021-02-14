@@ -52,7 +52,7 @@ class FlashSaleCollectionViewController: UICollectionViewController {
 		if segue.identifier == "showDetail" {
 			if let indexPath = collectionView.indexPathsForSelectedItems?.first {
 				let detailsVC = segue.destination as? ProductDetailViewController
-				detailsVC?.product = flashSaleProducts[indexPath.item]
+//				detailsVC?.product = flashSaleProducts[indexPath.item]
 			}
 		}
 	}

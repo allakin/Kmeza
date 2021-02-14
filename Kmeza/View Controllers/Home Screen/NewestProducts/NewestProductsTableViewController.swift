@@ -63,7 +63,7 @@ class NewestProductsTableViewController: UITableViewController {
 		if segue.identifier == "showDetail" {
 			if let indexPath = tableView.indexPathForSelectedRow {
 				let detailsVC = segue.destination as? ProductDetailViewController
-				detailsVC?.product = newestProducts[indexPath.row]
+//				detailsVC?.product = newestProducts[indexPath.row]
 			}
 		}
 	}

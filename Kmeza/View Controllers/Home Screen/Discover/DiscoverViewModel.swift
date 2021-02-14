@@ -11,6 +11,8 @@ protocol DiscoverViewModelProtocol: class {
 	var products: [Product] { get }
 	func numberOfRows() -> Int
 	func sortFetchData(by type: ProductType)
+	func cellViewModel(at indexPath: IndexPath) -> DiscoverCellViewModelProtocol?
+	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol?
 }
 
 class DiscoverViewModel: DiscoverViewModelProtocol {
@@ -35,6 +37,16 @@ class DiscoverViewModel: DiscoverViewModelProtocol {
 				products.append(product)
 			}
 		}
+	}
+	
+	func cellViewModel(at indexPath: IndexPath) -> DiscoverCellViewModelProtocol? {
+		let product = products[indexPath.item]
+		return DiscoverCellViewModel(product: product)
+	}
+	
+	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol? {
+		let product = products[indexPath.item]
+		return ProductDetailViewModel(product: product)
 	}
 	
 	private func fetchData() -> [Product] {

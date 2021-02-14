@@ -32,8 +32,7 @@ class DiscoverCollectionViewController: UICollectionViewController {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
 													  for: indexPath) as! DiscoverCollectionViewCell
 		
-		let discoverProduct = viewModel.products[indexPath.item]
-		cell.viewModel = DiscoverCellViewModel(product: discoverProduct)
+		cell.viewModel = viewModel.cellViewModel(at: indexPath)
 		cell.buttonTapAction = { cell.changeAddToWishListStatus() }
 		
 		return cell
@@ -47,7 +46,8 @@ class DiscoverCollectionViewController: UICollectionViewController {
 		if segue.identifier == "showDetail" {
 			if let indexPath = collectionView.indexPathsForSelectedItems?.first {
 				let detailsVC = segue.destination as? ProductDetailViewController
-				detailsVC?.product = viewModel.products[indexPath.item]
+				let selectedProduct = viewModel.products[indexPath.item]
+				detailsVC?.viewModel = ProductDetailViewModel(product: selectedProduct)
 			}
 		}
 	}
