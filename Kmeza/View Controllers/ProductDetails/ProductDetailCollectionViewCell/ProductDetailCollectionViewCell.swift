@@ -11,8 +11,12 @@ class ProductDetailCollectionViewCell: UICollectionViewCell {
 	
 	@IBOutlet weak var productImage: UIImageView!
 	
-	func configureContent(_ info: InformationOfProduct) {
-		productImage.backgroundColor = .yellow
-		info.productImages.forEach { productImage.image = UIImage(named: $0.image) }
+	var viewModel: ProductDetailCollectionCellViewModelProtocol! {
+		didSet {
+			productImage.backgroundColor = .yellow
+			viewModel.getImages().forEach { (image) in
+				productImage.image = UIImage(named: image)
+			}
+		}
 	}
 }

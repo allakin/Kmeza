@@ -19,6 +19,7 @@ class ProductDetailViewController: UIViewController {
 	@IBOutlet weak var productWeight: UILabel!
 	@IBOutlet weak var conditionType: UILabel!
 	@IBOutlet weak var categoryType: UILabel!
+	@IBOutlet weak var typeCloths: UILabel!
 	@IBOutlet weak var productDescription: UILabel!
 	@IBOutlet weak var productPrice: UILabel!
 	@IBOutlet weak var productSale: UILabel!
@@ -26,12 +27,12 @@ class ProductDetailViewController: UIViewController {
 	@IBOutlet weak var buyButton: UIButton!
 	@IBOutlet weak var addToWishlistButton: UIButton!
 	
-	var product: Product!
+	var viewModel: ProductDetailViewModelProtocol!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		settingUI()
-		configureContant(info: product)
+		configureContant()
 	}
 	
 	@IBAction func productSizeAction(_ sender: UIButton) {
@@ -45,7 +46,7 @@ class ProductDetailViewController: UIViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProductImages" {
 			let destination = segue.destination as! ProductDetailCollectionViewController
-			destination.images = product.productInformation
+			destination.viewModel = ProductDetailCollectionViewModal(productImages: viewModel.productInformation.productImages)
 		}
 	}
 	
@@ -74,19 +75,19 @@ class ProductDetailViewController: UIViewController {
 		}
 	}
 	
-	private func configureContant(info: Product) {
-		productName.text = info.title
-		collectionType.text = info.typeCollection
-		numberOfReviews.text = "(\(info.productInformation.numberOfReviews) Reviews)"
-		brandName.text = info.productInformation.specification.brand
-		productWeight.text = info.productInformation.specification.weight
-		conditionType.text = info.productInformation.specification.condition
-		categoryType.text = info.productInformation.specification.category
-		productDescription.text = info.productInformation.description
-		productPrice.text = "\(info.price)"
-		productSale.text = "\(info.sale)"
+	private func configureContant() {
+		productName.text = viewModel.name
+		collectionType.text = viewModel.collectionType
+		numberOfReviews.text = viewModel.numberOfReviews
+		brandName.text = viewModel.brandName
+		productWeight.text = viewModel.productWeight
+		conditionType.text = viewModel.conditionType
+		categoryType.text = viewModel.categoryType
+		typeCloths.text = viewModel.typeCloths
+		productDescription.text = viewModel.description
+		productPrice.text = viewModel.price
+		productSale.text = viewModel.sale
 	}
-	
 	
 	private func settingUI() {
 		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -104,7 +105,7 @@ class ProductDetailViewController: UIViewController {
 		
 		productColor.forEach { $0.layer.cornerRadius = $0.frame.size.width / 2 }
 		
-		for index in zip(productColor, product.productInformation.color) {
+		for index in zip(productColor, viewModel.productInformation.color) {
 			index.0.backgroundColor = UIColor(red: CGFloat(index.1.red),
 											  green: CGFloat(index.1.green),
 											  blue: CGFloat(index.1.blue),

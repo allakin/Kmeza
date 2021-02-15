@@ -39,6 +39,10 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 		productsCount = "\(count)"
 	}
 	
+	@IBAction func showCatalogAction(_ sender: UIButton) {
+		performSegue(withIdentifier: "showCatalog", sender: nil)
+	}
+	
 //	override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {}
 	
 	private func settingSideMenu() {

@@ -16,7 +16,6 @@ class NewestProductsTableViewCell: UITableViewCell {
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
-	
 
     override func awakeFromNib() {
         super.awakeFromNib()

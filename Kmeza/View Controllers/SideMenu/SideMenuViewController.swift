@@ -51,11 +51,14 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 		switch indexPath.row {
 		case 0:
 			destination(view: "HomeScreenViewController")
+		case 1:
+			destination(view: "CatalogScreenViewController")
 		default:
 			break
 		}
 	}
 	
+	//FIXME: - Поправить переход к view
 	private func destination(view: String) {
 		dismiss(animated: true) {
 			let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

@@ -26,11 +26,11 @@ struct Product {
 			  numberStock: 0,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
+																	   ProductImage(image: "Walkthrough_Screen_1"),
+																	   ProductImage(image: "Walkthrough_Screen_3"),
+																	   ProductImage(image: "Walkthrough_Screen_1"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
-																	   ProductImage(image: "Walkthrough_Screen_2"),
-																	   ProductImage(image: "Walkthrough_Screen_2"),
-																	   ProductImage(image: "Walkthrough_Screen_2"),
-																	   ProductImage(image: "Walkthrough_Screen_2")],
+																	   ProductImage(image: "Walkthrough_Screen_3")],
 													   numberOfReviews: 234,
 													   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
 													   color: [ProductColor(red: 0.92,
@@ -51,7 +51,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Discover"
+																					category: "Men Cloths",
+																					typeCloths: "Shoes"))), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -86,7 +87,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Discover"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -121,7 +123,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Discover"
+																					category: "Men Cloths",
+																					typeCloths: "Dress"))), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -156,7 +159,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Discover"
+																					category: "Men Cloths",
+																					typeCloths: "Dress"))), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -191,7 +195,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Discover"
+																					category: "Men Cloths",
+																					typeCloths: "Dress"))), //"Discover"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -226,7 +231,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -261,7 +267,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -271,11 +278,11 @@ struct Product {
 			  numberStock: 200,
 			  numberOfProducts: 115,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_3"),
+																	   ProductImage(image: "Walkthrough_Screen_2"),
+																	   ProductImage(image: "Walkthrough_Screen_1"),
 																	   ProductImage(image: "Walkthrough_Screen_3"),
-																	   ProductImage(image: "Walkthrough_Screen_3"),
-																	   ProductImage(image: "Walkthrough_Screen_3"),
-																	   ProductImage(image: "Walkthrough_Screen_3"),
-																	   ProductImage(image: "Walkthrough_Screen_3")],
+																	   ProductImage(image: "Walkthrough_Screen_2"),
+																	   ProductImage(image: "Walkthrough_Screen_1")],
 													   numberOfReviews: 4512,
 													   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
 													   color: [ProductColor(red: 0.92,
@@ -296,7 +303,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Dress"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -331,7 +339,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -366,7 +375,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -401,7 +411,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -436,7 +447,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Flash Sale"
+																					category: "Men Cloths",
+																					typeCloths: "Suits"))), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_3",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -471,7 +483,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Newest Products"
+																					category: "Men Cloths",
+																					typeCloths: "Shoes"))), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -506,7 +519,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Newest Products"
+																					category: "Men Cloths",
+																					typeCloths: "Shoes"))), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -541,7 +555,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Newest Products"
+																					category: "Men Cloths",
+																					typeCloths: "Shoes"))), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -576,7 +591,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes"))), //"Newest Products"
+																					category: "Men Cloths",
+																					typeCloths: "Dress"))), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -611,7 +627,8 @@ struct Product {
 													   specification: Specification(brand: "Naiki Shoes",
 																					weight: "260gr",
 																					condition: "NEW",
-																					category: "Men Shoes")))  //"Newest Products"
+																					category: "Men Cloths",
+																					typeCloths: "Dress")))  //"Newest Products"
 	]
 }
 
