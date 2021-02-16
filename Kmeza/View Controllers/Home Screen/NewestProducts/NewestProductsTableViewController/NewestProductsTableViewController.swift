@@ -12,29 +12,32 @@ protocol NewestProductsTableViewControllerDelegate {
 }
 
 class NewestProductsTableViewController: UITableViewController {
-
-	let products = Product.products
+	
+	var viewModel: NewestProductsViewModelProtocol! {
+		didSet {
+			viewModel.getData()
+		}
+	}
+	
 	var delegate: NewestProductsTableViewControllerDelegate!
 	
-	private var newestProducts: [Product] = []
 	private var isAddedToWishList = false
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		sortProducts(by: .newestProducts)
-		delegate.products(count: newestProducts.count)
+		viewModel = NewestProductsViewModel()
+		delegate.products(count: viewModel.countOfProduct())
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		newestProducts.count
+		viewModel.countOfProduct()
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewestProductsTableViewCell
 		
-		let product = newestProducts[indexPath.row]
+		let product = viewModel.products[indexPath.row]
 		cell.productImage.image = UIImage(named: product.cover)
 		cell.productTitle.text = product.title
 		cell.productPrice.text = "$\(product.price)"
@@ -68,20 +71,20 @@ class NewestProductsTableViewController: UITableViewController {
 		}
 	}
 	
-	private func sortProducts(by type: ProductType) {
-		products.forEach { (product) in
-			if product.productType == type.rawValue {
-				let product = Product(cover: product.cover,
-									  typeCollection: product.typeCollection,
-									  productType: product.productType,
-									  title: product.title,
-									  price: product.price,
-									  sale: product.sale,
-									  numberStock: product.numberStock,
-									  numberOfProducts: product.numberOfProducts,
-									  productInformation: product.productInformation)
-				newestProducts.append(product)
-			}
-		}
-	}
+//	private func sortProducts(by type: ProductType) {
+//		products.forEach { (product) in
+//			if product.productType == type.rawValue {
+//				let product = Product(cover: product.cover,
+//									  typeCollection: product.typeCollection,
+//									  productType: product.productType,
+//									  title: product.title,
+//									  price: product.price,
+//									  sale: product.sale,
+//									  numberStock: product.numberStock,
+//									  numberOfProducts: product.numberOfProducts,
+//									  productInformation: product.productInformation)
+//				newestProducts.append(product)
+//			}
+//		}
+//	}
 }

@@ -12,7 +12,7 @@ class DiscoverCollectionViewController: UICollectionViewController {
 	
 	var viewModel: DiscoverViewModelProtocol! {
 		didSet{
-			viewModel.sortFetchData(by: .discover)
+			viewModel.getData()
 		}
 	}
 	
