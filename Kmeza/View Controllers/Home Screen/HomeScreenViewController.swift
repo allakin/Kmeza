@@ -43,8 +43,6 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 		performSegue(withIdentifier: "showCatalog", sender: nil)
 	}
 	
-//	override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {}
-	
 	private func settingSideMenu() {
 		let sideMenuVC = UIStoryboard(name: "Main", bundle: nil)
 			.instantiateViewController(identifier: "SideMenuTableViewController")

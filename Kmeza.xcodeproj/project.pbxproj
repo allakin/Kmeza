@@ -77,6 +77,8 @@
 		73D8789A25A5B3CD00F33B63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */; };
 		73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */; };
 		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
+		E917133A25E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917133925E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift */; };
+		E917134025E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917133F25E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift */; };
 		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
 		E9642A1325D1C1B500055F3B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9642A1225D1C1B500055F3B /* Box.swift */; };
 		E975B49E25DAE5510035128A /* DiscoverCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975B49D25DAE5510035128A /* DiscoverCellViewModel.swift */; };
@@ -188,6 +190,8 @@
 		C8FA2AC2D59D104E953A5887 /* Pods-KmezaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmezaTests.release.xcconfig"; path = "Target Support Files/Pods-KmezaTests/Pods-KmezaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E917133925E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionViewControllerViewModel.swift; sourceTree = "<group>"; };
+		E917133F25E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionCellViewModel.swift; sourceTree = "<group>"; };
 		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		E9642A1225D1C1B500055F3B /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		E975B49D25DAE5510035128A /* DiscoverCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverCellViewModel.swift; sourceTree = "<group>"; };
@@ -444,8 +448,8 @@
 		735ED92725ADFB70003F8AEB /* FlashSale */ = {
 			isa = PBXGroup;
 			children = (
-				735ED92825ADFB86003F8AEB /* FlashSaleCollectionViewCell.swift */,
-				735ED93025ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift */,
+				E917133125E032EF00F3A564 /* FlashSaleCollectionViewCell */,
+				E917133525E032FB00F3A564 /* FlashSaleCollectionViewController */,
 			);
 			path = FlashSale;
 			sourceTree = "<group>";
@@ -530,6 +534,24 @@
 				05A9D41559F69038F2ED0A99 /* Pods_KmezaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E917133125E032EF00F3A564 /* FlashSaleCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				735ED92825ADFB86003F8AEB /* FlashSaleCollectionViewCell.swift */,
+				E917133F25E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift */,
+			);
+			path = FlashSaleCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E917133525E032FB00F3A564 /* FlashSaleCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				735ED93025ADFBA7003F8AEB /* FlashSaleCollectionViewController.swift */,
+				E917133925E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift */,
+			);
+			path = FlashSaleCollectionViewController;
 			sourceTree = "<group>";
 		};
 		E975B46C25DAE2F30035128A /* ProductDetailViewController */ = {
@@ -913,6 +935,7 @@
 				73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */,
 				737AD10425B4908800EB8B50 /* ProductDetailCollectionViewController.swift in Sources */,
 				73570EA025B1A94100363499 /* SideMenuPage.swift in Sources */,
+				E917133A25E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift in Sources */,
 				73570E9825B199E100363499 /* SideMenuTableViewCell.swift in Sources */,
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
 				737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */,
@@ -928,6 +951,7 @@
 				7374F63625C6AB9D007E6CF8 /* CatalogScreenViewCell.swift in Sources */,
 				E97F691425D966D100144316 /* ProductDetailCollectionCellViewModel.swift in Sources */,
 				7357F4E125A85F4500D62454 /* Reference.swift in Sources */,
+				E917134025E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift in Sources */,
 				7338E91425B4A8E000044D55 /* Extension+UIlabel.swift in Sources */,
 				E975B49E25DAE5510035128A /* DiscoverCellViewModel.swift in Sources */,
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
