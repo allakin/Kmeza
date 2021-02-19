@@ -11,8 +11,8 @@ protocol NewestProductsViewModelProtocol: class {
 	var products: [Product] { get }
 	func countOfProduct() -> Int
 	func getData()
-//	func cellViewModel(at indexPath: IndexPath) -> DiscoverCellViewModelProtocol?
-//	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol?
+	func cellViewModel(at indexPath: IndexPath) -> NewestProductsTableCellViewModelProtocol?
+	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol?
 }
 
 class NewestProductsViewModel: NewestProductsViewModelProtocol {
@@ -23,27 +23,16 @@ class NewestProductsViewModel: NewestProductsViewModelProtocol {
 	}
 	
 	func getData() {
-		sortFetchData(by: .newestProducts)
+		products = Product.sortFetchData(by: .newestProducts)
 	}
 	
-	private func sortFetchData(by type: ProductType) {
-		fetchData().forEach { (product) in
-			if product.productType == type.rawValue {
-				let product = Product(cover: product.cover,
-									  typeCollection: product.typeCollection,
-									  productType: product.productType,
-									  title: product.title,
-									  price: product.price,
-									  sale: product.sale,
-									  numberStock: product.numberStock,
-									  numberOfProducts: product.numberOfProducts,
-									  productInformation: product.productInformation)
-				products.append(product)
-			}
-		}
+	func cellViewModel(at indexPath: IndexPath) -> NewestProductsTableCellViewModelProtocol? {
+		let product = products[indexPath.row]
+		return NewestProductsTableCellViewModel(product: product)
 	}
 	
-	private func fetchData() -> [Product] {
-		Product.products
+	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol? {
+		let product = products[indexPath.row]
+		return ProductDetailViewModel(product: product)
 	}
 }

@@ -21,8 +21,6 @@ class NewestProductsTableViewController: UITableViewController {
 	
 	var delegate: NewestProductsTableViewControllerDelegate!
 	
-	private var isAddedToWishList = false
-	
     override func viewDidLoad() {
         super.viewDidLoad()
 		viewModel = NewestProductsViewModel()
@@ -37,23 +35,9 @@ class NewestProductsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewestProductsTableViewCell
 		
-		let product = viewModel.products[indexPath.row]
-		cell.productImage.image = UIImage(named: product.cover)
-		cell.productTitle.text = product.title
-		cell.productPrice.text = "$\(product.price)"
-		cell.productSale.text = "$\(product.sale)"
-		cell.productNumberOfReviews.text = "(\(product.productInformation.numberOfReviews) Reviews)"
 		cell.selectionStyle = .none
-		
-		cell.buttonTapAction = { () in
-			if self.isAddedToWishList {
-				self.isAddedToWishList.toggle()
-				cell.addToWishListButton.setImage(UIImage(named: "AddToWishList"), for: .normal)
-			} else {
-				self.isAddedToWishList.toggle()
-				cell.addToWishListButton.setImage(UIImage(named: "AddToWishListPressed"), for: .normal)
-			}
-		}
+		cell.viewModel = viewModel.cellViewModel(at: indexPath)
+		cell.buttonTapAction = { cell.changeAddToWishListStatus() }
 		
         return cell
     }
@@ -66,25 +50,9 @@ class NewestProductsTableViewController: UITableViewController {
 		if segue.identifier == "showDetail" {
 			if let indexPath = tableView.indexPathForSelectedRow {
 				let detailsVC = segue.destination as? ProductDetailViewController
-//				detailsVC?.product = newestProducts[indexPath.row]
+				let selectedProduct = viewModel.products[indexPath.row]
+				detailsVC?.viewModel = ProductDetailViewModel(product: selectedProduct)
 			}
 		}
 	}
-	
-//	private func sortProducts(by type: ProductType) {
-//		products.forEach { (product) in
-//			if product.productType == type.rawValue {
-//				let product = Product(cover: product.cover,
-//									  typeCollection: product.typeCollection,
-//									  productType: product.productType,
-//									  title: product.title,
-//									  price: product.price,
-//									  sale: product.sale,
-//									  numberStock: product.numberStock,
-//									  numberOfProducts: product.numberOfProducts,
-//									  productInformation: product.productInformation)
-//				newestProducts.append(product)
-//			}
-//		}
-//	}
 }

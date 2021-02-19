@@ -453,7 +453,7 @@ struct Product {
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
 			  title: "1Ne_Denim Tishort",
-			  price: 999.99,
+			  price: 800.99,
 			  sale: 1200.00,
 			  numberStock: 0,
 			  numberOfProducts: 0,
@@ -630,6 +630,27 @@ struct Product {
 																					category: "Men Cloths",
 																					typeCloths: "Dress")))  //"Newest Products"
 	]
+	
+	static func sortFetchData(by type: ProductType) -> [Product] {
+		var products: [Product] = []
+		
+		Product.products.forEach { (product) in
+			if product.productType == type.rawValue {
+				let product = Product(cover: product.cover,
+									  typeCollection: product.typeCollection,
+									  productType: product.productType,
+									  title: product.title,
+									  price: product.price,
+									  sale: product.sale,
+									  numberStock: product.numberStock,
+									  numberOfProducts: product.numberOfProducts,
+									  productInformation: product.productInformation)
+				products.append(product)
+			}
+		}
+		
+		return products
+	}
 }
 
 

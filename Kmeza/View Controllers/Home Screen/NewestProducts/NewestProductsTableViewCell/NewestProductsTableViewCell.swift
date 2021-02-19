@@ -16,6 +16,17 @@ class NewestProductsTableViewCell: UITableViewCell {
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
+	
+	var viewModel: NewestProductsTableCellViewModelProtocol! {
+		didSet {
+			productImage.image = UIImage(named: viewModel.image)
+			productTitle.text = viewModel.title
+			productPrice.text = viewModel.price
+			productSale.text = viewModel.sale
+			productNumberOfReviews.text = viewModel.numberOfReviews
+			addToWishListButton.setImage(UIImage(named: "AddToWishList"), for: .normal)
+		}
+	}
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +40,18 @@ class NewestProductsTableViewCell: UITableViewCell {
 		buttonTapAction?()
 	}
 
+	func changeAddToWishListStatus() {
+		if viewModel.isAddedToWishList.value {
+			viewModel.changeAddToWishListStatus()
+			addToWishListButton.setImage(UIImage(named: "AddToWishList"), for: .normal)
+			print(false)
+		} else {
+			viewModel.changeAddToWishListStatus()
+			addToWishListButton.setImage(UIImage(named: "AddToWishListPressed"), for: .normal)
+			print(true)
+		}
+	}
+	
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
