@@ -10,7 +10,7 @@ import Foundation
 protocol DiscoverViewModelProtocol: class {
 	var products: [Product] { get }
 	func numberOfRows() -> Int
-	func sortFetchData(by type: ProductType)
+	func getData()
 	func cellViewModel(at indexPath: IndexPath) -> DiscoverCellViewModelProtocol?
 	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol?
 }
@@ -22,21 +22,8 @@ class DiscoverViewModel: DiscoverViewModelProtocol {
 		products.count
 	}
 	
-	func sortFetchData(by type: ProductType) {
-		fetchData().forEach { (product) in
-			if product.productType == type.rawValue {
-				let product = Product(cover: product.cover,
-									  typeCollection: product.typeCollection,
-									  productType: product.productType,
-									  title: product.title,
-									  price: product.price,
-									  sale: product.sale,
-									  numberStock: product.numberStock,
-									  numberOfProducts: product.numberOfProducts,
-									  productInformation: product.productInformation)
-				products.append(product)
-			}
-		}
+	func getData() {
+		products = Product.sortFetchData(by: .discover)
 	}
 	
 	func cellViewModel(at indexPath: IndexPath) -> DiscoverCellViewModelProtocol? {
@@ -47,9 +34,5 @@ class DiscoverViewModel: DiscoverViewModelProtocol {
 	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol? {
 		let product = products[indexPath.item]
 		return ProductDetailViewModel(product: product)
-	}
-	
-	private func fetchData() -> [Product] {
-		Product.products
 	}
 }

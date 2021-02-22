@@ -1,5 +1,5 @@
 //
-//  DiscoverCollectionViewController.swift
+//  FlashSaleCollectionViewController.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 12.01.2021.
@@ -7,30 +7,31 @@
 
 import UIKit
 
-class DiscoverCollectionViewController: UICollectionViewController {
-	private var isAddedToWishList = false
+class FlashSaleCollectionViewController: UICollectionViewController {
 	
-	var viewModel: DiscoverViewModelProtocol! {
-		didSet{
+	var viewModel: FlashSaleCollectionViewControllerViewModelProtocol! {
+		didSet {
 			viewModel.getData()
 		}
 	}
 	
+	private var isAddedToWishList = false
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		viewModel = DiscoverViewModel()
+		viewModel = FlashSaleCollectionViewControllerViewModel()
 	}
 	
 	// MARK: UICollectionViewDataSource
 	override func collectionView(_ collectionView: UICollectionView,
 								 numberOfItemsInSection section: Int) -> Int {
-		viewModel.numberOfRows()
+		viewModel.countOfProduct()
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView,
 								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-													  for: indexPath) as! DiscoverCollectionViewCell
+													  for: indexPath) as! FlashSaleCollectionViewCell
 		
 		cell.viewModel = viewModel.cellViewModel(at: indexPath)
 		cell.buttonTapAction = { cell.changeAddToWishListStatus() }
@@ -53,7 +54,7 @@ class DiscoverCollectionViewController: UICollectionViewController {
 	}
 }
 
-extension DiscoverCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension FlashSaleCollectionViewController: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
 						insetForSectionAt section: Int) -> UIEdgeInsets {

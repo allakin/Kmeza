@@ -1,5 +1,5 @@
 //
-//  DiscoverCollectionViewCell.swift
+//  FlashSaleCollectionViewCell.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 12.01.2021.
@@ -7,26 +7,27 @@
 
 import UIKit
 
-class DiscoverCollectionViewCell: UICollectionViewCell {
+class FlashSaleCollectionViewCell: UICollectionViewCell {
+	
 	@IBOutlet weak var productImage: UIImageView!
 	@IBOutlet weak var productTitle: UILabel!
 	@IBOutlet weak var productPrice: UILabel!
-	@IBOutlet weak var productSale: UILabel!
-	@IBOutlet weak var typeCollection: UILabel!
+	@IBOutlet weak var numberStockProducts: UILabel!
+	@IBOutlet weak var leftStockProducts: UIProgressView!
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
 	private var isAddedToWishList = false
 	
-	var viewModel: DiscoverCellViewModelProtocol! {
+	var viewModel: FlashSaleCollectionCellViewModelProtocol! {
 		didSet {
 			configureUI()
 			
 			productImage.image = UIImage(named: viewModel.image)
 			productTitle.text = viewModel.title
 			productPrice.text = viewModel.price
-			productSale.text = viewModel.sale
-			typeCollection.text = viewModel.collectionType
+			numberStockProducts.text = viewModel.numberStockProducts
+			leftStockProducts.progress = viewModel.leftStockProducts
 			
 			addToWishListButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
 		}
@@ -52,8 +53,6 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	}
 	
 	private func configureUI() {
-		productImage.layer.cornerRadius = 6
-		productSale.addAttributeString()
+		productImage.layer.cornerRadius = 8
 	}
-	
 }

@@ -23,7 +23,7 @@ struct Product {
 			  title: "1Dis_Denim Jacket",
 			  price: 56.00,
 			  sale: 60.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_1"),
@@ -59,7 +59,7 @@ struct Product {
 			  title: "2Dis_Denim Jacket",
 			  price: 56.00,
 			  sale: 60.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -95,7 +95,7 @@ struct Product {
 			  title: "3Dis_Denim Jacket",
 			  price: 56.00,
 			  sale: 60.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -131,7 +131,7 @@ struct Product {
 			  title: "4Dis_Denim Jacket",
 			  price: 56.00,
 			  sale: 60.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -167,7 +167,7 @@ struct Product {
 			  title: "5Dis_1Denim Jacket",
 			  price: 56.00,
 			  sale: 60.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -453,9 +453,9 @@ struct Product {
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
 			  title: "1Ne_Denim Tishort",
-			  price: 999.99,
+			  price: 800.99,
 			  sale: 1200.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_1"),
 																	   ProductImage(image: "Walkthrough_Screen_1"),
@@ -491,7 +491,7 @@ struct Product {
 			  title: "4Denim Jacket",
 			  price: 1523.46,
 			  sale: 1600.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -527,7 +527,7 @@ struct Product {
 			  title: "4Denim Jacket",
 			  price: 1523.46,
 			  sale: 1600.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -563,7 +563,7 @@ struct Product {
 			  title: "4Denim Jacket",
 			  price: 1523.46,
 			  sale: 1600.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -599,7 +599,7 @@ struct Product {
 			  title: "5Ne_Denim Jacket",
 			  price: 1523.46,
 			  sale: 1600.00,
-			  numberStock: 0,
+			  numberStock: 123,
 			  numberOfProducts: 0,
 			  productInformation: InformationOfProduct(productImages: [ProductImage(image: "Walkthrough_Screen_2"),
 																	   ProductImage(image: "Walkthrough_Screen_2"),
@@ -630,6 +630,27 @@ struct Product {
 																					category: "Men Cloths",
 																					typeCloths: "Dress")))  //"Newest Products"
 	]
+	
+	static func sortFetchData(by type: ProductType) -> [Product] {
+		var products: [Product] = []
+		
+		Product.products.forEach { (product) in
+			if product.productType == type.rawValue {
+				let product = Product(cover: product.cover,
+									  typeCollection: product.typeCollection,
+									  productType: product.productType,
+									  title: product.title,
+									  price: product.price,
+									  sale: product.sale,
+									  numberStock: product.numberStock,
+									  numberOfProducts: product.numberOfProducts,
+									  productInformation: product.productInformation)
+				products.append(product)
+			}
+		}
+		
+		return products
+	}
 }
 
 
