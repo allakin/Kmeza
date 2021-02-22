@@ -17,6 +17,7 @@ class FlashSaleCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
+	private var isAddedToWishList = false
 	
 	var viewModel: FlashSaleCollectionCellViewModelProtocol! {
 		didSet {
@@ -37,15 +38,18 @@ class FlashSaleCollectionViewCell: UICollectionViewCell {
 	}
 	
 	func changeAddToWishListStatus() {
-		if viewModel.isAddedToWishList.value {
-			viewModel.changeAddToWishListStatus()
-			addToWishListButton.setImage(UIImage(named: "AddToWishList_White"), for: .normal)
-			print(false)
-		} else {
-			viewModel.changeAddToWishListStatus()
-			addToWishListButton.setImage(UIImage(named: "AddToWishListPressed_White"), for: .normal)
-			print(true)
+		viewModel.isAddedToWishList.bind { [unowned self] isAddedToWishList in
+			self.isAddedToWishList = isAddedToWishList
 		}
+
+		addToWishListButton.setImage(changeImageForAddwishListButton(value: isAddedToWishList),
+									 for: .normal)
+
+		viewModel.changeAddToWishListStatus()
+	}
+	
+	private func changeImageForAddwishListButton(value: Bool) -> UIImage {
+		UIImage(named: value ? "AddToWishList_White" : "AddToWishListPressed_White")!
 	}
 	
 	private func configureUI() {
