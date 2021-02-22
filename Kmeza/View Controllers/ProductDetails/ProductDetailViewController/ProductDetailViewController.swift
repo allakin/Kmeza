@@ -33,47 +33,28 @@ class ProductDetailViewController: UIViewController {
 		super.viewDidLoad()
 		settingUI()
 		configureContant()
-		setDisabledState()
+		SettingProductDetailButton.shared.setDisabledState(at: buyButton, and: productPrice)
+		SettingProductDetailButton.shared.hideLabel(at: productSale, and: productPrice)
 	}
 	
 	@IBAction func productSizeAction(_ sender: UIButton) {
-		setSelectedSize(at: sender.tag)
+		SettingProductDetailButton.shared.setSelectedSize(at: sizeButton, and: sender.tag)
 	}
 	
 	@IBAction func productColorAction(_ sender: UIButton) {
-		setSelectedColor(at: sender.tag)
+		SettingProductDetailButton.shared.setSelectedColor(at: productColor, and: sender.tag)
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProductImages" {
 			let destination = segue.destination as! ProductDetailCollectionViewController
-			destination.viewModel = ProductDetailCollectionViewModal(productImages: viewModel.productInformation.productImages)
+			let images = ProductDetailCollectionViewModal(productImages: viewModel.productInformation.productImages)
+			destination.viewModel = images
 		}
 	}
 	
 	deinit {
 		print("\(ProductDetailViewController.self) deinit")
-	}
-	
-	private func setSelectedSize(at tag: Int) {
-		for (index, value) in sizeButton.enumerated() {
-			if index == tag {
-				value.backgroundColor = UIColor.getColor(color: .primaryAccentColor)
-			} else {
-				value.backgroundColor = .clear
-			}
-		}
-	}
-	
-	private func setSelectedColor(at tag: Int) {
-		for (index, value) in productColor.enumerated() {
-			if index == tag {
-				value.layer.borderWidth = 2
-				value.layer.borderColor = UIColor.getColor(color: .primaryAccentColor).cgColor
-			} else {
-				value.layer.borderWidth = 0
-			}
-		}
 	}
 	
 	private func configureContant() {
@@ -111,15 +92,6 @@ class ProductDetailViewController: UIViewController {
 											  green: CGFloat(index.1.green),
 											  blue: CGFloat(index.1.blue),
 											  alpha: 1)
-		}
-	}
-	
-	private func setDisabledState() {
-		if productPrice.text == "SOLD" {
-			buyButton.isSelected = false
-			buyButton.backgroundColor = .lightGray
-			buyButton.titleColor(for: .disabled)
-			productSale.isHidden = true
 		}
 	}
 }
