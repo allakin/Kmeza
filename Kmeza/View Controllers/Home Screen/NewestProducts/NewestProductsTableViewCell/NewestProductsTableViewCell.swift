@@ -16,6 +16,7 @@ class NewestProductsTableViewCell: UITableViewCell {
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
+	private var isAddedToWishList = false
 	
 	var viewModel: NewestProductsTableCellViewModelProtocol! {
 		didSet {
@@ -39,23 +40,23 @@ class NewestProductsTableViewCell: UITableViewCell {
 	@objc func tappedButton() {
 		buttonTapAction?()
 	}
-
+	
 	func changeAddToWishListStatus() {
-		if viewModel.isAddedToWishList.value {
-			viewModel.changeAddToWishListStatus()
-			addToWishListButton.setImage(UIImage(named: "AddToWishList"), for: .normal)
-			print(false)
-		} else {
-			viewModel.changeAddToWishListStatus()
-			addToWishListButton.setImage(UIImage(named: "AddToWishListPressed"), for: .normal)
-			print(true)
+		viewModel.isAddedToWishList.bind { [unowned self] isAddedToWishList in
+			self.isAddedToWishList = isAddedToWishList
 		}
+
+		addToWishListButton.setImage(changeImageForAddwishListButton(value: isAddedToWishList),
+									 for: .normal)
+
+		viewModel.changeAddToWishListStatus()
+	}
+	
+	private func changeImageForAddwishListButton(value: Bool) -> UIImage {
+		UIImage(named: value ? "AddToWishList" : "AddToWishListPressed")!
 	}
 	
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
 }
