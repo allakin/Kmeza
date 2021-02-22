@@ -33,6 +33,7 @@ class ProductDetailViewController: UIViewController {
 		super.viewDidLoad()
 		settingUI()
 		configureContant()
+		setDisabledState()
 	}
 	
 	@IBAction func productSizeAction(_ sender: UIButton) {
@@ -110,6 +111,15 @@ class ProductDetailViewController: UIViewController {
 											  green: CGFloat(index.1.green),
 											  blue: CGFloat(index.1.blue),
 											  alpha: 1)
+		}
+	}
+	
+	private func setDisabledState() {
+		if productPrice.text == "SOLD" {
+			buyButton.isSelected = false
+			buyButton.backgroundColor = .lightGray
+			buyButton.titleColor(for: .disabled)
+			productSale.isHidden = true
 		}
 	}
 }

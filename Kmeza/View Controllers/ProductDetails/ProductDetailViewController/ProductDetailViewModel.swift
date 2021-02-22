@@ -61,7 +61,7 @@ class ProductDetailViewModel: ProductDetailViewModelProtocol {
 	}
 	
 	var price: String {
-		"$\(product.price)"
+		product.numberOfProducts >= product.numberStock ? "SOLD" : "$\(product.price)"
 	}
 	
 	var sale: String {
@@ -73,8 +73,8 @@ class ProductDetailViewModel: ProductDetailViewModelProtocol {
 	}
 	
 	private let product: Product
+	
 	required init(product: Product) {
 		self.product = product
 	}
-	
 }

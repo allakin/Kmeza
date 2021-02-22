@@ -47,6 +47,8 @@ class FlashSaleCollectionCellViewModel: FlashSaleCollectionCellViewModelProtocol
 	
 	var isAddedToWishList: Box<Bool>
 	
+	private let product: Product
+	
 	required init(product: Product) {
 		self.product = product
 		isAddedToWishList = Box(value: false)
@@ -55,8 +57,6 @@ class FlashSaleCollectionCellViewModel: FlashSaleCollectionCellViewModelProtocol
 	func changeAddToWishListStatus() {
 		isAddedToWishList.value.toggle()
 	}
-	
-	private let product: Product
 	
 	private func configureLeftCountProducts(_ number: Int, _ count: Int) -> String {
 		number >= count ? "0 Left" : "\(number) Left"
