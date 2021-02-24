@@ -40,7 +40,11 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	}
 	
 	@IBAction func showCatalogAction(_ sender: UIButton) {
-		performSegue(withIdentifier: "showCatalog", sender: nil)
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let vc = storyboard.instantiateViewController(withIdentifier: "CatalogScreenViewController")
+		let navigationController = UINavigationController(rootViewController: vc)
+		navigationController.modalPresentationStyle = .fullScreen
+		present(navigationController, animated: true, completion: nil)
 	}
 	
 	private func settingSideMenu() {
