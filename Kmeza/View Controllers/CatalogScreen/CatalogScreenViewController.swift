@@ -18,12 +18,15 @@ class CatalogScreenViewController: UICollectionViewController {
 		configureCollectionCell()
 	}
 	
-	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+	override func collectionView(_ collectionView: UICollectionView,
+								 numberOfItemsInSection section: Int) -> Int {
 		categories.count
 	}
 	
-	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CatalogScreenViewCell
+	override func collectionView(_ collectionView: UICollectionView,
+								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
+													  for: indexPath) as! CatalogScreenViewCell
 		
 		let category = categories[indexPath.item]
 		cell.configureContent(category)
@@ -61,6 +64,6 @@ extension CatalogScreenViewController: CHTCollectionViewDelegateWaterfallLayout 
 	func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
 						insetForSectionAt section: Int) -> UIEdgeInsets {
-		UIEdgeInsets(top: 0, left: 28, bottom: 0, right: 28)
+		UIEdgeInsets(top: 28, left: 28, bottom: 0, right: 28)
 	}
 }

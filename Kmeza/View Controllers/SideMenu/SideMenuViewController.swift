@@ -60,11 +60,14 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	
 	//FIXME: - Поправить переход к view
 	private func destination(view: String) {
-		dismiss(animated: true) {
-			let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-			let newViewController = storyBoard.instantiateViewController(withIdentifier: view)
-			newViewController.modalPresentationStyle = .fullScreen
-			self.present(newViewController, animated: true, completion: nil)
-		}
+		//			let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+		//			let newViewController = storyBoard.instantiateViewController(withIdentifier: view)
+		//			newViewController.modalPresentationStyle = .fullScreen
+		//			self.present(newViewController, animated: true, completion: nil)
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let vc = storyboard.instantiateViewController(withIdentifier: view)
+		let navigationController = UINavigationController(rootViewController: vc)
+		navigationController.modalPresentationStyle = .fullScreen
+		present(navigationController, animated: true, completion: nil)
 	}
 }
