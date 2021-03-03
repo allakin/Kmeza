@@ -43,7 +43,7 @@ enum StoryBoardID: String {
 
 enum CurrentPage: String {
 	case home = "Home"
-	case featured = "Featured"
+	case catalog = "Catalog"
 	case myCard = "My Cart"
 	case wishlist = "Wishlist"
 	case logout = "Logout"

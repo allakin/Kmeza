@@ -41,7 +41,7 @@
 		734DE2972586780C0006E607 /* KmezaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2962586780C0006E607 /* KmezaTests.swift */; };
 		734DE2A22586780C0006E607 /* KmezaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734DE2A12586780C0006E607 /* KmezaUITests.swift */; };
 		73570E9825B199E100363499 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73570E9725B199E100363499 /* SideMenuTableViewCell.swift */; };
-		73570EA025B1A94100363499 /* SideMenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73570E9F25B1A94100363499 /* SideMenuPage.swift */; };
+		73570EA025B1A94100363499 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73570E9F25B1A94100363499 /* SideMenuItem.swift */; };
 		7357F4E125A85F4500D62454 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357F4E025A85F4500D62454 /* Reference.swift */; };
 		7357F51A25A8740000D62454 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357F51925A8740000D62454 /* SignInViewController.swift */; };
 		7358015425AC44CC00FB544E /* NewestProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358015325AC44CC00FB544E /* NewestProductsTableViewController.swift */; };
@@ -148,7 +148,7 @@
 		734DE2A12586780C0006E607 /* KmezaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmezaUITests.swift; sourceTree = "<group>"; };
 		734DE2A32586780C0006E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73570E9725B199E100363499 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
-		73570E9F25B1A94100363499 /* SideMenuPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuPage.swift; sourceTree = "<group>"; };
+		73570E9F25B1A94100363499 /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
 		7357F4E025A85F4500D62454 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		7357F51925A8740000D62454 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7358015325AC44CC00FB544E /* NewestProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewestProductsTableViewController.swift; sourceTree = "<group>"; };
@@ -491,7 +491,7 @@
 				737CC737259BC7D600B861BD /* WelcomeFeature.swift */,
 				735ED91A25ADAC1D003F8AEB /* Product.swift */,
 				730A6FF025AF3A8C0068576C /* InformationOfProduct.swift */,
-				73570E9F25B1A94100363499 /* SideMenuPage.swift */,
+				73570E9F25B1A94100363499 /* SideMenuItem.swift */,
 				7374F6C225C6D03D007E6CF8 /* Catagory.swift */,
 			);
 			path = Model;
@@ -938,7 +938,7 @@
 				E9B67C3A25E3CB42007B82A8 /* SettingProductDetailButton.swift in Sources */,
 				73270076259FA33F001B0F69 /* TextFieldWithPadding.swift in Sources */,
 				737AD10425B4908800EB8B50 /* ProductDetailCollectionViewController.swift in Sources */,
-				73570EA025B1A94100363499 /* SideMenuPage.swift in Sources */,
+				73570EA025B1A94100363499 /* SideMenuItem.swift in Sources */,
 				E917133A25E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift in Sources */,
 				73570E9825B199E100363499 /* SideMenuTableViewCell.swift in Sources */,
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,

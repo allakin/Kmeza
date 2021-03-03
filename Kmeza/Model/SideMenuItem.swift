@@ -1,15 +1,15 @@
 //
-//  SideMenuPage.swift
+//  SideMenuItem.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 15.01.2021.
 //
 
-struct SideMenuPage {
+struct SideMenuItem {
 	let pageName: String
 	let pageImage: String
 
-	static let page: [SideMenuPage] = [
+	static let items: [SideMenuItem] = [
 		.init(pageName: "Home",
 			  pageImage: "HomeNotPressed"),
 		.init(pageName: "Catalog",

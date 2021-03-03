@@ -32,16 +32,26 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
     }
 	
 	@IBAction func showSideMenuAction(_ sender: UIBarButtonItem) {
-		present(sideMenu!, animated: true)
+//		dismiss(animated: true) {
+//			self.present(self.sideMenu!, animated: true)
+//			}
+//		}
+		
+		present(sideMenu!, animated: true, completion: nil)
+//		performSegue(withIdentifier: "test", sender: nil)
 	}
 	
 	func products(count: Int) {
-		productsCount = "\(count)"
+		 productsCount = "\(count)"
+	 }
+	
+	deinit {
+		print(HomeScreenViewController.self)
 	}
 	
 	@IBAction func showCatalogAction(_ sender: UIButton) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: "CatalogScreenViewController")
+		let vc = storyboard.instantiateViewController(withIdentifier: "CatalogScreenViewController ")
 		let navigationController = UINavigationController(rootViewController: vc)
 		navigationController.modalPresentationStyle = .fullScreen
 		present(navigationController, animated: true, completion: nil)
@@ -55,7 +65,7 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 		sideMenu?.leftSide = true
 		sideMenu?.setNavigationBarHidden(true, animated: false)
 		sideMenu?.menuWidth = 262
-		
+
 		SideMenuManager.default.leftMenuNavigationController = sideMenu
 		SideMenuManager.default.addPanGestureToPresent(toView: view)
 	}

@@ -18,7 +18,7 @@ class SideMenuTableViewCell: UITableViewCell {
 		pageSelection.layer.cornerRadius = pageSelection.frame.width / 2
     }
 	
-	func configureContant(_ contant: SideMenuPage) {
+	func configureContant(_ contant: SideMenuItem) {
 		pageIcon.image = UIImage(named: contant.pageImage)
 		pageName.text = contant.pageName
 	}

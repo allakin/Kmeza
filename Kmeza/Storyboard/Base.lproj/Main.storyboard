@@ -1031,7 +1031,7 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI8-LG-UbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3748" y="454.72263868065971"/>
+            <point key="canvasLocation" x="3748" y="710"/>
         </scene>
         <!--Home-->
         <scene sceneID="E8h-Rc-BTC">
@@ -1240,13 +1240,14 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssh-bT-Kvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4636" y="291"/>
+            <point key="canvasLocation" x="4649" y="243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jca-La-NRn">
             <objects>
                 <navigationController storyboardIdentifier="HomeScreenViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenKeyboardAppears="YES" id="Ey1-kJ-PQz" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="YGz-A1-voS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZXI-cB-262">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2168,7 +2169,7 @@ in This Era</string>
         <!--Catalog Screen View Controller-->
         <scene sceneID="xlO-5s-5aN">
             <objects>
-                <collectionViewController storyboardIdentifier="CatalogScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Glo-Vd-Hpp" customClass="CatalogScreenViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Glo-Vd-Hpp" customClass="CatalogScreenViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="8Cn-Gh-KJq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2239,7 +2240,25 @@ in This Era</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8j-HG-KvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4636" y="1633.1334332833585"/>
+            <point key="canvasLocation" x="4906" y="1693"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JlT-Xc-v0U">
+            <objects>
+                <navigationController storyboardIdentifier="CatalogScreenViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QHl-tN-jBo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QCB-yr-dkF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Glo-Vd-Hpp" kind="relationship" relationship="rootViewController" id="7eY-8h-jYs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLz-nF-LBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3748" y="1693"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
