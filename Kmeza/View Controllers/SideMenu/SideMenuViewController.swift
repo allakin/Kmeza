@@ -16,6 +16,10 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	@IBOutlet weak var sideMenu: UITableView!
 	
 	private var items = SideMenuItem.items
+	private var homeVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "HomeScreenViewController")
+	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogScreenViewController")
+	
+//		.instantiateViewController(withIdentifier: "")
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -50,9 +54,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		switch indexPath.row {
 		case 0:
-			FetchCurrentPage.fetch() == CurrentPage.home.rawValue ? dismiss(animated: true, completion: nil) : test2()
+			FetchCurrentPage.fetch() == CurrentPage.home.rawValue ? dismiss(animated: true, completion: nil) : showScreen(homeVC)
 		case 1:
-			FetchCurrentPage.fetch() == CurrentPage.catalog.rawValue ? dismiss(animated: true, completion: nil) : test()
+			FetchCurrentPage.fetch() == CurrentPage.catalog.rawValue ? dismiss(animated: true, completion: nil) : showScreen(catalogVC)
 		default:
 			break
 		}
@@ -62,16 +66,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 		print(SideMenuViewController.self)
 	}
 	
-	func test() {
-		let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogScreenViewController")
-		viewController?.modalPresentationStyle = .fullScreen
-		present(viewController!, animated: true, completion: nil)
-	}
-	
-	func test2() {
-		let viewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeScreenViewController")
-		viewController?.modalPresentationStyle = .fullScreen
-		present(viewController!, animated: true, completion: nil)
+	func showScreen(_ viewController: UIViewController) {
+		viewController.modalPresentationStyle = .fullScreen
+		present(viewController, animated: true, completion: nil)
 	}
 	
 }
