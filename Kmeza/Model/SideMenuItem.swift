@@ -13,7 +13,7 @@ struct SideMenuItem {
 		.init(pageName: "Home",
 			  pageImage: "HomeNotPressed"),
 		.init(pageName: "Catalog",
-			  pageImage: "FeaturedNotPressed"),
+			  pageImage: "CatalogNotPressed"),
 		.init(pageName: "My Cart",
 			  pageImage: "MyCartNotPressed"),
 		.init(pageName: "Wishlist",
