@@ -1187,6 +1187,7 @@ in This Era</string>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="showCatalogAction:" destination="4cK-FI-VHK" eventType="touchUpInside" id="d8E-mk-RD6"/>
+                                                                    <segue destination="QHl-tN-jBo" kind="presentation" identifier="showCatelog" modalPresentationStyle="fullScreen" id="9Ih-vv-c9Q"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>

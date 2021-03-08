@@ -19,8 +19,6 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	private var homeVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "HomeScreenViewController")
 	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogScreenViewController")
 	
-//		.instantiateViewController(withIdentifier: "")
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		userImage.roundingImage()

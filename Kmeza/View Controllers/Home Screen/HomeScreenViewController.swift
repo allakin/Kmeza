@@ -32,13 +32,7 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
     }
 	
 	@IBAction func showSideMenuAction(_ sender: UIBarButtonItem) {
-//		dismiss(animated: true) {
-//			self.present(self.sideMenu!, animated: true)
-//			}
-//		}
-		
 		present(sideMenu!, animated: true, completion: nil)
-//		performSegue(withIdentifier: "test", sender: nil)
 	}
 	
 	func products(count: Int) {
@@ -50,11 +44,7 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	}
 	
 	@IBAction func showCatalogAction(_ sender: UIButton) {
-		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: "CatalogScreenViewController ")
-		let navigationController = UINavigationController(rootViewController: vc)
-		navigationController.modalPresentationStyle = .fullScreen
-		present(navigationController, animated: true, completion: nil)
+		performSegue(withIdentifier: "showCatelog", sender: nil)
 	}
 	
 	private func settingSideMenu() {
