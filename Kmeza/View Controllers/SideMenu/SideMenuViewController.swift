@@ -15,7 +15,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	
 	@IBOutlet weak var sideMenu: UITableView!
 	
-	private let pages = SideMenuPage.page
+	private var items = SideMenuItem.items
+	private var homeVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "HomeScreenViewController")
+	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogScreenViewController")
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -26,13 +28,13 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		pages.count
+		items.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = sideMenu.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SideMenuTableViewCell
 		
-		let page = pages[indexPath.row]
+		let page = items[indexPath.row]
 		cell.configureContant(page)
 		cell.selectionStyle = .none
 		
@@ -50,24 +52,21 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		switch indexPath.row {
 		case 0:
-			destination(view: "HomeScreenViewController")
+			FetchCurrentPage.fetch() == CurrentPage.home.rawValue ? dismiss(animated: true, completion: nil) : showScreen(homeVC)
 		case 1:
-			destination(view: "CatalogScreenViewController")
+			FetchCurrentPage.fetch() == CurrentPage.catalog.rawValue ? dismiss(animated: true, completion: nil) : showScreen(catalogVC)
 		default:
 			break
 		}
 	}
 	
-	//FIXME: - Поправить переход к view
-	private func destination(view: String) {
-		//			let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-		//			let newViewController = storyBoard.instantiateViewController(withIdentifier: view)
-		//			newViewController.modalPresentationStyle = .fullScreen
-		//			self.present(newViewController, animated: true, completion: nil)
-		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: view)
-		let navigationController = UINavigationController(rootViewController: vc)
-		navigationController.modalPresentationStyle = .fullScreen
-		present(navigationController, animated: true, completion: nil)
+	deinit {
+		print(SideMenuViewController.self)
 	}
+	
+	func showScreen(_ viewController: UIViewController) {
+		viewController.modalPresentationStyle = .fullScreen
+		present(viewController, animated: true, completion: nil)
+	}
+	
 }
