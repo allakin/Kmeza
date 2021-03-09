@@ -1,5 +1,5 @@
 //
-//  CatalogScreenViewController.swift
+//  СatalogueOutfitsCollectionViewController.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 24.01.2021.
@@ -10,7 +10,7 @@ import CHTCollectionViewWaterfallLayout
 import SideMenu
 
 
-class CatalogScreenViewController: UICollectionViewController {
+class СatalogueOutfitsCollectionViewController: UICollectionViewController {
 	
 	let categories = Category.categories
 	private var sideMenu: SideMenuNavigationController?
@@ -41,7 +41,7 @@ class CatalogScreenViewController: UICollectionViewController {
 	override func collectionView(_ collectionView: UICollectionView,
 								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-													  for: indexPath) as! CatalogScreenViewCell
+													  for: indexPath) as! СatalogueOutfitsCell
 		
 		let category = categories[indexPath.item]
 		cell.configureContent(category)
@@ -57,7 +57,7 @@ class CatalogScreenViewController: UICollectionViewController {
 	}
 	
 	deinit {
-		print(CatalogScreenViewController.self)
+		print(СatalogueOutfitsCollectionViewController.self)
 	}
 	
 	private func configureCollectionCell() {
@@ -86,7 +86,7 @@ class CatalogScreenViewController: UICollectionViewController {
 	}
 }
 
-extension CatalogScreenViewController: CHTCollectionViewDelegateWaterfallLayout {
+extension СatalogueOutfitsCollectionViewController: CHTCollectionViewDelegateWaterfallLayout {
 	
 	func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
