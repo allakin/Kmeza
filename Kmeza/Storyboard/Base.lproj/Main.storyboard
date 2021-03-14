@@ -2264,7 +2264,7 @@ in This Era</string>
             </objects>
             <point key="canvasLocation" x="3748" y="1644"/>
         </scene>
-        <!--Catalog Collection View Controller-->
+        <!--All Collection-->
         <scene sceneID="tc4-vE-ZV5">
             <objects>
                 <viewController id="nks-E1-kCi" customClass="CatalogCollectionViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
@@ -2313,30 +2313,28 @@ in This Era</string>
                                                             </constraints>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yDM-Um-Hi0">
-                                                            <rect key="frame" x="0.0" y="56" width="319" height="360.5"/>
+                                                            <rect key="frame" x="0.0" y="56" width="319" height="363.5"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="5rH-n0-uSA">
-                                                            <rect key="frame" x="0.0" y="444.5" width="319" height="126.5"/>
+                                                            <rect key="frame" x="0.0" y="447.5" width="319" height="123.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhA-mz-q1j">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="48.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="45.5"/>
                                                                     <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="28"/>
                                                                     <color key="highlightedColor" name="Third Text Color"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-Kh-RFr">
-                                                                    <rect key="frame" x="0.0" y="76.5" width="319" height="50"/>
-                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <rect key="frame" x="0.0" y="73.5" width="319" height="50"/>
+                                                                    <color key="backgroundColor" name="Primary Accent Color"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="Wnh-zd-Iva"/>
                                                                     </constraints>
-                                                                    <state key="normal" title="Button">
+                                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                                                    <state key="normal" title="MORE">
                                                                         <color key="titleColor" name="Third Text Color"/>
                                                                     </state>
                                                                 </button>
                                                             </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="200" id="Lro-vz-YZM"/>
-                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
@@ -2373,10 +2371,10 @@ in This Era</string>
                             <constraint firstItem="uby-fe-mEj" firstAttribute="top" secondItem="ye3-EJ-YTD" secondAttribute="top" id="xno-qO-BNu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nMu-Kf-Gya"/>
+                    <navigationItem key="navigationItem" title="All Collection" id="nMu-Kf-Gya"/>
                     <connections>
                         <outlet property="collectionView" destination="uby-fe-mEj" id="J7B-83-28T"/>
-                        <segue destination="Glo-Vd-Hpp" kind="show" id="uNZ-QN-Ify"/>
+                        <segue destination="Glo-Vd-Hpp" kind="show" identifier="showCollection" id="uNZ-QN-Ify"/>
                     </connections>
                 </viewController>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k6J-W7-jPN">

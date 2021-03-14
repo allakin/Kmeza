@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class CatalogCollectionViewController: UIViewController {
 
@@ -17,11 +18,42 @@ class CatalogCollectionViewController: UIViewController {
 		}
 	}
 	
+	private var sideMenu: SideMenuNavigationController?
+	
     override func viewDidLoad() {
         super.viewDidLoad()
+		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		navigationController?.navigationBar.shadowImage = UIImage()
+		navigationController?.navigationBar.isTranslucent = true
+		navigationController?.navigationBar.tintColor = UIColor(red:0.73, green:0.74, blue:0.83, alpha:1.00)
+		
+		let image = UIImage(named: "Menu")
+		let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(cancel))
+		navigationItem.leftBarButtonItem = button
+		
+		settingSideMenu()
+		
 		viewModel = CatalogCollectionViewModel()
 		setupCollectionView()
+		SaveCurrentPage.save(.catalog)
     }
+	
+	@objc func cancel() {
+//		dismiss(animated: true) {
+//			self.present(self.sideMenu!, animated: true)
+//		}
+		present(sideMenu!, animated: true)
+	}
+	
+	private func settingSideMenu() {
+		let sideMenuVC = UIStoryboard(name: "Main", bundle: nil)
+			.instantiateViewController(identifier: "SideMenuTableViewController")
+		
+		sideMenu = SideMenuNavigationController(rootViewController: sideMenuVC)
+		sideMenu?.leftSide = true
+		sideMenu?.setNavigationBarHidden(true, animated: false)
+		sideMenu?.menuWidth = 262
+	}
 	
 	private func setupCollectionView() {
 		let layout = UICollectionViewFlowLayout()
@@ -66,10 +98,7 @@ extension CatalogCollectionViewController: UICollectionViewDelegate,
 		0
 	}
 	
-//	func collectionView(_ collectionView: UICollectionView,
-//						layout collectionViewLayout: UICollectionViewLayout,
-//						insetForSectionAt section: Int) -> UIEdgeInsets {
-//		UIEdgeInsets(top: 0, left: 28, bottom: 0, right: 28)
-//	}
-	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		performSegue(withIdentifier: "showCollection", sender: nil)
+	}
 }

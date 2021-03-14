@@ -16,10 +16,19 @@ class CatalogCollectionViewCell: UICollectionViewCell {
 	
 	var viewModal: CatalogCollectionCellViewModelProtocol! {
 		didSet {
+			settingUI()
+			
 			catalogImage.image = UIImage(named: viewModal.catalogImage)
 			catalogTitle.text = viewModal.catalogTitle
 			nextPage.text = viewModal.nextPage
 			previewsPage.text = viewModal.previewsPage
 		}
+	}
+	
+	private func settingUI() {
+		catalogImage.layer.cornerRadius = 20
+		
+		catalogButton.setFullRoundCorners()
+		catalogButton.setButtonShadow()
 	}
 }
