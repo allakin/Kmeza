@@ -44,7 +44,7 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 	}
 	
 	@IBAction func showCatalogAction(_ sender: UIButton) {
-		performSegue(withIdentifier: "showCatelog", sender: nil)
+		performSegue(withIdentifier: "showCatalog", sender: nil)
 	}
 	
 	private func settingSideMenu() {

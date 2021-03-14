@@ -17,7 +17,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	
 	private var items = SideMenuItem.items
 	private var homeVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "HomeScreenViewController")
-	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogScreenViewController")
+	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogCollectionViewController")
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
