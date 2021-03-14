@@ -7,8 +7,10 @@
 
 import UIKit
 
-class CatalogCollectionViewController: UICollectionViewController {
+class CatalogCollectionViewController: UIViewController {
 
+	@IBOutlet weak var collectionView: UICollectionView!
+	
 	var viewModel: CatalogCollectionViewModelProtocol! {
 		didSet {
 			viewModel.getData()
@@ -18,29 +20,56 @@ class CatalogCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		viewModel = CatalogCollectionViewModel()
+		setupCollectionView()
     }
-
-    // MARK: UICollectionViewDataSource
-    override func collectionView(_ collectionView: UICollectionView,
-								 numberOfItemsInSection section: Int) -> Int {
-		viewModel.numberOfRows()
-    }
-
-    override func collectionView(_ collectionView: UICollectionView,
-								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-													  for: indexPath) as! CatalogCollectionViewCell
-    
-        // Configure the cell
-    
-        return cell
-    }
+	
+	private func setupCollectionView() {
+		let layout = UICollectionViewFlowLayout()
+		layout.scrollDirection = .horizontal
+		collectionView.collectionViewLayout = layout
+		collectionView.contentInsetAdjustmentBehavior = .never
+		collectionView.isPagingEnabled = true
+	}
 }
 
-extension CatalogCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension CatalogCollectionViewController: UICollectionViewDelegate,
+									 UICollectionViewDataSource,
+									 UICollectionViewDelegateFlowLayout {
+	// MARK: UICollectionViewDataSource
+	func collectionView(_ collectionView: UICollectionView,
+								 numberOfItemsInSection section: Int) -> Int {
+		viewModel.numberOfRows()
+	}
+
+	func collectionView(_ collectionView: UICollectionView,
+								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
+													  for: indexPath) as! CatalogCollectionViewCell
+	
+		cell.viewModal = viewModel.cellViewModel(at: indexPath)
+	
+		return cell
+	}
+	
 	func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
-						insetForSectionAt section: Int) -> UIEdgeInsets {
-		UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+						sizeForItemAt indexPath: IndexPath) -> CGSize {
+		let itemWidth = collectionView.bounds.width
+		let itemHeight = collectionView.bounds.height
+		
+		return CGSize(width: itemWidth, height: itemHeight)
 	}
+	
+	func collectionView(_ collectionView: UICollectionView,
+						layout collectionViewLayout: UICollectionViewLayout,
+						minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+		0
+	}
+	
+//	func collectionView(_ collectionView: UICollectionView,
+//						layout collectionViewLayout: UICollectionViewLayout,
+//						insetForSectionAt section: Int) -> UIEdgeInsets {
+//		UIEdgeInsets(top: 0, left: 28, bottom: 0, right: 28)
+//	}
+	
 }

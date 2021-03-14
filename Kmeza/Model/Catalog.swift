@@ -10,10 +10,12 @@ import Foundation
 struct Catalog {
 	let image: String
 	let title: String
+	let nextPage: String
+	let previewsPage: String
 	
 	static let categories: [Catalog] = [
-		.init(image: "Walkthrough_Screen_1", title: "men".uppercased()),
-		.init(image: "Walkthrough_Screen_2", title: "womanmen".uppercased()),
-		.init(image: "Walkthrough_Screen_3", title: "children".uppercased())
+		.init(image: "1", title: "Men Collection".uppercased(), nextPage: "For woman →", previewsPage: ""),
+		.init(image: "2", title: "Woman Collection".uppercased(), nextPage: "For children →", previewsPage: "← For men"),
+		.init(image: "3", title: "Children Collection".uppercased(), nextPage: "", previewsPage: "For woman"),
 	]
 }
