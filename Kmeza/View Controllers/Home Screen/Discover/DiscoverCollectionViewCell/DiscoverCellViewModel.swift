@@ -28,7 +28,7 @@ class DiscoverCellViewModel: DiscoverCellViewModelProtocol {
 	}
 
 	var title: String {
-		product.title
+		product.name
 	}
 
 	var price: String {

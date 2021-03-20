@@ -6,10 +6,10 @@
 //
 
 struct InformationOfProduct {
-	let productImages: [ProductImage]
+	let thumbnails: [ProductImage]
 	let numberOfReviews: Int
 	let description: String
-	let color: [ProductColor]
+	let colorPickers: [ColorPicker]
 	let	specification: Specification
 }
 
@@ -21,7 +21,7 @@ struct Specification {
 	let typeCloths: String
 }
 
-struct ProductColor {
+struct ColorPicker {
 	let red: Double
 	let green: Double
 	let blue: Double

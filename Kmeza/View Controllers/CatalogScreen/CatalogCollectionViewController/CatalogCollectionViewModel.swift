@@ -12,10 +12,11 @@ protocol CatalogCollectionViewModelProtocol: class {
 	func numberOfRows() -> Int
 	func getData()
 	func cellViewModel(at indexPath: IndexPath) -> CatalogCollectionCellViewModel?
-//	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol
+//	func viewModelForSelectedRow(at indexPath: IndexPath) -> СatalogueOutfitsCollectionViewModalProtocol?
 }
 
 class CatalogCollectionViewModel: CatalogCollectionViewModelProtocol {
+	
 	var catalogs: [Catalog] = []
 	
 	func numberOfRows() -> Int {
@@ -30,4 +31,8 @@ class CatalogCollectionViewModel: CatalogCollectionViewModelProtocol {
 		let catalog = catalogs[indexPath.item]
 		return CatalogCollectionCellViewModel(catalog: catalog)
 	}
+	
+//	func viewModelForSelectedRow(at indexPath: IndexPath) -> СatalogueOutfitsCollectionViewModalProtocol? {
+//		let catalog = catalogs[indexPath.item]
+//	}
 }
