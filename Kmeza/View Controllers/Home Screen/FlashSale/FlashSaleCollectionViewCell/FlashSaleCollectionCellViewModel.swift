@@ -26,7 +26,7 @@ class FlashSaleCollectionCellViewModel: FlashSaleCollectionCellViewModelProtocol
 	}
 	
 	var title: String {
-		product.title
+		product.name
 	}
 	
 	var price: String {

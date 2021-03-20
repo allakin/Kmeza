@@ -48,7 +48,7 @@ class ProductDetailViewController: UIViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProductImages" {
 			let destination = segue.destination as! ProductDetailCollectionViewController
-			let images = ProductDetailCollectionViewModal(productImages: viewModel.productInformation.productImages)
+			let images = ProductDetailCollectionViewModal(productImages: viewModel.productInformation.thumbnails)
 			destination.viewModel = images
 		}
 	}
@@ -87,7 +87,7 @@ class ProductDetailViewController: UIViewController {
 		
 		productColor.forEach { $0.layer.cornerRadius = $0.frame.size.width / 2 }
 		
-		for index in zip(productColor, viewModel.productInformation.color) {
+		for index in zip(productColor, viewModel.productInformation.colorPickers) {
 			index.0.backgroundColor = UIColor(red: CGFloat(index.1.red),
 											  green: CGFloat(index.1.green),
 											  blue: CGFloat(index.1.blue),
