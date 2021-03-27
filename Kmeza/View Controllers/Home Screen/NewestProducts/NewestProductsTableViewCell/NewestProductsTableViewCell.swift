@@ -29,8 +29,8 @@ class NewestProductsTableViewCell: UITableViewCell {
 		}
 	}
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+	override func awakeFromNib() {
+		super.awakeFromNib()
 		productSale.addAttributeString()
 		productImage.layer.cornerRadius = 8
 
@@ -56,7 +56,7 @@ class NewestProductsTableViewCell: UITableViewCell {
 		UIImage(named: value ? "AddToWishList" : "AddToWishListPressed")!
 	}
 	
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+	override func setSelected(_ selected: Bool, animated: Bool) {
+		super.setSelected(selected, animated: animated)
+	}
 }

@@ -21,26 +21,26 @@ class NewestProductsTableViewController: UITableViewController {
 	
 	var delegate: NewestProductsTableViewControllerDelegate!
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		viewModel = NewestProductsViewModel()
 		delegate.products(count: viewModel.countOfProduct())
-    }
+	}
 
-    // MARK: - Table view data source
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	// MARK: - Table view data source
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		viewModel.countOfProduct()
-    }
+	}
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewestProductsTableViewCell
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewestProductsTableViewCell
 		
 		cell.selectionStyle = .none
 		cell.viewModel = viewModel.cellViewModel(at: indexPath)
 		cell.buttonTapAction = { cell.changeAddToWishListStatus() }
 		
-        return cell
-    }
+		return cell
+	}
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		performSegue(withIdentifier: "showDetail", sender: nil)
