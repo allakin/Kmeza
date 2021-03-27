@@ -33,12 +33,13 @@ class ProductDetailViewController: UIViewController {
 		super.viewDidLoad()
 		settingUI()
 		configureContant()
-		SettingProductDetailButton.shared.setDisabledState(at: buyButton, and: productPrice)
-		SettingProductDetailButton.shared.hideLabel(at: productSale, and: productPrice)
+		SettingProductDetailButton.shared.setDisabledState(at: buyButton, and: viewModel.price)
+		SettingProductDetailButton.shared.hideLabel(at: productSale, and: viewModel.price)
 	}
 	
 	@IBAction func productSizeAction(_ sender: UIButton) {
 		SettingProductDetailButton.shared.setSelectedSize(at: sizeButton, and: sender.tag)
+//		SettingProductDetailButton.shared.isDisableSizeButton(at: sizeButton, name: sender.currentTitle ?? "")
 	}
 	
 	@IBAction func productColorAction(_ sender: UIButton) {
@@ -71,12 +72,7 @@ class ProductDetailViewController: UIViewController {
 		productSale.text = viewModel.sale
 	}
 	
-	private func settingUI() {
-		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-		navigationController?.navigationBar.shadowImage = UIImage()
-		navigationController?.navigationBar.isTranslucent = true
-		navigationController?.navigationBar.tintColor = .white
-		
+	private func settingUI() {		
 		productSale.addAttributeString()
 		
 		buyButton.setFullRoundCorners()
@@ -92,6 +88,15 @@ class ProductDetailViewController: UIViewController {
 											  green: CGFloat(index.1.green),
 											  blue: CGFloat(index.1.blue),
 											  alpha: 1)
+		}
+		
+		for index in zip(sizeButton, viewModel.productInformation.sizes) {
+			if index.0.currentTitle != index.1.size || viewModel.price == "SOLD" {
+				index.0.isEnabled = false
+				index.0.layer.borderWidth = 1
+				index.0.layer.borderColor = UIColor.lightGray.cgColor
+				index.0.setTitleColor(.lightGray, for: .disabled)
+			}
 		}
 	}
 }

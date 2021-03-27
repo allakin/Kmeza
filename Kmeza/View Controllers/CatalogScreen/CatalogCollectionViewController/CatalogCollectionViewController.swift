@@ -26,9 +26,7 @@ class CatalogCollectionViewController: UIViewController {
 														   action: #selector(showSideMenu))
 		
 		viewModel = CatalogCollectionViewModel()
-		
 		setupCollectionView()
-		
 		SaveCurrentPage.save(.catalog)
 	}
 	

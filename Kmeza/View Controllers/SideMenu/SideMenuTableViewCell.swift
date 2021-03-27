@@ -13,10 +13,10 @@ class SideMenuTableViewCell: UITableViewCell {
 	@IBOutlet weak var pageName: UILabel!
 	@IBOutlet weak var pageSelection: UIView!
 	
-    override func awakeFromNib() {
-        super.awakeFromNib()
+	override func awakeFromNib() {
+		super.awakeFromNib()
 		pageSelection.layer.cornerRadius = pageSelection.frame.width / 2
-    }
+	}
 	
 	func configureContant(_ contant: SideMenuItem) {
 		pageIcon.image = UIImage(named: contant.pageImage)

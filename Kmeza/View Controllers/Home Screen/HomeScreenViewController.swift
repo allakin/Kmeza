@@ -8,18 +8,17 @@
 import UIKit
 
 class HomeScreenViewController: UIViewController, NewestProductsTableViewControllerDelegate {
-	
 	@IBOutlet weak var newProductsCount: UILabel!
 	@IBOutlet weak var newestProductContainerView: UIView!
 	
 	var productsCount: String?
 	
 	override func viewDidLoad() {
-        super.viewDidLoad()
+		super.viewDidLoad()
 		navigationController?.settingUI()
 		newProductsCount.text = "Showing \(productsCount ?? "") Results"
 		SaveCurrentPage.save(.home)
-    }
+	}
 	
 	@IBAction func showSideMenuAction(_ sender: UIBarButtonItem) {
 		present(SideMenuViewer.shared.showSideMenu(), animated: true)

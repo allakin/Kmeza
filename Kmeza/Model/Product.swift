@@ -52,7 +52,11 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Shoes"))), //"Discover"
+																					typeCloths: "Shoes"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "XXL")])), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -88,7 +92,11 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Discover"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "XL")])), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -124,7 +132,11 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Dress"))), //"Discover"
+																					typeCloths: "Dress"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "XXL")])), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -160,7 +172,10 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Dress"))), //"Discover"
+																					typeCloths: "Dress"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "L"),
+															   Size(size: "XL")])), //"Discover"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Man collections",
 			  productType: "Discover",
@@ -196,7 +211,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Dress"))), //"Discover"
+																					typeCloths: "Dress"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Discover"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -232,7 +252,11 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Flash Sale"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -268,7 +292,11 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Flash Sale"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -304,7 +332,11 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Dress"))), //"Flash Sale"
+																					typeCloths: "Dress"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -340,7 +372,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Flash Sale"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -376,7 +413,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Flash Sale"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -412,7 +454,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Flash Sale"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_2",
 			  typeCollection: "Woman collections",
 			  productType: "Flash Sale",
@@ -448,7 +495,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Suits"))), //"Flash Sale"
+																					typeCloths: "Suits"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Flash Sale"
 		.init(cover: "Walkthrough_Screen_3",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -484,7 +536,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Shoes"))), //"Newest Products"
+																					typeCloths: "Shoes"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -520,7 +577,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Shoes"))), //"Newest Products"
+																					typeCloths: "Shoes"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -556,7 +618,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Shoes"))), //"Newest Products"
+																					typeCloths: "Shoes"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -592,7 +659,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Dress"))), //"Newest Products"
+																					typeCloths: "Dress"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")])), //"Newest Products"
 		.init(cover: "Walkthrough_Screen_1",
 			  typeCollection: "Woman collections",
 			  productType: "Newest Products",
@@ -628,7 +700,12 @@
 																					weight: "260gr",
 																					condition: "NEW",
 																					category: "Men Cloths",
-																					typeCloths: "Dress")))  //"Newest Products"
+																					typeCloths: "Dress"),
+													   sizes: [Size(size: "S"),
+															   Size(size: "M"),
+															   Size(size: "L"),
+															   Size(size: "Xl"),
+															   Size(size: "XXL")]))  //"Newest Products"
 	]
 	
 	static func sortFetchData(by type: ProductType) -> [Product] {

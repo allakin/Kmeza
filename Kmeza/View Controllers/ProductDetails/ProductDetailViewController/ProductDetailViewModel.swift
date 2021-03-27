@@ -24,6 +24,7 @@ protocol ProductDetailViewModelProtocol: class {
 }
 
 class ProductDetailViewModel: ProductDetailViewModelProtocol {
+	
 	var name: String {
 		product.name
 	}

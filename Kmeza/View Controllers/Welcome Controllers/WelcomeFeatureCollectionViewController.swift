@@ -14,9 +14,9 @@ class WelcomeFeatureCollectionViewController: UIViewController {
 	let information: [WelcomeFeature] = WelcomeFeature.collection
 	
 	override func viewDidLoad() {
-        super.viewDidLoad()
+		super.viewDidLoad()
 		setupCollectionView()
-    }
+	}
 	
 	private func setupCollectionView() {
 		let layout = UICollectionViewFlowLayout()

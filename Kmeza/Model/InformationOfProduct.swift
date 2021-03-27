@@ -11,6 +11,7 @@ struct InformationOfProduct {
 	let description: String
 	let colorPickers: [ColorPicker]
 	let	specification: Specification
+	let sizes: [Size]
 }
 
 struct Specification {
@@ -29,4 +30,8 @@ struct ColorPicker {
 
 struct ProductImage {
 	let image: String
+}
+
+struct Size {
+	let size: String
 }
