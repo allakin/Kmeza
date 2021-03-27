@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SideMenu
 
 class CatalogCollectionViewController: UIViewController {
 
@@ -18,41 +17,26 @@ class CatalogCollectionViewController: UIViewController {
 		}
 	}
 	
-	private var sideMenu: SideMenuNavigationController?
-	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 		navigationController?.navigationBar.shadowImage = UIImage()
 		navigationController?.navigationBar.isTranslucent = true
 		navigationController?.navigationBar.tintColor = UIColor(red:0.73, green:0.74, blue:0.83, alpha:1.00)
 		
 		let image = UIImage(named: "Menu")
-		let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(cancel))
+		let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(showSideMenu))
 		navigationItem.leftBarButtonItem = button
 		
-		settingSideMenu()
-		
 		viewModel = CatalogCollectionViewModel()
+		
 		setupCollectionView()
+		
 		SaveCurrentPage.save(.catalog)
-    }
-	
-	@objc func cancel() {
-//		dismiss(animated: true) {
-//			self.present(self.sideMenu!, animated: true)
-//		}
-		present(sideMenu!, animated: true)
 	}
 	
-	private func settingSideMenu() {
-		let sideMenuVC = UIStoryboard(name: "Main", bundle: nil)
-			.instantiateViewController(identifier: "SideMenuTableViewController")
-		
-		sideMenu = SideMenuNavigationController(rootViewController: sideMenuVC)
-		sideMenu?.leftSide = true
-		sideMenu?.setNavigationBarHidden(true, animated: false)
-		sideMenu?.menuWidth = 262
+	@objc func showSideMenu() {
+		present(SideMenuViewer.shared.showSideMenu(), animated: true)
 	}
 	
 	private func setupCollectionView() {
@@ -64,10 +48,10 @@ class CatalogCollectionViewController: UIViewController {
 	}
 }
 
+// MARK: UICollectionViewDataSource
 extension CatalogCollectionViewController: UICollectionViewDelegate,
 									 UICollectionViewDataSource,
 									 UICollectionViewDelegateFlowLayout {
-	// MARK: UICollectionViewDataSource
 	func collectionView(_ collectionView: UICollectionView,
 								 numberOfItemsInSection section: Int) -> Int {
 		viewModel.numberOfRows()
