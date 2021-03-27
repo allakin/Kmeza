@@ -8,7 +8,7 @@
 import UIKit
 
 class CatalogCollectionViewController: UIViewController {
-
+	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
 	var viewModel: CatalogCollectionViewModelProtocol! {
@@ -19,14 +19,11 @@ class CatalogCollectionViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-		navigationController?.navigationBar.shadowImage = UIImage()
-		navigationController?.navigationBar.isTranslucent = true
-		navigationController?.navigationBar.tintColor = UIColor(red:0.73, green:0.74, blue:0.83, alpha:1.00)
-		
-		let image = UIImage(named: "Menu")
-		let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(showSideMenu))
-		navigationItem.leftBarButtonItem = button
+		navigationController?.settingUI()
+		navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Menu"),
+														   style: .plain,
+														   target: self,
+														   action: #selector(showSideMenu))
 		
 		viewModel = CatalogCollectionViewModel()
 		
@@ -50,20 +47,20 @@ class CatalogCollectionViewController: UIViewController {
 
 // MARK: UICollectionViewDataSource
 extension CatalogCollectionViewController: UICollectionViewDelegate,
-									 UICollectionViewDataSource,
-									 UICollectionViewDelegateFlowLayout {
+										   UICollectionViewDataSource,
+										   UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView,
-								 numberOfItemsInSection section: Int) -> Int {
+						numberOfItemsInSection section: Int) -> Int {
 		viewModel.numberOfRows()
 	}
-
+	
 	func collectionView(_ collectionView: UICollectionView,
-								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+						cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
 													  for: indexPath) as! CatalogCollectionViewCell
-	
+		
 		cell.viewModal = viewModel.cellViewModel(at: indexPath)
-	
+		
 		return cell
 	}
 	

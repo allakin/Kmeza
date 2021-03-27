@@ -2264,7 +2264,7 @@ in This Era</string>
             </objects>
             <point key="canvasLocation" x="3748" y="1644"/>
         </scene>
-        <!--All Collection-->
+        <!--Title-->
         <scene sceneID="tc4-vE-ZV5">
             <objects>
                 <viewController id="nks-E1-kCi" customClass="CatalogCollectionViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
@@ -2371,7 +2371,7 @@ in This Era</string>
                             <constraint firstItem="uby-fe-mEj" firstAttribute="top" secondItem="ye3-EJ-YTD" secondAttribute="top" id="xno-qO-BNu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Collection" id="nMu-Kf-Gya"/>
+                    <navigationItem key="navigationItem" title="Title" id="ioW-vF-STz"/>
                     <connections>
                         <outlet property="collectionView" destination="uby-fe-mEj" id="J7B-83-28T"/>
                         <segue destination="Glo-Vd-Hpp" kind="show" identifier="showCollection" id="uNZ-QN-Ify"/>
