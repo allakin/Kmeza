@@ -287,7 +287,7 @@ with K’meza</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="372" height="160"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-86-oV7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="69"/>
                                                                     <string key="text">Best Fashion Store 
 in This Era</string>
                                                                     <fontDescription key="fontDescription" name="Lora-Medium" family="Lora" pointSize="28"/>
@@ -295,13 +295,13 @@ in This Era</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-ZG-Bx8">
-                                                                    <rect key="frame" x="0.0" y="82" width="372" height="36"/>
+                                                                    <rect key="frame" x="0.0" y="79" width="372" height="41"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AI2-56-Emn">
-                                                                    <rect key="frame" x="0.0" y="128" width="372" height="32"/>
+                                                                    <rect key="frame" x="0.0" y="130" width="372" height="30"/>
                                                                     <color key="pageIndicatorTintColor" name="Primary Accent Color"/>
                                                                     <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </pageControl>
@@ -833,7 +833,7 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awc-Nm-f18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3748" y="-1113"/>
+            <point key="canvasLocation" x="3748" y="-1128"/>
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="wQd-Lm-VHr">
@@ -1031,7 +1031,7 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI8-LG-UbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3748" y="710"/>
+            <point key="canvasLocation" x="3748" y="752"/>
         </scene>
         <!--Home-->
         <scene sceneID="E8h-Rc-BTC">
@@ -1395,7 +1395,7 @@ in This Era</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed4-PQ-dTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5663" y="-499"/>
+            <point key="canvasLocation" x="5654" y="-383"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="Ab6-s0-sx7">
@@ -1849,7 +1849,7 @@ in This Era</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxp-8b-8xg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6730" y="-124"/>
+            <point key="canvasLocation" x="6734" y="-77"/>
         </scene>
         <!--Flash Sale Collection View Controller-->
         <scene sceneID="3BM-1a-Tla">
@@ -1979,7 +1979,7 @@ in This Era</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzA-U3-ytL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5662" y="31"/>
+            <point key="canvasLocation" x="5654" y="100"/>
         </scene>
         <!--Newest Products Table View Controller-->
         <scene sceneID="QE7-QA-4y1">
@@ -2165,7 +2165,7 @@ in This Era</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2h1-Lr-d1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7797" y="-486"/>
+            <point key="canvasLocation" x="7812" y="-370"/>
         </scene>
         <!--Men-->
         <scene sceneID="xlO-5s-5aN">
@@ -2264,7 +2264,7 @@ in This Era</string>
             </objects>
             <point key="canvasLocation" x="3748" y="1644"/>
         </scene>
-        <!--All Collection-->
+        <!--Title-->
         <scene sceneID="tc4-vE-ZV5">
             <objects>
                 <viewController id="nks-E1-kCi" customClass="CatalogCollectionViewController" customModule="Kmeza" customModuleProvider="target" sceneMemberID="viewController">
@@ -2272,10 +2272,10 @@ in This Era</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uby-fe-mEj">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uby-fe-mEj">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NYV-Oh-xnU">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NYV-Oh-xnU">
                                     <size key="itemSize" width="375" height="627"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -2283,7 +2283,7 @@ in This Era</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="zmB-ji-fWf" customClass="CatalogCollectionViewCell" customModule="Kmeza" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                                        <rect key="frame" x="0.0" y="-2" width="375" height="627"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="f3r-vC-rQU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
@@ -2313,18 +2313,18 @@ in This Era</string>
                                                             </constraints>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yDM-Um-Hi0">
-                                                            <rect key="frame" x="0.0" y="56" width="319" height="363.5"/>
+                                                            <rect key="frame" x="0.0" y="56" width="319" height="365.5"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="5rH-n0-uSA">
-                                                            <rect key="frame" x="0.0" y="447.5" width="319" height="123.5"/>
+                                                            <rect key="frame" x="0.0" y="449.5" width="319" height="121.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhA-mz-q1j">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="45.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="43.5"/>
                                                                     <fontDescription key="fontDescription" name="Lora-Bold" family="Lora" pointSize="28"/>
                                                                     <color key="highlightedColor" name="Third Text Color"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-Kh-RFr">
-                                                                    <rect key="frame" x="0.0" y="73.5" width="319" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="71.5" width="319" height="50"/>
                                                                     <color key="backgroundColor" name="Primary Accent Color"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="Wnh-zd-Iva"/>
@@ -2371,7 +2371,7 @@ in This Era</string>
                             <constraint firstItem="uby-fe-mEj" firstAttribute="top" secondItem="ye3-EJ-YTD" secondAttribute="top" id="xno-qO-BNu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Collection" id="nMu-Kf-Gya"/>
+                    <navigationItem key="navigationItem" title="Title" id="ioW-vF-STz"/>
                     <connections>
                         <outlet property="collectionView" destination="uby-fe-mEj" id="J7B-83-28T"/>
                         <segue destination="Glo-Vd-Hpp" kind="show" identifier="showCollection" id="uNZ-QN-Ify"/>
@@ -2390,7 +2390,7 @@ in This Era</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HYe-uA-4YY"/>
+        <segue reference="NXg-ey-dIq"/>
         <segue reference="HQB-Dh-YK9"/>
     </inferredMetricsTieBreakers>
     <resources>
