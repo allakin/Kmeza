@@ -33,16 +33,18 @@ class SettingProductDetailButton {
 		}
 	}
 	
-	func setDisabledState(at button: UIButton, and price: UILabel) {
-		if price.text == "SOLD" {
-			button.isSelected = false
-			button.backgroundColor = .lightGray
-			button.titleColor(for: .disabled)
+	func setDisabledState(at button: UIButton, and price: String) {
+		if price == "SOLD" {
+			button.isEnabled = false
+			button.backgroundColor = .clear
+			button.layer.borderWidth = 1
+			button.layer.borderColor = UIColor.lightGray.cgColor
+			button.setTitleColor(.lightGray, for: .disabled)
 		}
 	}
 	
-	func hideLabel(at label: UILabel, and price: UILabel) {
-		if price.text == "SOLD" {
+	func hideLabel(at label: UILabel, and price: String) {
+		if price == "SOLD" {
 			label.isHidden = true
 		}
 	}
