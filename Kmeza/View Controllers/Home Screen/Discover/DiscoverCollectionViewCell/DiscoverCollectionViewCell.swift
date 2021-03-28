@@ -40,10 +40,10 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 		viewModel.isAddedToWishList.bind { [unowned self] isAddedToWishList in
 			self.isAddedToWishList = isAddedToWishList
 		}
-
+		
 		addToWishListButton.setImage(changeImageForAddwishListButton(value: isAddedToWishList),
 									 for: .normal)
-
+		
 		viewModel.changeAddToWishListStatus()
 	}
 	

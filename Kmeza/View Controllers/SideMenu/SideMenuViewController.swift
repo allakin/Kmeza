@@ -18,6 +18,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	private var items = SideMenuItem.items
 	private var homeVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "HomeScreenViewController")
 	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogCollectionViewController")
+	private var wishlistVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "WishlistViewController")
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -55,6 +56,8 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 			FetchCurrentPage.fetch() == CurrentPage.home.rawValue ? dismiss(animated: true, completion: nil) : showScreen(homeVC)
 		case 1:
 			FetchCurrentPage.fetch() == CurrentPage.catalog.rawValue ? dismiss(animated: true, completion: nil) : showScreen(catalogVC)
+		case 3:
+			FetchCurrentPage.fetch() == CurrentPage.wishlist.rawValue ? dismiss(animated: true, completion: nil) : showScreen(wishlistVC)
 		default:
 			break
 		}
