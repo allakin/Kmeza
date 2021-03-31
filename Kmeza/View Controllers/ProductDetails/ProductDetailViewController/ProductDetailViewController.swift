@@ -48,8 +48,8 @@ class ProductDetailViewController: UIViewController {
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProductImages" {
-			let destination = segue.destination as! ProductDetailCollectionViewController
-			let images = ProductDetailCollectionViewModal(productImages: viewModel.productInformation.thumbnails)
+			let destination = segue.destination as! ProductThumbnailsCollectionViewController
+			let images = ProductThumbnailsCollectionViewViewModal(productImages: viewModel.productInformation.thumbnails)
 			destination.viewModel = images
 		}
 	}

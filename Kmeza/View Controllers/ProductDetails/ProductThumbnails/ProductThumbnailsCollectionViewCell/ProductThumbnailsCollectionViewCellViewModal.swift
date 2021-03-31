@@ -1,5 +1,5 @@
 //
-//  ProductDetailCollectionCellViewModel.swift
+//  ProductThumbnailsCollectionViewCellViewModal.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 14.02.2021.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol ProductDetailCollectionCellViewModelProtocol: class {
+protocol ProductThumbnailsCollectionViewCellViewModalProtocol: class {
 	init(images: ProductImage)
 	func getImages() -> [String]
 }
 
 
-class ProductDetailCollectionCellViewModel: ProductDetailCollectionCellViewModelProtocol {
+class ProductThumbnailsCollectionViewCellViewModal: ProductThumbnailsCollectionViewCellViewModalProtocol {
 	private let images: ProductImage
 	
 	required init(images: ProductImage) {
