@@ -33,7 +33,6 @@ class WishlistViewController: UIViewController {
 			
 			cellProductView.isHidden = true
 			cellProductViewButton.tintColor = UIColor.getColor(color: .navigationButtonColor)
-			
 		default:
 			listProductView.isHidden = true
 			listProductViewButton.tintColor = UIColor.getColor(color: .navigationButtonColor)
