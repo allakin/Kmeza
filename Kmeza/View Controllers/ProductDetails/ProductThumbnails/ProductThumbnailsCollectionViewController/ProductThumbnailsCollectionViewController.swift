@@ -1,5 +1,5 @@
 //
-//  ProductDetailCollectionViewController.swift
+//  ProductThumbnailsCollectionViewController.swift
 //  Kmeza
 //
 //  Created by Pavel Anpleenko on 17.01.2021.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ProductDetailCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class ProductThumbnailsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	
-	var viewModel: ProductDetailCollectionViewModalProtocol!
+	var viewModel: ProductThumbnailsCollectionViewViewModalProtocol!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -24,7 +24,7 @@ class ProductDetailCollectionViewController: UICollectionViewController, UIColle
 	override func collectionView(_ collectionView: UICollectionView,
 								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-													  for: indexPath) as! ProductDetailCollectionViewCell
+													  for: indexPath) as! ProductThumbnailsCollectionViewCell
 		
 		cell.viewModel = viewModel.cellViewModel(at: indexPath)
 		

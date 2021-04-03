@@ -8,6 +8,7 @@
 // MARK: - UserDefauls values
 let CURRENT_ROOT_VIEW_CONTROLLER = "SetRootViewController"
 let SHOW_CURRENT_PAGE = "ShowCurrentPage"
+let ADD_TO_WISHLIST = "SaveToWishlist"
 
 //enum UserDefaultKeys {
 //	case currentRootViewController

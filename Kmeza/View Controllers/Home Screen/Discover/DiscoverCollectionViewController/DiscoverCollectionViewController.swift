@@ -33,7 +33,8 @@ class DiscoverCollectionViewController: UICollectionViewController {
 													  for: indexPath) as! DiscoverCollectionViewCell
 		
 		cell.viewModel = viewModel.cellViewModel(at: indexPath)
-		cell.buttonTapAction = { cell.changeAddToWishListStatus() }
+		cell.buttonTapAction = { cell.changeAddToWishListStatus()
+		}
 		
 		return cell
 	}
