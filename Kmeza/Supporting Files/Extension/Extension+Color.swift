@@ -24,6 +24,7 @@ extension UIColor {
 		case onDeliveryMarkTextColor
 		case textFileldBackroundDefaultColor
 		case textFileldBorderDefaultColor
+		case navigationButtonColor
 	}
 	
 	static func getColor(color: ColorName) -> UIColor {
@@ -58,6 +59,8 @@ extension UIColor {
 			return UIColor(named: "textFileldBackroundDefaultColor") ?? .red
 		case .textFileldBorderDefaultColor:
 			return UIColor(named: "textFileldBorderDefaultColor") ?? .red
+		case .navigationButtonColor:
+			return UIColor(named: "navigationButtonColor") ?? .red
 		}
 	}
 }

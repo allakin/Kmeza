@@ -36,18 +36,6 @@ class FetchCurrentPage: GetUserDefaults {
 	}
 }
 
-class AddToWishlist: GetUserDefaults {
-	static func save(value: Product) {
-		userDefault.setValue( value, forKey: ADD_TO_WISHLIST)
-	}
-}
-
-class FetchWishlist: GetUserDefaults {
-	static func fetch() -> [Any] {
-		userDefault.array(forKey: ADD_TO_WISHLIST) ?? []
-	}
-}
-
 enum StoryBoardID: String {
 	case welcomeViewController = "WelcomeViewController"
 	case homeScreenViewController = "HomeScreenViewController"

@@ -11,25 +11,22 @@ class WishlistTableViewController: UITableViewController {
 	
 	let prodict = Product.products
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-		print("++++++++")
-		print(FetchWishlist.fetch())
-		print("++++++++")
-    }
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
 
-    // MARK: - Table view data source
+	// MARK: - Table view data source
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		prodict.count
 	}
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WishlistTableViewCell
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WishlistTableViewCell
 		
 		cell.productTitle.text = prodict[indexPath.row].name
 		
-        return cell
-    }
+		return cell
+	}
 
     /*
     // Override to support conditional editing of the table view.
