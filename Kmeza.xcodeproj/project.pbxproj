@@ -77,6 +77,7 @@
 		73D8789A25A5B3CD00F33B63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8789925A5B3CD00F33B63 /* GoogleService-Info.plist */; };
 		73F1D61925A8BF4E0060A904 /* AuthorizationInFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */; };
 		DDDAACF37728C8DD26C9272B /* Pods_Kmeza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */; };
+		E900CB912618835F00078AB0 /* WorkWithFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900CB902618835F00078AB0 /* WorkWithFirebase.swift */; };
 		E917133A25E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917133925E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift */; };
 		E917134025E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917133F25E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift */; };
 		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
@@ -202,6 +203,7 @@
 		C8FA2AC2D59D104E953A5887 /* Pods-KmezaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmezaTests.release.xcconfig"; path = "Target Support Files/Pods-KmezaTests/Pods-KmezaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8EA1BB9298A782433AC8CF9 /* Pods-Kmeza-KmezaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kmeza-KmezaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kmeza-KmezaUITests/Pods-Kmeza-KmezaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA222FB57193DC11B04AD00 /* Pods_Kmeza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kmeza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900CB902618835F00078AB0 /* WorkWithFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWithFirebase.swift; sourceTree = "<group>"; };
 		E917133925E0335200F3A564 /* FlashSaleCollectionViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionViewControllerViewModel.swift; sourceTree = "<group>"; };
 		E917133F25E0366500F3A564 /* FlashSaleCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCollectionCellViewModel.swift; sourceTree = "<group>"; };
 		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 				73F1D61825A8BF4E0060A904 /* AuthorizationInFirebase.swift */,
 				73947C7A2593AB92008A1781 /* UserDefault Save + Fetch .swift */,
 				E986C58B260F1F45000E6DEB /* SideMenuViewer.swift */,
+				E900CB902618835F00078AB0 /* WorkWithFirebase.swift */,
 			);
 			path = "Singleton Class";
 			sourceTree = "<group>";
@@ -1047,6 +1050,7 @@
 				73570E9825B199E100363499 /* SideMenuTableViewCell.swift in Sources */,
 				73947C7B2593AB92008A1781 /* UserDefault Save + Fetch .swift in Sources */,
 				737CC748259BCB3300B861BD /* WelcomeFeatureCollectionViewController.swift in Sources */,
+				E900CB912618835F00078AB0 /* WorkWithFirebase.swift in Sources */,
 				7338E91925B4C63800044D55 /* ProductDetailViewController.swift in Sources */,
 				735B686D25BD95690010F338 /* СatalogueOutfitsCollectionViewController.swift in Sources */,
 				73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */,

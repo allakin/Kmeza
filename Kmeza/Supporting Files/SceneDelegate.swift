@@ -23,13 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //			defaults.removeObject(forKey: key)
 //		}
 		
-//		let currentRootViewController = FetchRootViewController.fetchData()
-//
-//		if currentRootViewController == "HomeScreenViewController" {
-//			ShowViewScreen.shared.showHomeScreen()
-//		} else if currentRootViewController == "WelcomeViewController" {
-//			ShowViewScreen.shared.showWelcomeScreen()
-//		}
+		let currentRootViewController = FetchRootViewController.fetchData()
+
+		if currentRootViewController == "HomeScreenViewController" {
+			ShowViewScreen.shared.showHomeScreen()
+		} else if currentRootViewController == "WelcomeViewController" {
+			ShowViewScreen.shared.showWelcomeScreen()
+		}
 	}
 	
 	func sceneDidDisconnect(_ scene: UIScene) {
