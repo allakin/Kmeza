@@ -16,6 +16,7 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var addToWishListButton: UIButton!
 	
 	var buttonTapAction: (()->())?
+	var savedData = false
 	
 	private var isAddedToWishList = false
 	
@@ -46,27 +47,6 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
 									 for: .normal)
 		
 		viewModel.changeAddToWishListStatus()
-		
-		let saveTest = Product(cover: "",
-							   typeCollection: "",
-							   productType: "",
-							   name: "viewModel.title",
-							   price: 0,
-							   sale: 0,
-							   numberStock: 0,
-							   numberOfProducts: 0,
-							   productInformation: InformationOfProduct(thumbnails: [ProductImage(image: "")],
-																		numberOfReviews: 0,
-																		description: "",
-																		colorPickers: [ColorPicker(red: 0.0,
-																								   green: 0.0,
-																								   blue: 0.0)],
-																		specification: Specification(brand: "",
-																									 weight: "",
-																									 condition: "",
-																									 category: "",
-																									 typeCloths: ""),
-																		sizes: [Size(size: "")]))
 	}
 	
 	private func changeImageForAddwishListButton(value: Bool) -> UIImage {
