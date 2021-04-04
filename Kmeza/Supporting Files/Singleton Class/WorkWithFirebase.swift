@@ -43,7 +43,7 @@ class SaveDataInFirebase: WorkWithFirebase {
 	
 	func saveData(data: [String: Any]) {
 		guard let name = data["name"] as? String else { return }
-		databaseReference().child("wishlist_userID\(getUserID())").child(name).setValue(data)
+		databaseReference().child("wishlist_userID__\(getUserID())__").child(name).setValue(data)
 	}
 }
 
@@ -53,6 +53,6 @@ class RemoveDataFromFirebase: WorkWithFirebase {
 	private override init() {}
 	
 	func removeData(name: String) {
-		databaseReference().child("wishlist_userID\(getUserID())").child(name).removeValue()
+		databaseReference().child("wishlist_userID__\(getUserID())__").child(name).removeValue()
 	}
 }
