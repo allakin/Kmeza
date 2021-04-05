@@ -50,5 +50,8 @@ class NewestProductsTableCellViewModel: NewestProductsTableCellViewModelProtocol
 	
 	func changeAddToWishListStatus() {
 		isAddedToWishList.value.toggle()
+		
+		DataTemplate.shared.saveOrRemoveProductInWishlistFromFirebase(isAdded: isAddedToWishList,
+																	  product: product)
 	}
 }
