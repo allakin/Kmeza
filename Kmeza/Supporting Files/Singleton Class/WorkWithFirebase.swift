@@ -56,3 +56,69 @@ class RemoveDataFromFirebase: WorkWithFirebase {
 		databaseReference().child("wishlist_userID__\(getUserID())__").child(name).removeValue()
 	}
 }
+
+
+class DataTemplate {
+	static let shared = DataTemplate()
+	
+	private init() {}
+	
+	func saveOrRemoveProductInWishlistFromFirebase(isAdded: Box<Bool>, product: Product) {
+		if isAdded.value {
+			SaveDataInFirebase.shared.saveData(data: DataTemplate.shared.data(product: product))
+		} else {
+			RemoveDataFromFirebase.shared.removeData(name: product.name)
+		}
+	}
+	
+	private func data(product: Product) -> [String: Any] {
+		["cover": product.cover,
+		 "typeCollection": product.typeCollection,
+		 "productType": product.productType,
+		 "name": product.name,
+		 "price": product.price,
+		 "sale": product.sale,
+		 "numberStock": product.numberStock,
+		 "numberOfProducts": product.numberOfProducts,
+		 "numberOfReviews": product.productInformation.numberOfReviews,
+		 "description": product.productInformation.description,
+		 "thumbnails": parseThumbnails(product: product),
+		 "colorPickers": parseColorPickers(product: product),
+		 "specification": ["brand": product.productInformation.specification.brand,
+						   "weight": product.productInformation.specification.weight,
+						   "condition": product.productInformation.specification.condition,
+						   "category": product.productInformation.specification.category,
+						   "typeCloths": product.productInformation.specification.typeCloths],
+		 "sizes": parseSizes(product: product)]
+	}
+	
+	private func parseThumbnails(product: Product) -> [[String: Any]] {
+		var thumbnails: [[String: Any]] = [[:]]
+		
+		product.productInformation.thumbnails.forEach { (image) in
+			thumbnails.append(["image": image.image])
+		}
+		
+		return thumbnails
+	}
+	
+	private func parseColorPickers(product: Product) -> [[String: Any]] {
+		var colorPickers: [[String: Any]] = [[:]]
+		
+		product.productInformation.colorPickers.forEach { (color) in
+			colorPickers.append(["red": color.red, "green": color.green, "blue": color.blue])
+		}
+		
+		return colorPickers
+	}
+	
+	private func parseSizes(product: Product) -> [[String: Any]] {
+		var sizes: [[String: Any]] = [[:]]
+		
+		product.productInformation.sizes.forEach { (size) in
+			sizes.append(["size": size.size])
+		}
+		
+		return sizes
+	}
+}

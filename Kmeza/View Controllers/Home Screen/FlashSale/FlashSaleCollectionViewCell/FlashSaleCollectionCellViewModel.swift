@@ -56,6 +56,9 @@ class FlashSaleCollectionCellViewModel: FlashSaleCollectionCellViewModelProtocol
 	
 	func changeAddToWishListStatus() {
 		isAddedToWishList.value.toggle()
+		
+		DataTemplate.shared.saveOrRemoveProductInWishlistFromFirebase(isAdded: isAddedToWishList,
+																	  product: product)
 	}
 	
 	private func configureLeftCountProducts(_ number: Int, _ count: Int) -> String {
