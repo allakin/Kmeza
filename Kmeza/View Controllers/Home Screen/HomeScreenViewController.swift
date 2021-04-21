@@ -18,6 +18,8 @@ class HomeScreenViewController: UIViewController, NewestProductsTableViewControl
 		navigationController?.settingUI()
 		newProductsCount.text = "Showing \(productsCount ?? "") Results"
 		SaveCurrentPage.save(.home)
+		
+		GetWishlist.shared.getData()
 	}
 	
 	@IBAction func showSideMenuAction(_ sender: UIBarButtonItem) {
