@@ -11,6 +11,8 @@ target 'Kmeza' do
 
 	pod 'SideMenu'
 	pod 'CHTCollectionViewWaterfallLayout'
+	
+	pod 'Alamofire'
 
   target 'KmezaTests' do
     inherit! :search_paths

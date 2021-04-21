@@ -6,6 +6,7 @@
 //
 
 import Firebase
+import Alamofire
 
 class WorkWithFirebase {
 	func databaseReference() -> DatabaseReference {
@@ -120,5 +121,20 @@ class DataTemplate {
 		}
 		
 		return sizes
+	}
+}
+
+
+class GetWishlist: WorkWithFirebase {
+	static let shared = GetWishlist()
+	
+	private override init() {}
+	
+	func getData() {
+		databaseReference().child("wishlist_userID__\(getUserID())__").observe(.value, with: { (snapshot) in
+			let data = snapshot.value as? [String: Any] ?? [:]
+			data.forEach { (key, value) in
+			}
+		})
 	}
 }
