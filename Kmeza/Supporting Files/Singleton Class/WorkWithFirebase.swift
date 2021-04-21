@@ -134,6 +134,7 @@ class GetWishlist: WorkWithFirebase {
 		databaseReference().child("wishlist_userID__\(getUserID())__").observe(.value, with: { (snapshot) in
 			let data = snapshot.value as? [String: Any] ?? [:]
 			data.forEach { (key, value) in
+				print(value)
 			}
 		})
 	}

@@ -16,9 +16,12 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 	@IBOutlet weak var sideMenu: UITableView!
 	
 	private var items = SideMenuItem.items
-	private var homeVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "HomeScreenViewController")
-	private var catalogVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "CatalogCollectionViewController")
-	private var wishlistVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "WishlistViewController")
+	private var homeVC = UIStoryboard(name: "Main", bundle: .main)
+		.instantiateViewController(withIdentifier: "HomeScreenViewController")
+	private var catalogVC = UIStoryboard(name: "Main", bundle: .main)
+		.instantiateViewController(withIdentifier: "CatalogCollectionViewController")
+	private var wishlistVC = UIStoryboard(name: "Main", bundle: .main)
+		.instantiateViewController(withIdentifier: "WishlistViewController")
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
