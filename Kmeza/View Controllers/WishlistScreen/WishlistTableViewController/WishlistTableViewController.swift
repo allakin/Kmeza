@@ -9,21 +9,20 @@ import UIKit
 
 class WishlistTableViewController: UITableViewController {
 	
-	let prodict = Product.products
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
 
 	// MARK: - Table view data source
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		prodict.count
+		wishlist.count
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WishlistTableViewCell
 		
-		cell.productTitle.text = prodict[indexPath.row].name
+		cell.productTitle.text = wishlist[indexPath.row].name
+		cell.productImage.image = UIImage(named: wishlist[indexPath.row].cover)
 		
 		return cell
 	}

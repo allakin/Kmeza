@@ -7,6 +7,8 @@
 
 import Foundation
 
+var wishlist: [ProductInWishlist] = []
+
 struct ProductInWishlist {
 	let cover: String
 	let typeCollection: String
