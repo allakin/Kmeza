@@ -83,6 +83,7 @@
 		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
 		E9606A2D25F66D1400F6BA44 /* CatalogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9606A2C25F66D1400F6BA44 /* CatalogCollectionViewCell.swift */; };
 		E9642A1325D1C1B500055F3B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9642A1225D1C1B500055F3B /* Box.swift */; };
+		E96D40182634609800DE6DD6 /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D40172634609800DE6DD6 /* Wishlist.swift */; };
 		E971E1F625F66ABB0051A419 /* CatalogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971E1F525F66ABB0051A419 /* CatalogCollectionViewController.swift */; };
 		E972C33926106A6900442BAE /* WishlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972C33826106A6900442BAE /* WishlistTableViewController.swift */; };
 		E972C34526106A9B00442BAE /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972C34426106A9B00442BAE /* WishlistTableViewCell.swift */; };
@@ -209,6 +210,7 @@
 		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		E9606A2C25F66D1400F6BA44 /* CatalogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9642A1225D1C1B500055F3B /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		E96D40172634609800DE6DD6 /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
 		E971E1F525F66ABB0051A419 /* CatalogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewController.swift; sourceTree = "<group>"; };
 		E972C33826106A6900442BAE /* WishlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewController.swift; sourceTree = "<group>"; };
 		E972C34426106A9B00442BAE /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 				73570E9F25B1A94100363499 /* SideMenuItem.swift */,
 				7374F6C225C6D03D007E6CF8 /* Catagory.swift */,
 				E98DB1CA25F72AFB00CFD6AF /* Catalog.swift */,
+				E96D40172634609800DE6DD6 /* Wishlist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1056,6 +1059,7 @@
 				73597B03259F2B8C009097D7 /* Extension+Color.swift in Sources */,
 				73849289258E3AA000F665E8 /* WalkthroughViewController.swift in Sources */,
 				73AB239A259DC476004BAA64 /* SignUpViewController.swift in Sources */,
+				E96D40182634609800DE6DD6 /* Wishlist.swift in Sources */,
 				738492A5258E8BE000F665E8 /* WalkthroughCollectionViewCell.swift in Sources */,
 				737CC743259BCACF00B861BD /* WelcomeFeatureCollectionViewCell.swift in Sources */,
 				E98DB1CB25F72AFB00CFD6AF /* Catalog.swift in Sources */,

@@ -133,8 +133,9 @@ class GetWishlist: WorkWithFirebase {
 	func getData() {
 		databaseReference().child("wishlist_userID__\(getUserID())__").observe(.value, with: { (snapshot) in
 			let data = snapshot.value as? [String: Any] ?? [:]
-			data.forEach { (key, value) in
-				print(value)
+			data.forEach { (_, value) in
+				let product = ProductInWishlist(value: value as! [String : Any])
+				print(product)
 			}
 		})
 	}
