@@ -2624,6 +2624,9 @@ in This Era</string>
                         <viewLayoutGuide key="safeArea" id="kIA-lN-yFm"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
+                    <connections>
+                        <segue destination="K6v-GY-VZd" kind="showDetail" identifier="showDetail" id="jgz-Wr-E0B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELE-4m-mgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2631,7 +2634,7 @@ in This Era</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ja9-Hg-HOg"/>
+        <segue reference="jgz-Wr-E0B"/>
         <segue reference="HQB-Dh-YK9"/>
     </inferredMetricsTieBreakers>
     <resources>
