@@ -17,7 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		
 		FirebaseApp.configure()
 		
-		GetWishlist.shared.getData()
+		var viewModel: WishlistTableViewControllerViewModelProtocol! {
+			didSet {
+				viewModel.getData()
+			}
+		}
+		viewModel = WishlistTableViewControllerViewModel()
 		
 //		let defaults = UserDefaults.standard
 //		let dictionary = defaults.dictionaryRepresentation()

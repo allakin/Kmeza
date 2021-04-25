@@ -83,6 +83,8 @@
 		E921710D25CF0E76002BE769 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */; };
 		E9606A2D25F66D1400F6BA44 /* CatalogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9606A2C25F66D1400F6BA44 /* CatalogCollectionViewCell.swift */; };
 		E9642A1325D1C1B500055F3B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9642A1225D1C1B500055F3B /* Box.swift */; };
+		E96A058626354731002E725E /* WishlistTableViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96A058526354731002E725E /* WishlistTableViewControllerViewModel.swift */; };
+		E96A058B26354820002E725E /* WishlistTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96A058A26354820002E725E /* WishlistTableViewCellViewModel.swift */; };
 		E96D40182634609800DE6DD6 /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D40172634609800DE6DD6 /* Wishlist.swift */; };
 		E971E1F625F66ABB0051A419 /* CatalogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971E1F525F66ABB0051A419 /* CatalogCollectionViewController.swift */; };
 		E972C33926106A6900442BAE /* WishlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972C33826106A6900442BAE /* WishlistTableViewController.swift */; };
@@ -210,6 +212,8 @@
 		E921710C25CF0E76002BE769 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		E9606A2C25F66D1400F6BA44 /* CatalogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9642A1225D1C1B500055F3B /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		E96A058526354731002E725E /* WishlistTableViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewControllerViewModel.swift; sourceTree = "<group>"; };
+		E96A058A26354820002E725E /* WishlistTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		E96D40172634609800DE6DD6 /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
 		E971E1F525F66ABB0051A419 /* CatalogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewController.swift; sourceTree = "<group>"; };
 		E972C33826106A6900442BAE /* WishlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewController.swift; sourceTree = "<group>"; };
@@ -621,6 +625,7 @@
 			isa = PBXGroup;
 			children = (
 				E972C33826106A6900442BAE /* WishlistTableViewController.swift */,
+				E96A058526354731002E725E /* WishlistTableViewControllerViewModel.swift */,
 			);
 			path = WishlistTableViewController;
 			sourceTree = "<group>";
@@ -629,6 +634,7 @@
 			isa = PBXGroup;
 			children = (
 				E972C34426106A9B00442BAE /* WishlistTableViewCell.swift */,
+				E96A058A26354820002E725E /* WishlistTableViewCellViewModel.swift */,
 			);
 			path = WishlistTableViewCell;
 			sourceTree = "<group>";
@@ -1065,6 +1071,7 @@
 				E98DB1CB25F72AFB00CFD6AF /* Catalog.swift in Sources */,
 				735ED91125ADAAC2003F8AEB /* DiscoverCollectionViewController.swift in Sources */,
 				730A6FF125AF3A8C0068576C /* InformationOfProduct.swift in Sources */,
+				E96A058B26354820002E725E /* WishlistTableViewCellViewModel.swift in Sources */,
 				7374F63625C6AB9D007E6CF8 /* СatalogueOutfitsCell.swift in Sources */,
 				E97F691425D966D100144316 /* ProductThumbnailsCollectionViewCellViewModal.swift in Sources */,
 				7357F4E125A85F4500D62454 /* Reference.swift in Sources */,
@@ -1075,6 +1082,7 @@
 				73849277258E370100F665E8 /* WelcomeViewController.swift in Sources */,
 				736D8040258F8FB0005F0BA8 /* Extension+Button.swift in Sources */,
 				E971E1F625F66ABB0051A419 /* CatalogCollectionViewController.swift in Sources */,
+				E96A058626354731002E725E /* WishlistTableViewControllerViewModel.swift in Sources */,
 				734DE2822586780C0006E607 /* SceneDelegate.swift in Sources */,
 				E9AD5C34260128CF000E6604 /* СatalogueOutfitsCollectionViewModal.swift in Sources */,
 				737AD10925B490A900EB8B50 /* ProductThumbnailsCollectionViewCell.swift in Sources */,
