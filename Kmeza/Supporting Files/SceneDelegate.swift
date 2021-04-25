@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		
 		FirebaseApp.configure()
 		
+		GetWishlist.shared.getData()
+		
 //		let defaults = UserDefaults.standard
 //		let dictionary = defaults.dictionaryRepresentation()
 //		dictionary.keys.forEach { key in
