@@ -8,15 +8,13 @@
 import Foundation
 
 protocol WishlistTableViewControllerViewModelProtocol: class {
-	var wishlists: [ProductInWishlist] { get }
 	func countOfProduct() -> Int
 	func getData()
-//	func cellViewModel(at indexPath: IndexPath) -> FlashSaleCollectionCellViewModelProtocol?
+	func cellViewModel(at indexPath: IndexPath) -> WishlistTableViewCellViewModelProtocol?
 //	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol?
 }
 
 class WishlistTableViewControllerViewModel: WishlistTableViewControllerViewModelProtocol {
-	var wishlists: [ProductInWishlist] = []
 	
 	func countOfProduct() -> Int {
 		wishlists.count
@@ -26,14 +24,14 @@ class WishlistTableViewControllerViewModel: WishlistTableViewControllerViewModel
 		GetWishlist.shared.getData()
 	}
 	
-//	func cellViewModel(at indexPath: IndexPath) -> FlashSaleCollectionCellViewModelProtocol? {
-//		<#code#>
-//	}
-//
+	func cellViewModel(at indexPath: IndexPath) -> WishlistTableViewCellViewModelProtocol? {
+		let wishlist = wishlists[indexPath.row]
+		return WishlistTableViewCellViewModel(product: wishlist)
+	}
+
+	// TODO: - Сделать переход к экрану ProductDetailViewModel
 //	func viewModelForSelectedRow(at indexPath: IndexPath) -> ProductDetailViewModelProtocol? {
-//		<#code#>
+//		let wishlist = wishlists[indexPath.row]
+//		return ProductDetailViewModel(product: wishlist)
 //	}
-	
-	
-	
 }

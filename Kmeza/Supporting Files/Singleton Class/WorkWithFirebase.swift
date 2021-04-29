@@ -135,7 +135,7 @@ class GetWishlist: WorkWithFirebase {
 			let data = snapshot.value as? [String: Any] ?? [:]
 			data.forEach { (_, value) in
 				let product = ProductInWishlist(value: value as! [String : Any])
-				wishlist.append(product)
+				wishlists.append(product)
 			}
 		})
 	}

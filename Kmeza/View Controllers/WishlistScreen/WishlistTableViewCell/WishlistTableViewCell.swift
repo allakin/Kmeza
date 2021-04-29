@@ -17,9 +17,19 @@ class WishlistTableViewCell: UITableViewCell {
 	
 	var buttonTapAction: (()->())?
 	
+	var viewModel: WishlistTableViewCellViewModelProtocol! {
+		didSet {
+			productTitle.text = viewModel.title
+			productImage.image = UIImage(named: viewModel.image)
+			productSale.text = viewModel.sale
+			productPrice.text = viewModel.price
+			productNumberOfReviews.text = viewModel.numberOfReviews
+		}
+	}
+	
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+		productSale.addAttributeString()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,5 +37,4 @@ class WishlistTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
